@@ -1,0 +1,197 @@
+{
+  "slug": "classic-popovers",
+  "title": "Classic Popovers",
+  "subtitle": "Recipe Formulation Sheet",
+  "blurb": "Steam-leavened and egg-rich — these climb tall on nothing but heat and a thin, high-hydration batter, no baking powder required.",
+  "tags": ["Breads", "American", "Vegetarian", "Baking"],
+  "meta": {
+    "version": "1.0",
+    "date": "August 24, 2026",
+    "status": "Production Ready",
+    "baseTargetScale": "6 Large Popovers / 767.5 g Batter (1x)",
+    "source": {
+      "publication": "King Arthur Baking",
+      "title": "Popovers Recipe",
+      "author": "King Arthur Baking Company",
+      "url": "https://www.kingarthurbaking.com/recipes/popovers-recipe",
+      "note": "Covers the base batter and method only. The add-in quantities table below draws on several other published popover recipes, each cited individually in that section."
+    }
+  },
+  "summary": [
+    "Popovers rise on steam alone — there is no baking powder, soda, or yeast in the batter. That means the batter has to do two contradictory things at once: stay thin enough to flash into steam fast, and hold enough structure to trap that steam as it expands. This recipe's liquid (milk and eggs combined) runs to roughly three times the weight of the flour, well past the ~250% hydration that popover batter needs to pour like heavy cream rather than pancake batter.",
+    "The flour's job is entirely structural. Medium-protein all-purpose flour (around 11.7%) forms just enough gluten, reinforced by the egg proteins, to build walls around the expanding steam without going so elastic that it resists the rise. A hot start matters as much as the batter itself — the oven has to be genuinely at 450°F, not just reading 450°F on a lagging built-in gauge, or the popovers never get the violent first burst that sets their height."
+  ],
+  "specs": [
+    { "label": "Yield", "value": "6 large popovers" },
+    { "label": "Prep Time", "value": "5 minutes" },
+    { "label": "Cook Time", "value": "35-40 minutes (450°F, then 350°F)" },
+    { "label": "Service", "value": "Hot, immediately" }
+  ],
+  "scalingPrinciple": "Flour (A.01) is locked at 100.0% following baker's-percentage convention for a batter recipe: it's the only ingredient providing structure, so it's the meaningful anchor for scaling. Every other ingredient — eggs, milk, salt, butter — is expressed as a percentage of the flour weight, and the batch scaler recomputes all of them from that baseline.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Batter Base" },
+        {
+          "id": "A.01",
+          "name": "All-Purpose Flour",
+          "volume": "1½ cups",
+          "mass": 180,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "The only structural ingredient in the batter. Its gluten network, reinforced by the egg proteins, is what traps the expanding steam — medium-protein AP flour (not bread flour, not pastry flour) is the deliberate choice."
+        },
+        {
+          "id": "A.02",
+          "name": "Large Eggs",
+          "volume": "4 large eggs",
+          "mass": 200,
+          "pct": 111.11,
+          "role": "Built into the wet mixture first; egg protein reinforces the flour's structure and helps the popover hold its shape as it deflates slightly on cooling. Warm the eggs in hot water for 10 minutes before cracking so they whisk in smoothly rather than shocking the batter cold."
+        },
+        {
+          "id": "A.03",
+          "name": "Milk",
+          "volume": "1½ cups",
+          "mass": 340,
+          "pct": 188.89,
+          "role": "The primary source of steam. Bring to room temperature or lukewarm before whisking — cold milk has the same shocking effect on the batter as cold eggs."
+        },
+        { "group": "B — Seasoning & Fat" },
+        {
+          "id": "B.01",
+          "name": "Table Salt",
+          "volume": "¾ tsp",
+          "mass": 4.5,
+          "pct": 2.5,
+          "estimated": true,
+          "role": "Seasons the batter; dissolves fully once whisked in with the eggs and milk."
+        },
+        {
+          "id": "B.02",
+          "name": "Unsalted Butter, melted",
+          "volume": "3 tbsp",
+          "mass": 43,
+          "pct": 23.89,
+          "role": "Stirred in last, right before the cups are filled, so it stays liquid and disperses evenly instead of seizing into solid flecks."
+        }
+      ],
+      "total": {
+        "mass": 767.5,
+        "pct": 426.39,
+        "role": "Combined raw material input for one full batch (6 large popovers)."
+      }
+    }
+  ],
+  "matrixFootnote": "*Salt mass is a standard culinary estimate (1 tsp table salt ≈ 6 g) converted from the source's ¾-teaspoon measure — King Arthur does not publish a gram weight for the salt. Eggs, milk, flour, and butter are all stated directly in the source, in both volume and grams (eggs converted using the standard 50 g per large egg, out of shell).",
+  "miseTitle": "II. Pre-Assembly Processing (Mise en Place)",
+  "mise": [
+    {
+      "label": "Eggs (A.02)",
+      "text": "Warm whole eggs, still in the shell, in a bowl of hot tap water for about 10 minutes before cracking."
+    },
+    {
+      "label": "Milk (A.03)",
+      "text": "Bring to room temperature or a bare lukewarm."
+    },
+    {
+      "label": "Pan",
+      "text": "Grease a standard 12-cup muffin tin or a popover pan heavily, including the flat metal *between* the cups — batter crests over the rims as it rises, and any bare metal there will anchor a popover and tear its side when you unmold it."
+    }
+  ],
+  "executionTitle": "III. Execution Sequence",
+  "execution": [
+    {
+      "name": "Preheat and Position",
+      "params": "~15-30 min | 450°F (232°C)",
+      "text": "Set an oven rack in the lower third and preheat to 450°F, confirming with an independent oven thermometer — built-in gauges routinely signal ready before the box is actually at temperature, and popovers need the real number for their first burst of steam."
+    },
+    {
+      "name": "Whisk the Wet Ingredients",
+      "params": "~2 min",
+      "text": "Whisk the eggs, milk, and salt together until fully combined, with no streaks of yolk visible."
+    },
+    {
+      "name": "Add the Flour",
+      "params": "~1 min",
+      "text": "Add all the flour at once and whisk until frothy and thin — pourable like heavy cream. Small lumps are fine and bake out; don't keep whisking to chase them or you'll build gluten the batter doesn't need."
+    },
+    {
+      "name": "Stir in the Butter",
+      "params": "~30 sec",
+      "text": "Stir in the melted butter quickly, just until combined. If you're adding cheese or herbs (see the add-in table below), fold them in now."
+    },
+    {
+      "name": "Fill and Bake, Undisturbed",
+      "params": "35-40 min total | 450°F, then 350°F",
+      "text": [
+        "Pour the batter into the greased cups, filling each two-thirds to three-quarters full. Slide the pan onto the lower rack and bake at 450°F for 20 minutes without opening the oven door — every peek lets out the heat driving the rise.",
+        "Without opening the door, reduce the oven to 350°F and bake 10 to 15 minutes more, until deeply golden brown and firm-sided. If the tops are coloring faster than the sides are setting, slide a baking sheet onto the rack above to shield them."
+      ]
+    },
+    {
+      "name": "Vent and Serve",
+      "params": "Immediately",
+      "text": "Pull the pan and immediately prick the side of each popover with a knife tip to let the trapped steam escape — skip this and the interiors turn soggy as they sit. Unmold and serve at once; popovers lose their structure fast as they cool."
+    }
+  ],
+  "qcTitle": "IV. Quality Control Parameters",
+  "qc": [
+    {
+      "metric": "Rise",
+      "target": "Tall, deeply domed tops well above the rim; sides firm enough to hold their shape when unmolded.",
+      "action": "If short and pale, the oven wasn't genuinely at 450°F at load-in — verify with an independent thermometer and preheat longer next time. If they rose and then collapsed, the door was opened during the first 20 minutes, or they came out before the sides fully set; give the second stage its full 15 minutes."
+    },
+    {
+      "metric": "Crust Color",
+      "target": "Deep, even golden-brown on top and sides, not pale gold.",
+      "action": "If pale at the finish, extend the 350°F stage in 5-minute increments. If tops are dark before the sides have set, shield with a baking sheet on the rack above for the remainder of the bake."
+    },
+    {
+      "metric": "Interior Texture",
+      "target": "Custardy and moist immediately around a mostly hollow center — not gummy or wet.",
+      "action": "If underbaked at the center, add 5 extra minutes at 350°F next time. Venting the tops the moment they leave the oven also keeps residual steam from resoftening the interior."
+    }
+  ],
+  "sections": [
+    {
+      "id": "add-in-quantities",
+      "title": "Add-In Quantities for Cheese & Herb Popovers",
+      "intro": "The base batter above is intentionally plain. These are not variations this source offers — each is compiled from a separate published popover recipe built to the same 6-popover / 1½ cup flour scale, so the quantities carry over directly. Fold cheese in with the flour (step III.3) and stir soft herbs in with the butter (step III.4); a sprinkled cheese topping goes on right before the pan goes in the oven.",
+      "table": {
+        "columns": ["Add-In", "Amount (6-Popover / 1x Batch)", "Est. Mass", "When to Add", "Source"],
+        "rows": [
+          [
+            "Cheddar cheese powder",
+            "¼ cup",
+            "28 g",
+            "Whisked into the batter with the flour",
+            "King Arthur Baking — *Light and Crispy Cheese Popovers*"
+          ],
+          [
+            "Shredded Gruyère + fresh thyme",
+            "1 cup Gruyère, 1 tbsp minced thyme",
+            "~113 g cheese / ~3 g thyme (est.)",
+            "Both blended into the batter with the flour",
+            "Belly Full — *Popovers with Gruyère and Thyme*"
+          ],
+          [
+            "Shredded Gruyère + smoked Gouda, parsley & thyme",
+            "½ cup Gruyère + ¼ cup Gouda (mix-in); 2 tbsp combined cheese (topping); 2 tbsp chopped parsley + 1 tbsp chopped thyme",
+            "~57 g + ~28 g mix-in; ~14 g topping; ~8 g parsley + ~3 g thyme (est.)",
+            "Cheeses whisked into the batter with the flour; herbs added to the egg-and-milk mixture; extra cheese sprinkled on top just before baking",
+            "Wyse Guide — *Herb & Cheese Popovers*"
+          ],
+          [
+            "Grated Parmesan, chives, pepper & lemon zest",
+            "⅓ cup Parmesan, 2 tbsp chopped chives, 1 tsp black pepper, 1 tsp lemon zest",
+            "35 g Parmesan / ~6 g chives / ~2 g pepper / ~2 g zest (est.)",
+            "Parmesan whisked in with the flour; chives, pepper, and zest added to the egg-and-milk mixture",
+            "Family Style Food — *Parmesan Popovers with Chives*"
+          ]
+        ]
+      }
+    }
+  ],
+  "directive": "Don't open the oven door before the first 20 minutes are up, and don't trust the oven's built-in gauge over an independent thermometer — a batch that goes in below a true 450°F never gets the initial burst of steam that sets its height, and no amount of extra time in the second stage will recover it."
+}
