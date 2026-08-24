@@ -175,7 +175,8 @@ arrays or placeholder strings to fill the shape out.
           "mass": 453.6,
           "pct": 100.0,
           "baseline": true,
-          "estimated": false,
+          // "estimated": true only when the mass was estimated;
+          //   omit the key entirely otherwise
           "role": "What this ingredient does and how it's prepped."
         },
         {
@@ -284,7 +285,7 @@ Reuse existing tags wherever one fits. Current taxonomy:
              Mediterranean, Mexican, French, Southern US, American
   Diet       Vegetarian, Vegan, Gluten-Free, Contains Meat
   Technique  Baking, Roasting, Grilling, Braising, Fermentation, No-Cook
-  Collection Meal Prep, Make-Ahead
+  Occasion   Meal Prep, Make-Ahead
 
 A recipe carries as many tags as genuinely apply and appears under each one.
 Invent a new tag only when nothing fits; a new tag needs no configuration —
@@ -295,51 +296,14 @@ Diet tags describe the recipe AS FORMULATED. Anything with fish sauce, oyster
 sauce, anchovy, honey, dairy, or egg is not Vegan. Check the matrix before
 tagging; do not infer from the title.
 
-Never assign "Favorites" on your own. That tag is the user's editorial call.
+Do NOT emit a "Favorites" tag — Favorites is not a tag. It is a curated slug
+list under "collections" in data/index.json that the user maintains by hand.
+Featuring a recipe is their editorial call, never yours. Produce the recipe
+sheet and the index entry only.
 
 ================================================================================
-8. PRIVACY
+8. SOURCE ATTRIBUTION
 ================================================================================
-
-The repository and website are PUBLIC.
-
-Source documents may contain personal context — medications, health conditions,
-schedules, family details, or private reasoning about why a dish exists. None
-of that goes into published JSON, including slugs.
-
-Nutritional rationale stated in general terms is fine ("magnesium and B6 from
-the seed blend"). Personal medical framing is not ("timed to balance a
-medication load", "to counter executive dysfunction"). Keep the food science,
-drop the personal file. If you are unsure whether something is private, leave
-it out and flag it in your response.
-
-================================================================================
-9. BEFORE YOU ANSWER — CHECKLIST
-================================================================================
-
-  [ ] JSON parses. No trailing commas, no comments, no unescaped quotes.
-  [ ] No placeholder text survives from the template.
-  [ ] "slug" matches between the recipe file and the index entry.
-  [ ] Exactly one row has "baseline": true, with "pct": 100.0.
-  [ ] Every pct = mass / baseline mass x 100, checked, not guessed.
-  [ ] Total mass equals the sum of the rows.
-  [ ] Every estimated mass has "estimated": true AND a matrixFootnote exists.
-  [ ] Diet tags verified against the actual ingredient list.
-  [ ] No invented ingredients or unsourced substitutions.
-  [ ] No personal or medical content in any field, including the slug.
-  [ ] Tone check: no "substrate"/"thermal enclosure"/"organoleptic" padding.
-
-Favorites and collections
--------------------------
-
-Do NOT emit a "Favorites" tag. Favorites are no longer a tag — they are a
-curated slug list under `collections` in data/index.json, which the user
-maintains by hand. Featuring a recipe is their editorial call, never yours.
-Produce the recipe sheet and the index entry only; if the user wants it
-featured they will add the slug themselves.
-
-Source attribution
-------------------
 
 meta.source is an object, not a string. Fill in whatever the source actually
 gives you and omit the rest — every key is optional, and the renderer composes
@@ -369,6 +333,26 @@ whatever is present into a citation.
     — do NOT claim authorship. Record what is known in "note" and say plainly
     that the attribution is unresolved.
 
+================================================================================
+9. PRIVACY
+================================================================================
+
+The repository and website are PUBLIC.
+
+Source documents may contain personal context — medications, health conditions,
+schedules, family details, or private reasoning about why a dish exists. None
+of that goes into published JSON, including slugs.
+
+Nutritional rationale stated in general terms is fine ("magnesium and B6 from
+the seed blend"). Personal medical framing is not ("timed to balance a
+medication load", "to counter executive dysfunction"). Keep the food science,
+drop the personal file. If you are unsure whether something is private, leave
+it out and flag it in your response.
+
+================================================================================
+10. VALIDATION
+================================================================================
+
 A validator enforces most of this list. After the sheet is saved, it is checked
 with:
 
@@ -382,6 +366,26 @@ fixed by hand.
 If a total deliberately excludes rows (an optional garnish, or a baker's
 "total flour" row that is the sum of its parts), set "partial": true inside
 the total object so the sum check is skipped.
+
+================================================================================
+11. BEFORE YOU ANSWER — CHECKLIST
+================================================================================
+
+  [ ] JSON parses. No trailing commas, no comments, no unescaped quotes.
+  [ ] No placeholder text survives from the template.
+  [ ] "slug" matches between the recipe file and the index entry.
+  [ ] Exactly one row has "baseline": true, with "pct": 100.0.
+  [ ] Every pct = mass / baseline mass x 100, checked, not guessed.
+  [ ] Total mass equals the sum of the rows.
+  [ ] Every estimated mass has "estimated": true AND a matrixFootnote exists.
+  [ ] Diet tags verified against the actual ingredient list.
+  [ ] No invented ingredients or unsourced substitutions.
+  [ ] No personal or medical content in any field, including the slug.
+  [ ] Tone check: no "substrate"/"thermal enclosure"/"organoleptic" padding.
+  [ ] meta.source is an object (never a string); no invented URL.
+  [ ] No "Favorites" tag emitted.
+  [ ] total.partial set if the total deliberately excludes rows.
+  [ ] QC rows use metric/target/action, not actual/rating placeholders.
 
 State any assumption you had to make — an estimated mass basis, an ambiguous
 source quantity, a new tag — in one short note after the code blocks. Do not

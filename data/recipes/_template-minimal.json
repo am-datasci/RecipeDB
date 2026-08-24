@@ -14,7 +14,7 @@
       "publication": "Website or publication",
       "title": "Recipe title as published",
       "author": "Author",
-      "url": "https://example.com/recipe   (OPTIONAL — omit if the source has no URL; never guess one)"
+      "note": "Omit any key you do not have. url is optional — never guess one."
     }
   },
   "scalingPrinciple": "Item A.01 is locked at 100.0% as the primary substrate. All other percentages are calculated against that 400 g baseline.",

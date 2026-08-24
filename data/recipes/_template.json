@@ -16,9 +16,9 @@
       "publication": "Publication or website name",
       "title": "Article or recipe title",
       "author": "Author name — omit if the source is unattributed",
-      "url": "https://example.com/recipe   (OPTIONAL — omit if the source has no URL; never guess one)",
+      "url": "https://example.com/recipe",
       "date": "Updated Month DD, YYYY",
-      "note": "Optional caveat about the attribution itself. Delete when not needed."
+      "note": "Optional caveat about the attribution itself. Delete when not needed. NOTE: url is optional — delete this key entirely rather than shipping a guessed address."
     },
     "reconstruction": "DELETE THIS FIELD unless the sheet is heavily reconstructed. When present it renders as a caution banner at the top of the page. Use it to state plainly how little came from the source and what the cook should expect to tune."
   },
