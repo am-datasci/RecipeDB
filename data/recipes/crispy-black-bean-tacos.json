@@ -19,7 +19,7 @@
       "publication": "Delish",
       "title": "Crispy Sheet Pan Black Bean Tacos",
       "url": "https://www.delish.com/cooking/a45876266/crispy-sheet-pan-black-bean-tacos-recipe/",
-      "note": "URL reconstructed from the saved document filename; the article ID is accurate. Two figures in this sheet disagree with the published recipe as reported by secondary listings: the source calls for 1/2 cup water (this sheet has 1/4 cup / 60 g), and splits the oil 2 tbsp for the sauté and 3 tbsp for the pan (this sheet has 1 tbsp and 4 tbsp; the 5 tbsp total is unchanged). Delish blocks automated fetching, so this could not be confirmed against the article itself — verify before cooking."
+      "note": "URL reconstructed from the saved document filename; the article ID is accurate. The published recipe is internally inconsistent on water: its ingredient list calls for 1/4 cup, its method for 1/2 cup. This sheet follows the method, since that is the quantity actually added to the bean matrix. The oil split (2 tbsp sauté, 3 tbsp pan) also follows the method; the ingredient list states only the 5 tbsp total."
     }
   },
   "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
@@ -65,7 +65,7 @@
           "volume": "5.0 tbsp (divided)",
           "mass": 67.5,
           "pct": 15.34,
-          "role": "Thermal conduction lipid medium for pan searing and browning."
+          "role": "Thermal conduction lipid medium; 2 tbsp for the aromatic sauté, 3 tbsp to coat the sheet pan."
         },
         {
           "id": "B.05",
@@ -86,10 +86,10 @@
         {
           "id": "B.07",
           "name": "Water",
-          "volume": "0.25 cup",
-          "mass": 60.0,
-          "pct": 13.64,
-          "role": "Starch hydration and viscosity moderation fluid."
+          "volume": "1/2 cup",
+          "mass": 120.0,
+          "pct": 27.27,
+          "role": "Starch hydration and viscosity moderation fluid. The source's ingredient list says 1/4 cup; its method says 1/2 cup — the method figure is used here. See the attribution note."
         },
         {
           "id": "C.01",
@@ -117,8 +117,8 @@
         }
       ],
       "total": {
-        "mass": 1004.5,
-        "pct": 228.3,
+        "mass": 1064.5,
+        "pct": 241.93,
         "role": "Combined raw material input footprint (excluding optional finishes)."
       }
     }
@@ -145,7 +145,7 @@
     {
       "name": "Aromatic Thermal Sauté",
       "params": "6–8 min | Medium heat",
-      "text": "Charge a standard skillet with a fraction of the neutral vegetable oil B.04 (approx. 1 tbsp / 13.5 g). Introduce finely chopped yellow onion B.03 and a calculated portion of kosher salt B.06 (0.5 tsp). Apply continuous mechanical agitation until cellular structure collapses, yielding a translucent, softened matrix. Add taco seasoning B.05 during the final 60 seconds of this phase to thermally bloom lipid-soluble volatile compounds."
+      "text": "Charge a standard skillet with a fraction of the neutral vegetable oil B.04 (2 tbsp / 27 g). Introduce finely chopped yellow onion B.03 and a calculated portion of kosher salt B.06 (0.5 tsp). Apply continuous mechanical agitation until cellular structure collapses, yielding a translucent, softened matrix. Add taco seasoning B.05 during the final 60 seconds of this phase to thermally bloom lipid-soluble volatile compounds."
     },
     {
       "name": "Substrate Mashing & Viscosity Consolidation",
@@ -155,7 +155,7 @@
     {
       "name": "Sheet Pan Prep & Vessel Assembly",
       "params": "5 min | Room temperature",
-      "text": "Distribute the remaining neutral vegetable oil B.04 (approx. 4 tbsp / 54 g) evenly across the interior surface of the dark sheet pan to establish a uniform lipid-conductive barrier. Lay out the plasticized tortillas B.01. Dispense precisely apportioned amounts of the bean paste and shredded cheese B.02 onto one hemisphere of each tortilla. Pivot the unburdened hemisphere over the filling, compressing firmly to lock the structural envelope in a semi-circular configuration. Align assembled units onto the oiled surface."
+      "text": "Distribute the remaining neutral vegetable oil B.04 (remaining 3 tbsp / 40.5 g) evenly across the interior surface of the dark sheet pan to establish a uniform lipid-conductive barrier. Lay out the plasticized tortillas B.01. Dispense precisely apportioned amounts of the bean paste and shredded cheese B.02 onto one hemisphere of each tortilla. Pivot the unburdened hemisphere over the filling, compressing firmly to lock the structural envelope in a semi-circular configuration. Align assembled units onto the oiled surface."
     },
     {
       "name": "Thermal Enclosure Dehydration & Crisp Searing",
