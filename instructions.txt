@@ -349,6 +349,16 @@ whatever is present into a citation.
     the SHEET is largely invented rather than transcribed.
   - Omit meta.source entirely rather than filling it with a document
     descriptor, a category label, or a restatement of the recipe title.
+  - For an original formulation developed by the user with AI assistance
+    rather than transcribed from a published recipe, the attribution is:
+
+        "source": { "author": "Alan Mitchell, co-developed with AI" }
+
+    Use this only for genuinely original work. If the input carries signs of
+    a third-party origin — recipe-card metadata (Difficulty, Category, Prep
+    time), a first-person voice that is not the user's, or a named publication
+    — do NOT claim authorship. Record what is known in "note" and say plainly
+    that the attribution is unresolved.
 
 A validator enforces most of this list. After the sheet is saved, it is checked
 with:

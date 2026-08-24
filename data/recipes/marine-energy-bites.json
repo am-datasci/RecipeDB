@@ -13,7 +13,10 @@
     "version": "1.0",
     "date": "June 13, 2026",
     "status": "Production Ready",
-    "baseTargetScale": "14–16 Bites / ~469.5 g Target Batch Footprint"
+    "baseTargetScale": "14–16 Bites / ~469.5 g Target Batch Footprint",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
   "formulations": [

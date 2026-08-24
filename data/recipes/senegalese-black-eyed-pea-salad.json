@@ -15,7 +15,10 @@
     "version": "1.0",
     "date": "June 12, 2026",
     "status": "R&D Prototype",
-    "baseTargetScale": "4–6 Servings / 400 g Core Base"
+    "baseTargetScale": "4–6 Servings / 400 g Core Base",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
   "formulations": [

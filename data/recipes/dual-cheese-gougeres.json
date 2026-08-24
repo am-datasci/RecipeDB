@@ -12,7 +12,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "30–36 mini units (15–18 per flavor stream)"
+    "baseTargetScale": "30–36 mini units (15–18 per flavor stream)",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "specs": [
     {

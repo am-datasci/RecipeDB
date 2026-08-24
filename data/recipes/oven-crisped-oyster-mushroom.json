@@ -11,7 +11,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "450 g Mushroom Base / 35 Minutes Active"
+    "baseTargetScale": "450 g Mushroom Base / 35 Minutes Active",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "specs": [
     {

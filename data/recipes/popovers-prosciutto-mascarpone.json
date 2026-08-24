@@ -10,7 +10,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "12 Popovers / 300 g Flour Base"
+    "baseTargetScale": "12 Popovers / 300 g Flour Base",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "summary": [
     "This recipe delivers a dramatic, towering rise with a crisp, golden-brown exterior and a delicate, hollow, custardy interior. By introducing a precise amount of kefir into the traditional milk base, subtle acidity tenderizes the gluten, yielding an unparalleled texture. Paired with a refined herbed mascarpone and ultra-premium cured ham, this dish balances warmth, crunch, rich fat, herbal brightness, and deep savoriness."

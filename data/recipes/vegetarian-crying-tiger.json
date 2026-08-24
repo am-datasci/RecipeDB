@@ -14,7 +14,10 @@
     "version": "3.0 (Formulation Hybrid)",
     "date": "May 30, 2026",
     "status": "Production Spec",
-    "baseTargetScale": "4 Large Servings (Mushroom Base = 400 g)"
+    "baseTargetScale": "4 Large Servings (Mushroom Base = 400 g)",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "scalingPrinciple": "The King Oyster Mushroom weight serves as the 100% base. All percentages express the ingredient's relationship to that base mass. Volumes are optimized for the baseline batch size and must be scaled proportionally if batch mass changes.",
   "formulations": [

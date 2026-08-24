@@ -11,7 +11,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "2 Elegant Verrines"
+    "baseTargetScale": "2 Elegant Verrines",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "summary": [
     "A pastry chef's elevated interpretation of the traditional Florida Key Lime Pie, re-imagined as an elegant breakfast verrine or pre-dessert. This formulation balances the sharp, aromatic acidity of fresh lime with the rich, velvety texture of cultured full-fat Greek yogurt and the natural texturizing properties of organic chia seeds, offset by a crisp graham cracker and toasted coconut crumble."

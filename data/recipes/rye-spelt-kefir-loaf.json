@@ -10,7 +10,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "1 × 1.2 kg loaf / 650 g total flour"
+    "baseTargetScale": "1 × 1.2 kg loaf / 650 g total flour",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "specs": [
     {

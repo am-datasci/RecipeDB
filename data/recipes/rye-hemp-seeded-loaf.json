@@ -11,7 +11,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "1 kg Flour Base / 2 pan loaves"
+    "baseTargetScale": "1 kg Flour Base / 2 pan loaves",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "summary": [
     "A high-seed whole rye formulation built for nutrient density — hemp hearts, pumpkin and sunflower seeds, and ground flax carry magnesium, B6, tyrosine, and omega-3s. A pre-soak neutralizes phytic acid so those minerals stay bioavailable rather than bound.",

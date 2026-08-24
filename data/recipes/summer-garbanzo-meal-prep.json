@@ -12,7 +12,10 @@
     "version": "1.0",
     "date": "July 18, 2026",
     "status": "Production Ready",
-    "baseTargetScale": "3 Servings per formulation / 320 g dry bean base"
+    "baseTargetScale": "3 Servings per formulation / 320 g dry bean base",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "summary": [
     "One kombu-cooked chickpea batch is split into two finished formulations: a high-acid Southeast Asian larb-style salad and an emulsified Mediterranean pasta salad bound with lacto-fermented pickle brine. Measurement basis throughout is mass in grams and component weight percentages."

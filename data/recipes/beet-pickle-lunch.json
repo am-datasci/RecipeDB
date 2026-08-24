@@ -12,7 +12,10 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "1 quart jar / 450 g raw beet base"
+    "baseTargetScale": "1 quart jar / 450 g raw beet base",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
   },
   "summary": [
     "A deliberately minimal quick pickle built on a 1:1 water-to-rice-wine-vinegar ratio. Character is clean, crisp, and mineral-forward.",
