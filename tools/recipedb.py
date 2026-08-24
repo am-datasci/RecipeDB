@@ -232,6 +232,30 @@ def cmd_validate(args):
         if n > 1:
             rep.error('index.json', f'duplicate slug "{dup}" ({n}x)')
 
+    # Curated collections: slug lists must point at real recipes.
+    indexed_set = set(indexed)
+    for c in db.get('collections', []):
+        label = c.get('label', '?')
+        slugs = c.get('slugs', [])
+        if not c.get('label'):
+            rep.error('index.json', 'a collection has no label')
+        for dup, n in Counter(slugs).items():
+            if n > 1:
+                rep.error('index.json', f'collection "{label}" lists "{dup}" {n}x')
+        for sl in slugs:
+            if sl not in indexed_set:
+                rep.error('index.json',
+                          f'collection "{label}" references unknown recipe "{sl}"')
+        if not slugs:
+            rep.warn('index.json', f'collection "{label}" is empty')
+
+    if 'favoriteTag' in db:
+        rep.warn('index.json', 'favoriteTag is superseded by collections[]')
+    for r in db.get('recipes', []):
+        if 'Favorites' in r.get('tags', []):
+            rep.warn(r['slug'], 'still carries the "Favorites" tag — favorites are now '
+                                'a curated slug list in index.json collections[]')
+
     files = {os.path.basename(p)[:-5] for p in sheet_paths()}
     for slug in indexed:
         if slug not in files:
@@ -385,10 +409,15 @@ def cmd_stats(args):
             print(f'      {n:>3}  {t}')
         print()
 
-    loose = sorted(t for t in tags if t not in declared and t != 'Favorites')
+    for c in db.get('collections', []):
+        print(f'  {c.get("icon","*")} {c.get("label","?")}: {len(c.get("slugs",[]))} recipes')
+        for sl in c.get('slugs', []):
+            print(f'      {sl}')
+    print()
+
+    loose = sorted(t for t in tags if t not in declared)
     if loose:
         print(f'  Unfiled (shown under "More Tags"): {loose}\n')
-    print(f'  Favorites: {tags.get("Favorites", 0)}\n')
 
     est, plain, no_source = 0, 0, []
     sourced_url, sourced_author = 0, 0

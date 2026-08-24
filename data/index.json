@@ -1,6 +1,21 @@
 {
-  "$comment": "Home page is generated entirely from this file. Groups are ordering/labelling hints only — any tag you put on a recipe that is not listed in a group is auto-collected into a 'More Tags' group, so adding a new tag never requires editing HTML.",
-  "favoriteTag": "Favorites",
+  "$comment": "Home page is generated entirely from this file. `collections` are curated, ordered slug lists — edit those to change what is featured. `groups` are ordering hints for tags; a tag not listed in any group is auto-collected into \"More Tags\", so adding a new tag never requires editing HTML.",
+  "collections": [
+    {
+      "label": "Favorites",
+      "icon": "★",
+      "description": "Hand-picked. Edit the slug list here — nothing else needs touching.",
+      "slugs": [
+        "bubbies-clone-dill-pickles",
+        "crispy-black-bean-tacos",
+        "dual-cheese-gougeres",
+        "vinaigrettes-and-dressings",
+        "mushroom-bolognese",
+        "crispy-roast-potatoes",
+        "vegetarian-crying-tiger"
+      ]
+    }
+  ],
   "groups": [
     {
       "id": "course",
@@ -62,8 +77,8 @@
       ]
     },
     {
-      "id": "collections",
-      "label": "Collections",
+      "id": "occasion",
+      "label": "By Occasion",
       "description": "How these fit into the week.",
       "tags": [
         "Meal Prep",
@@ -115,8 +130,7 @@
         "Pickles & Ferments",
         "Vegan",
         "Vegetarian",
-        "Fermentation",
-        "Favorites"
+        "Fermentation"
       ]
     },
     {
@@ -139,8 +153,7 @@
         "Mains",
         "Mexican",
         "Vegetarian",
-        "Roasting",
-        "Favorites"
+        "Roasting"
       ]
     },
     {
@@ -151,8 +164,7 @@
         "Appetizers",
         "French",
         "Vegetarian",
-        "Baking",
-        "Favorites"
+        "Baking"
       ]
     },
     {
@@ -172,8 +184,7 @@
       "blurb": "All-Purpose, Lemon-Dijon, Sesame-Soy, Classic Caesar, and Creamy Herby Green — one sheet, five emulsions.",
       "tags": [
         "Sauces & Dressings",
-        "No-Cook",
-        "Favorites"
+        "No-Cook"
       ]
     },
     {
@@ -253,8 +264,7 @@
         "Mains",
         "Italian",
         "Vegetarian",
-        "Braising",
-        "Favorites"
+        "Braising"
       ]
     },
     {
@@ -336,8 +346,7 @@
         "Vegetarian",
         "Vegan",
         "Gluten-Free",
-        "Roasting",
-        "Favorites"
+        "Roasting"
       ]
     },
     {
@@ -362,8 +371,7 @@
         "Mains",
         "Thai",
         "Vegetarian",
-        "Vegan",
-        "Favorites"
+        "Vegan"
       ]
     }
   ]

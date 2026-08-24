@@ -20,6 +20,32 @@ data/index.json         tag taxonomy + recipe metadata
 data/recipes/<slug>.json  one formulation sheet per recipe
 ```
 
+## Featuring a recipe (collections)
+
+`collections` in `data/index.json` are curated, **ordered** slug lists. To change
+what's featured, edit one array — nothing else needs touching:
+
+```json
+"collections": [
+  {
+    "label": "Favorites",
+    "icon": "\u2605",
+    "description": "Hand-picked.",
+    "slugs": ["mushroom-bolognese", "crispy-roast-potatoes"]
+  }
+]
+```
+
+Order in the array is the order on the page, so the list doubles as a ranking.
+Add another object to create a second collection ("Weeknight", "To Try") — it
+gets its own section, its own filter chip, and its own badge icon, with no code
+change. `validate` errors on a slug that doesn't exist, so a typo can't silently
+drop a recipe.
+
+Collections are editorial; tags are descriptive. A tag says what a recipe *is*
+(and the validator checks diet tags against the ingredient list); a collection
+says what you think of it.
+
 ## Adding a tag
 
 Add the string to any recipe's `tags` array in `data/index.json`. That's it.

@@ -329,6 +329,15 @@ it out and flag it in your response.
   [ ] No personal or medical content in any field, including the slug.
   [ ] Tone check: no "substrate"/"thermal enclosure"/"organoleptic" padding.
 
+Favorites and collections
+-------------------------
+
+Do NOT emit a "Favorites" tag. Favorites are no longer a tag — they are a
+curated slug list under `collections` in data/index.json, which the user
+maintains by hand. Featuring a recipe is their editorial call, never yours.
+Produce the recipe sheet and the index entry only; if the user wants it
+featured they will add the slug themselves.
+
 Source attribution
 ------------------
 
