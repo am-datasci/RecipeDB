@@ -13,7 +13,12 @@
     "status": "Production Ready",
     "baseTargetScale": "10–12 Cabbage Rolls / 200 g Potato Base",
     "source": {
-      "note": "Apparently transcribed and translated from an Italian recipe site: the saved document carries recipe-card metadata (Difficulty, Category, Preparation time) and a first-person past-tense method (\"I started by selecting the largest cabbage leaves...\"). The original publication and author were not captured. Attribution unresolved."
+      "publication": "L'ennesimo blog di cucina",
+      "title": "Capunet vegetariani alle lenticchie",
+      "author": "Anna Fracassi",
+      "url": "https://www.lennesimoblogdicucina.com/2024/03/capunet-vegetariani-alle-lenticchie.html",
+      "date": "March 2024",
+      "note": "Translated from the Italian. Ingredient quantities, yield, difficulty, and all three timings match the original exactly."
     }
   },
   "specs": [

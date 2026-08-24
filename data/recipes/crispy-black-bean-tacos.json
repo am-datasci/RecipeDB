@@ -19,7 +19,7 @@
       "publication": "Delish",
       "title": "Crispy Sheet Pan Black Bean Tacos",
       "url": "https://www.delish.com/cooking/a45876266/crispy-sheet-pan-black-bean-tacos-recipe/",
-      "note": "URL reconstructed from the saved document filename; the article ID is accurate but the trailing slug was inferred."
+      "note": "URL reconstructed from the saved document filename; the article ID is accurate. Two figures in this sheet disagree with the published recipe as reported by secondary listings: the source calls for 1/2 cup water (this sheet has 1/4 cup / 60 g), and splits the oil 2 tbsp for the sauté and 3 tbsp for the pan (this sheet has 1 tbsp and 4 tbsp; the 5 tbsp total is unchanged). Delish blocks automated fetching, so this could not be confirmed against the article itself — verify before cooking."
     }
   },
   "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
