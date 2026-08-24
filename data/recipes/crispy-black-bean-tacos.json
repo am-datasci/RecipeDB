@@ -15,8 +15,12 @@
     "date": "June 12, 2026",
     "status": "R&D Prototype",
     "baseTargetScale": "4 Servings / 8 Tacos",
-    "source": "Delish — \"Crispy Sheet Pan Black Bean Tacos\"",
-    "sourceUrl": "https://www.delish.com/cooking/a45876266/crispy-sheet-pan-black-bean-tacos-recipe/"
+    "source": {
+      "publication": "Delish",
+      "title": "Crispy Sheet Pan Black Bean Tacos",
+      "url": "https://www.delish.com/cooking/a45876266/crispy-sheet-pan-black-bean-tacos-recipe/",
+      "note": "URL reconstructed from the saved document filename; the article ID is accurate but the trailing slug was inferred."
+    }
   },
   "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
   "formulations": [

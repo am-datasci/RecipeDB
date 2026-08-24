@@ -2,18 +2,22 @@
   "slug": "_template-minimal",
   "title": "Minimal Sheet — The Smallest Valid Recipe",
   "subtitle": "Recipe Formulation Sheet",
-
-  "tags": ["Mains", "Vegetarian"],
-
+  "tags": [
+    "Mains",
+    "Vegetarian"
+  ],
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
     "baseTargetScale": "4 Servings / 400 g Base",
-    "source": "Where this came from — omit the whole line if there is no source."
+    "source": {
+      "publication": "Website or publication",
+      "title": "Recipe title as published",
+      "author": "Author",
+      "url": "https://example.com/recipe   (OPTIONAL — omit if the source has no URL; never guess one)"
+    }
   },
-
   "scalingPrinciple": "Item A.01 is locked at 100.0% as the primary substrate. All other percentages are calculated against that 400 g baseline.",
-
   "formulations": [
     {
       "rows": [
@@ -51,13 +55,13 @@
       }
     }
   ],
-
   "matrixFootnote": "*Third Ingredient is a standard culinary estimate for the stated volume. All other masses are stated directly in the source.",
-
   "mise": [
-    { "label": "Prep (A.01)", "text": "Anything that must happen before cooking starts." }
+    {
+      "label": "Prep (A.01)",
+      "text": "Anything that must happen before cooking starts."
+    }
   ],
-
   "execution": [
     {
       "name": "First Step",
@@ -70,6 +74,5 @@
       "text": "Keep steps mechanical and specific. No filler."
     }
   ],
-
   "directive": "The one thing that ruins this recipe if the cook gets it wrong."
 }

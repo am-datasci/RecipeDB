@@ -1,0 +1,36 @@
+name: Validate recipes
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'tools/**'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'tools/**'
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # No dependencies to install — the toolkit is stdlib only.
+      - name: Validate sheets and index
+        run: python3 tools/recipedb.py validate
+
+      - name: Report percentage drift
+        if: always()
+        run: python3 tools/recipedb.py recalc all
+
+      - name: Archive overview
+        if: always()
+        run: python3 tools/recipedb.py stats

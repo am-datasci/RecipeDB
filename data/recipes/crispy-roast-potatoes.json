@@ -17,7 +17,12 @@
     "date": "August 8, 2026",
     "status": "Production Ready",
     "baseTargetScale": "6–8 Servings / 1,814.4 g Base (4 lb potato substrate)",
-    "source": "Serious Eats — \"The Best Crispy Roast Potatoes Ever,\" J. Kenji López-Alt (updated September 21, 2025)"
+    "source": {
+      "publication": "Serious Eats",
+      "title": "The Best Crispy Roast Potatoes Ever",
+      "author": "J. Kenji López-Alt",
+      "date": "Updated September 21, 2025"
+    }
   },
   "summary": [
     "López-Alt's method is a British-style boil-then-roast technique refined through iterative testing of potato variety, cut size, boiling water pH, and roasting temperature. Large chunks (quarters, sixths, or eighths) maximize the ratio of crisp exterior to creamy interior. Russet potatoes yield the crispest crust and fluffiest center; Yukon Golds roast darker with a creamier, more flavorful interior; red potatoes were rejected outright — their low starch content prevents lasting crispness.",

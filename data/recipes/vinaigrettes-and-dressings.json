@@ -11,7 +11,11 @@
     "version": "1.0",
     "status": "Production Ready",
     "baseTargetScale": "Five independent formulations, ~1 cup each",
-    "source": "All-Purpose Vinaigrette formula adapted from The Silver Palate"
+    "source": {
+      "publication": "The Silver Palate Cookbook",
+      "author": "Julee Rosso and Sheila Lukins",
+      "note": "The All-Purpose Vinaigrette formula is adapted from The Silver Palate. The remaining four dressings are house formulations."
+    }
   },
   "summary": [
     "Five emulsions covering most of what a salad needs. The All-Purpose is the workhorse — deliberately flexible, since it tolerates any vinegar and any soft herb on hand. Lemon-Dijon is the same idea with brightness and less flavor of its own. Sesame-Soy is built to cut richness, which is why it lands best on slaws. The Caesar skips the raw egg in favor of mayonnaise, which is already emulsified oil and egg. The Creamy Herby Green is the one worth breaking out a blender for."

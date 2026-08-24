@@ -64,12 +64,31 @@ function renderHead() {
         esc(m.status) + '</span>');
   }
   if (m.baseTargetScale) add('Base Target Scale', esc(m.baseTargetScale), true);
-  if (m.source) {
+
+  /* `source` is either a structured object (preferred) or, on older sheets,
+     a plain citation string. Both render. */
+  const src = m.source;
+  if (typeof src === 'string' && src) {
     const txt = m.sourceUrl
       ? '<a href="' + esc(m.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' +
-        esc(m.source) + '</a>'
-      : esc(m.source);
+        esc(src) + '</a>'
+      : esc(src);
     add('Source', txt, true);
+  } else if (src && typeof src === 'object') {
+    // Compose "Publication — \"Title\"", linking whichever parts exist.
+    const bits = [];
+    if (src.publication) bits.push(esc(src.publication));
+    if (src.title) bits.push('&ldquo;' + esc(src.title) + '&rdquo;');
+    let label = bits.join(' &mdash; ') || esc(src.url || '');
+    const url = src.url || m.sourceUrl;
+    if (url) {
+      label = '<a href="' + esc(url) + '" target="_blank" rel="noopener noreferrer">' +
+              label + '</a>';
+    }
+    if (src.date) label += ' <span style="color:var(--ink-faint)">(' + esc(src.date) + ')</span>';
+    if (label) add('Source', label, true);
+    if (src.author) add('Author', esc(src.author), true);
+    if (src.note) add('Attribution', rich(src.note), true);
   }
   h.appendChild(dl);
 

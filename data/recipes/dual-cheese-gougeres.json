@@ -12,10 +12,13 @@
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
-    "baseTargetScale": "30–36 mini units (15–18 per flavor stream)",
-    "source": "Document Type: Standard Operating Procedure & Formulation Sheet — Savory Pastry / Choux Dough (Pâte à Choux). Target application: low-residue, ambient-stable finger food for event catering."
+    "baseTargetScale": "30–36 mini units (15–18 per flavor stream)"
   },
   "specs": [
+    {
+      "label": "Product Category",
+      "value": "Savory pastry / choux (pâte à choux)"
+    },
     {
       "label": "Total Batch Yield",
       "value": "~30–36 mini units"

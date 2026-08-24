@@ -15,7 +15,12 @@
     "date": "August 13, 2026",
     "status": "R&D Prototype",
     "baseTargetScale": "6 Servings / ~3,814 g Total Batch (excl. finishing oil)",
-    "source": "Serious Eats — \"Pasta With Rich and Hearty Mushroom Bolognese Recipe,\" J. Kenji López-Alt (first published February 2014; updated March 6, 2025)"
+    "source": {
+      "publication": "Serious Eats",
+      "title": "Pasta With Rich and Hearty Mushroom Bolognese Recipe",
+      "author": "J. Kenji López-Alt",
+      "date": "First published February 2014; updated March 6, 2025"
+    }
   },
   "summary": [
     "The ragu's meaty texture comes from frying a mix of finely chopped button and shiitake mushrooms in oil until well browned and nearly dry — reducing to roughly a quarter of their starting volume. This concentrates flavor and produces a chewy bite that stands in for ground meat, in place of tempeh, TVP, or tofu.",

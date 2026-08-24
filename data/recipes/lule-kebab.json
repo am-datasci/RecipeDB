@@ -12,7 +12,11 @@
     "version": "1.0",
     "status": "Production Ready",
     "baseTargetScale": "12 lule kebabs / 907 g meat base",
-    "source": "The Armenian Kitchen — Father Vartan Joulfayan's version"
+    "source": {
+      "publication": "The Armenian Kitchen",
+      "title": "Lule Kebab ala Father Vartan Joulfayan",
+      "author": "Father Vartan Joulfayan"
+    }
   },
   "summary": [
     "Just as there are numerous recipes and spellings for other Armenian foods, lule kebab is no exception. This is Father Vartan Joulfayan's savory version — notable for retaining the onion and garlic liquid released during processing rather than draining it, which is what keeps a lean grind moist on the grill."

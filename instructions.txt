@@ -142,10 +142,16 @@ arrays or placeholder strings to fill the shape out.
     "date":            "June 23, 2026",
     "status":          "R&D Prototype", // or "Production Ready"
     "baseTargetScale": "4 Servings / 400 g Core Base",
-    "source":          "Serious Eats — \"Title,\" Author (updated Mar 2025)",
-    "sourceUrl":       "https://...",   // renders the source as a link
-    "reconstruction":  "..."            // ONLY when heavily reconstructed;
-                                        // renders as a caution banner
+    "source": {                        // structured; omit the whole object
+      "publication": "Serious Eats",   //   if there is genuinely no source
+      "title":       "Article or recipe title as published",
+      "author":      "J. Kenji López-Alt",
+      "url":         "https://...",    // OPTIONAL — include when you have it
+      "date":        "Updated March 6, 2025",
+      "note":        "..."             // optional caveat about the attribution
+    },
+    "reconstruction":  "..."           // ONLY when heavily reconstructed;
+                                       // renders as a caution banner
   },
 
   "summary": ["paragraph", "paragraph"],     // technique findings, not preamble
@@ -322,6 +328,27 @@ it out and flag it in your response.
   [ ] No invented ingredients or unsourced substitutions.
   [ ] No personal or medical content in any field, including the slug.
   [ ] Tone check: no "substrate"/"thermal enclosure"/"organoleptic" padding.
+
+Source attribution
+------------------
+
+meta.source is an object, not a string. Fill in whatever the source actually
+gives you and omit the rest — every key is optional, and the renderer composes
+whatever is present into a citation.
+
+  - url is NOT required. Books, magazines, handed-down recipes, and anything
+    reconstructed simply have none. Include it whenever the source is online
+    and you have the real address.
+  - NEVER invent or guess a URL. A plausible-looking wrong link is worse than
+    no link. If you are working from a saved document and only part of the
+    address is recoverable, say so in "note".
+  - author is the person credited, not the publication. "The Gift of Southern
+    Cooking" is the publication; "Edna Lewis and Scott Peacock" is the author.
+  - Use "note" for caveats about the attribution itself — an adaptation, a
+    partial source, an uncertain URL. Use meta.reconstruction (not note) when
+    the SHEET is largely invented rather than transcribed.
+  - Omit meta.source entirely rather than filling it with a document
+    descriptor, a category label, or a restatement of the recipe title.
 
 A validator enforces most of this list. After the sheet is saved, it is checked
 with:

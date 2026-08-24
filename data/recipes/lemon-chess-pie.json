@@ -12,7 +12,12 @@
     "version": "1.0",
     "status": "Production Ready",
     "baseTargetScale": "One 9-inch pie",
-    "source": "Slightly adapted from The Gift of Southern Cooking by Edna Lewis and Scott Peacock"
+    "source": {
+      "publication": "The Gift of Southern Cooking",
+      "title": "Lemon Chess Pie",
+      "author": "Edna Lewis and Scott Peacock",
+      "note": "Slightly adapted from the book."
+    }
   },
   "scalingPrinciple": "Item A.01 (Granulated Sugar) is locked at 100.0% as the defining mass of a chess pie filling — the custard is built around it, and the cornmeal, flour, and egg ratios all read against it. Note that pie diameter does not scale linearly with filling mass; doubling this formula fills two 9-inch shells rather than one larger one.",
   "formulations": [

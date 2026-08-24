@@ -179,6 +179,21 @@ def check_sheet(path, rep, known_tags):
     if not r.get('execution'):
         rep.warn(slug, 'no execution sequence')
 
+    src = r.get('meta', {}).get('source')
+    if isinstance(src, str):
+        rep.warn(slug, 'meta.source is a plain string — migrate to the structured '
+                       '{publication, title, author, url, date} form')
+    elif isinstance(src, dict):
+        known = {'publication', 'title', 'author', 'url', 'date', 'note'}
+        for k in set(src) - known:
+            rep.warn(slug, f'meta.source has unknown key "{k}" (expected {sorted(known)})')
+        if src.get('url') and not re.match(r'https?://', src['url']):
+            rep.error(slug, f'meta.source.url is not a URL: "{src["url"]}"')
+        # url is optional — books, magazines, and handed-down recipes have none.
+        # It is only checked for shape when present.
+        if r.get('meta', {}).get('sourceUrl'):
+            rep.warn(slug, 'meta.sourceUrl is superseded by meta.source.url')
+
     blob = json.dumps(r, ensure_ascii=False)
     for term in PRIVACY_TERMS:
         if re.search(re.escape(term), blob, re.I):
@@ -376,6 +391,7 @@ def cmd_stats(args):
     print(f'  Favorites: {tags.get("Favorites", 0)}\n')
 
     est, plain, no_source = 0, 0, []
+    sourced_url, sourced_author = 0, 0
     for p in sheet_paths():
         slug = os.path.basename(p)[:-5]
         if is_template(slug):
@@ -385,12 +401,22 @@ def cmd_stats(args):
         e = sum(1 for x in rows if x.get('estimated'))
         est += e
         plain += len(rows) - e
-        if not r.get('meta', {}).get('source'):
+        src = r.get('meta', {}).get('source')
+        if not src:
             no_source.append(slug)
+        elif isinstance(src, dict):
+            if src.get('url'):
+                sourced_url += 1
+            if src.get('author'):
+                sourced_author += 1
 
     tot = est + plain
     print(f'  Ingredient rows: {tot}  ({est} estimated, {round(est / tot * 100)}%)')
-    print(f'  Sheets without a source attribution: {len(no_source)}')
+    n = len(recipes)
+    print(f'  Sheets with a source:        {n - len(no_source)}/{n}')
+    print(f'       ...naming an author:    {sourced_author}')
+    print(f'       ...with a live URL:     {sourced_url}')
+    print(f'  Sheets without any source:   {len(no_source)}')
     for s in no_source:
         print(f'      {s}')
     return 0

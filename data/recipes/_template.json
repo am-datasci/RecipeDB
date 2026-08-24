@@ -2,41 +2,56 @@
   "slug": "_template",
   "title": "Template Sheet — Every Supported Field",
   "subtitle": "Recipe Formulation Sheet",
-
-  "tags": ["Mains", "Vegetarian"],
-
+  "tags": [
+    "Mains",
+    "Vegetarian"
+  ],
   "meta": {
     "projectId": "#XX-01",
     "version": "1.0",
     "date": "January 1, 2026",
     "status": "R&D Prototype",
     "baseTargetScale": "4 Servings / 500 g Core Base",
-    "source": "Publication — \"Article Title,\" Author (updated Month Year)",
-    "sourceUrl": "https://example.com/recipe",
+    "source": {
+      "publication": "Publication or website name",
+      "title": "Article or recipe title",
+      "author": "Author name — omit if the source is unattributed",
+      "url": "https://example.com/recipe   (OPTIONAL — omit if the source has no URL; never guess one)",
+      "date": "Updated Month DD, YYYY",
+      "note": "Optional caveat about the attribution itself. Delete when not needed."
+    },
     "reconstruction": "DELETE THIS FIELD unless the sheet is heavily reconstructed. When present it renders as a caution banner at the top of the page. Use it to state plainly how little came from the source and what the cook should expect to tune."
   },
-
   "summary": [
     "Optional. One paragraph per technique finding — what actually makes the recipe work and why. This is not a preamble or a story; it is the reasoning a cook needs before starting.",
     "Delete the whole field if the source offers no technique reasoning worth carrying over."
   ],
-
   "specs": [
-    { "label": "Yield", "value": "12 units" },
-    { "label": "Prep Time", "value": "25 minutes" },
-    { "label": "Cook Time", "value": "40 minutes" },
-    { "label": "Service", "value": "Hot, immediately" }
+    {
+      "label": "Yield",
+      "value": "12 units"
+    },
+    {
+      "label": "Prep Time",
+      "value": "25 minutes"
+    },
+    {
+      "label": "Cook Time",
+      "value": "40 minutes"
+    },
+    {
+      "label": "Service",
+      "value": "Hot, immediately"
+    }
   ],
-
   "scalingPrinciple": "State which item is locked at 100.0% and why that choice is right for this recipe — primary substrate for a main, total flour for bread, the water for a brine where salinity is the spec. The batch scaler recomputes every mass from this baseline, so the choice is load-bearing.",
-
   "formulationTitle": "I. Master Formulation Matrix",
-
   "formulations": [
     {
       "rows": [
-        { "group": "A — Core Substrate" },
-
+        {
+          "group": "A — Core Substrate"
+        },
         {
           "id": "A.01",
           "name": "Baseline Ingredient",
@@ -46,9 +61,9 @@
           "baseline": true,
           "role": "Exactly one row per sheet carries baseline:true and pct:100.0. Describe what the ingredient does and how it is prepped."
         },
-
-        { "group": "B — Secondary Components" },
-
+        {
+          "group": "B — Secondary Components"
+        },
         {
           "id": "B.01",
           "name": "Source-Stated Mass",
@@ -89,7 +104,6 @@
         "role": "Combined raw material input footprint. Must equal the sum of the numeric row masses."
       }
     },
-
     {
       "title": "Second Matrix — for multi-component recipes only",
       "intro": "Optional lead-in. Delete this entire object for a single-matrix recipe. Use additional matrices for sheets with genuinely separate components — a filling and a crumble, two flavour streams off one base, a shared batch split into two salads.",
@@ -114,9 +128,7 @@
       "note": "Optional footnote scoped to this matrix only."
     }
   ],
-
   "matrixFootnote": "*Required whenever any row has estimated:true. Name which items were estimated and on what basis, e.g. 'Onion, carrot, and herb masses are standard culinary estimates for the stated volumes. All other masses are stated directly in the source or derived by unit conversion.'",
-
   "miseTitle": "II. Pre-Assembly Processing (Mise en Place)",
   "mise": [
     {
@@ -128,7 +140,6 @@
       "text": "Omit the whole mise field when a recipe has no meaningful prep stage — some sheets fold it into the first execution step instead."
     }
   ],
-
   "executionTitle": "III. Execution Sequence",
   "execution": [
     {
@@ -154,7 +165,6 @@
       ]
     }
   ],
-
   "qcTitle": "IV. Quality Control Parameters",
   "qc": [
     {
@@ -163,7 +173,6 @@
       "action": "What to DO when the target is missed. Every QC row must be actionable; if you cannot write a real corrective action, drop the row. Do not use the older actual/rating placeholder columns."
     }
   ],
-
   "alternativesTitle": "V. Alternative Ingredients & Formulations",
   "alternatives": [
     {
@@ -171,7 +180,6 @@
       "text": "ONLY variations the source itself offers. Never generate substitutions. Delete this field entirely when the source offers none."
     }
   ],
-
   "sections": [
     {
       "id": "free-form",
@@ -182,17 +190,31 @@
       ],
       "items": [
         "A plain string renders as a simple bullet.",
-        { "label": "Bold lead-in:", "text": "An object renders with a bold label followed by body text." }
+        {
+          "label": "Bold lead-in:",
+          "text": "An object renders with a bold label followed by body text."
+        }
       ],
       "table": {
-        "columns": ["Feature", "This Version", "Traditional"],
+        "columns": [
+          "Feature",
+          "This Version",
+          "Traditional"
+        ],
         "rows": [
-          ["Texture", "Tender", "Chewy"],
-          ["Method", "Steamed 10 min", "Simmered 1 hr"]
+          [
+            "Texture",
+            "Tender",
+            "Chewy"
+          ],
+          [
+            "Method",
+            "Steamed 10 min",
+            "Simmered 1 hr"
+          ]
         ]
       }
     }
   ],
-
   "directive": "The single highest-leverage warning for this recipe — the one thing that ruins it. Renders as a highlighted Operational Directive block at the foot of the page. One per sheet; do not pad it with a second point."
 }
