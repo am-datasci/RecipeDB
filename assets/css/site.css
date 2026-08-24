@@ -143,49 +143,98 @@ a { color: var(--accent-ink); }
 }
 .hero-stats b { color: var(--accent); font-weight: 600; }
 
-/* ---------- filter bar ---------- */
+/* ---------- toolbar + filter panel ---------- */
 
-.filters { padding: 22px 0 6px; }
-.filter-group { margin-bottom: 16px; }
+.toolbar { padding: 16px 0 4px; }
+.toolbar-row {
+  display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+}
+
+.tool-btn {
+  display: inline-flex; align-items: center; gap: 7px;
+  border: 1px solid var(--rule-strong); background: var(--bg-panel);
+  color: var(--ink); border-radius: var(--radius);
+  padding: 7px 13px; font-size: 13.5px; cursor: pointer;
+  font-family: var(--sans); line-height: 1.4; min-height: 36px;
+}
+.tool-btn:hover { background: var(--bg-hover); }
+.tool-btn.is-open, .tool-btn.has-filters { border-color: var(--accent); color: var(--accent-ink); }
+.tool-btn .badge {
+  background: var(--accent); color: #fff; border-radius: 999px;
+  font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; line-height: 1.5;
+}
+.tool-btn .caret { color: var(--ink-faint); font-size: 10px; }
+
+.seg { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: var(--radius); overflow: hidden; }
+.seg button {
+  background: var(--bg-panel); border: none; border-right: 1px solid var(--rule-strong);
+  color: var(--ink-soft); font-family: var(--sans); font-size: 13px;
+  padding: 7px 13px; cursor: pointer; min-height: 36px; white-space: nowrap;
+}
+.seg button:last-child { border-right: none; }
+.seg button:hover { background: var(--bg-hover); color: var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+
+.result-count {
+  margin-left: auto; font-family: var(--mono); font-size: 12px;
+  color: var(--ink-faint); letter-spacing: .05em; white-space: nowrap;
+}
+.result-count b { color: var(--accent); }
+
+.filter-panel {
+  border: 1px solid var(--rule); border-radius: var(--radius);
+  background: var(--bg-panel); padding: 14px 16px 4px; margin-top: 10px;
+}
+.filter-group { margin-bottom: 14px; }
 .filter-group-label {
   font-family: var(--mono); font-size: 11px; letter-spacing: .12em;
   text-transform: uppercase; color: var(--ink-faint); margin-bottom: 7px;
 }
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {
-  border: 1px solid var(--rule-strong); background: var(--bg-panel);
+  border: 1px solid var(--rule-strong); background: var(--bg);
   color: var(--ink-soft); border-radius: 999px;
-  padding: 4px 12px; font-size: 13px; cursor: pointer;
+  padding: 6px 13px; font-size: 13px; cursor: pointer;
   font-family: var(--sans); line-height: 1.5; white-space: nowrap;
+  min-height: 36px; display: inline-flex; align-items: center;
   transition: background .12s, color .12s, border-color .12s;
 }
 .chip:hover { background: var(--bg-hover); color: var(--ink); }
 .chip .n { color: var(--ink-faint); font-family: var(--mono); font-size: 11px; margin-left: 5px; }
-.chip[aria-pressed="true"] {
-  background: var(--accent); border-color: var(--accent); color: #fff;
-}
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
 .chip[aria-pressed="true"] .n { color: rgba(255,255,255,.75); }
-.chip.chip-fav[aria-pressed="true"] { background: var(--baseline); border-color: var(--baseline); }
+.chip-col { background: var(--bg-panel); }
+.chip-col[aria-pressed="true"] { background: var(--baseline); border-color: var(--baseline); }
 
+/* active filter summary */
 .active-bar {
-  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
-  padding: 10px 0; border-top: 1px solid var(--rule);
-  font-size: 13px; color: var(--ink-soft);
+  display: flex; align-items: center; gap: 7px; flex-wrap: wrap;
+  padding: 10px 0 2px; font-size: 13px; color: var(--ink-soft);
 }
-.active-bar .clear {
-  background: none; border: none; color: var(--accent-ink);
-  cursor: pointer; font-size: 13px; text-decoration: underline; padding: 0;
+.pill {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--accent-soft); border: 1px solid var(--accent);
+  color: var(--accent-ink); border-radius: 999px;
+  padding: 4px 10px; font-size: 12.5px; cursor: pointer;
+  font-family: var(--sans); min-height: 30px;
 }
-.match-mode {
-  display: inline-flex; border: 1px solid var(--rule-strong);
-  border-radius: var(--radius); overflow: hidden;
+.pill:hover { background: var(--accent); color: #fff; }
+.pill .x { font-size: 15px; line-height: 1; opacity: .7; }
+.match-label {
+  font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-faint); margin-left: 4px;
 }
+.match-mode { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: var(--radius); overflow: hidden; }
 .match-mode button {
   background: var(--bg-panel); border: none; color: var(--ink-soft);
-  font-family: var(--mono); font-size: 11px; letter-spacing: .08em;
-  padding: 4px 10px; cursor: pointer; text-transform: uppercase;
+  font-family: var(--mono); font-size: 11px; letter-spacing: .06em;
+  padding: 5px 10px; cursor: pointer; text-transform: uppercase;
 }
 .match-mode button[aria-pressed="true"] { background: var(--accent); color: #fff; }
+.clear {
+  background: none; border: none; color: var(--accent-ink);
+  cursor: pointer; font-size: 13px; text-decoration: underline; padding: 4px 2px;
+}
 
 /* ---------- recipe groups ---------- */
 
@@ -254,8 +303,9 @@ a { color: var(--accent-ink); }
 }
 
 .empty {
-  padding: 40px 0; text-align: center; color: var(--ink-faint);
+  padding: 56px 0; text-align: center; color: var(--ink-soft); font-size: 15px;
 }
+.empty-sub { color: var(--ink-faint); font-size: 13.5px; }
 
 /* ---------- recipe page ---------- */
 
@@ -555,6 +605,11 @@ ul.plain b { color: var(--ink); }
 }
 
 @media (max-width: 640px) {
+  /* 44px minimum tap target (Apple HIG / WCAG 2.5.5). */
+  .chip, .tool-btn, .seg button { min-height: 44px; }
+  .chip { padding: 8px 15px; font-size: 13.5px; }
+  .pill { min-height: 36px; }
+  .result-count { margin-left: 0; width: 100%; padding-top: 2px; }
   .hero { padding: 26px 0 18px; }
   .sheet { padding: 22px 0 40px; }
   .card-grid { grid-template-columns: 1fr; }
