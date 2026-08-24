@@ -418,7 +418,10 @@ table.fm td.c-id {
   white-space: nowrap; letter-spacing: .03em;
 }
 table.fm td.c-name { font-weight: 500; min-width: 190px; }
-table.fm td.c-vol  { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); white-space: nowrap; }
+table.fm td.c-vol  { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft);
+                     /* Wraps: some sheets use this column for prep specifications,
+                        which are far longer than a plain volume like "1 lb". */
+                     white-space: normal; min-width: 96px; max-width: 200px; }
 table.fm td.c-mass { font-family: var(--mono); font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
 table.fm td.c-pct  { font-family: var(--mono); font-size: 12.5px; color: var(--ink-soft); white-space: nowrap; font-variant-numeric: tabular-nums; }
 table.fm td.c-role { color: var(--ink-soft); font-size: 13px; min-width: 240px; }
