@@ -4,14 +4,16 @@
     {
       "label": "Favorites",
       "icon": "★",
-      "description": "Hand-picked. Edit the slug list here — nothing else needs touching.",
+      "description": "Hand-picked.",
       "slugs": [
-        "bubbies-clone-dill-pickles",
-        "crispy-black-bean-tacos",
-        "dual-cheese-gougeres",
-        "vinaigrettes-and-dressings",
-        "mushroom-bolognese",
+        "oven-crisped-oyster-mushroom",
         "crispy-roast-potatoes",
+        "crispy-black-bean-tacos",
+        "rye-spelt-kefir-loaf",
+        "sunflower-tofu-veggie-burger",
+        "cheryl-millers-vegeburgers",
+        "vinaigrettes-and-dressings",
+        "bubbies-clone-dill-pickles",
         "vegetarian-crying-tiger"
       ]
     }
