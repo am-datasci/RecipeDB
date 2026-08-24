@@ -1,0 +1,241 @@
+{
+  "slug": "cheryl-millers-vegeburgers",
+  "title": "Cheryl Miller's Vegeburgers",
+  "subtitle": "Recipe Formulation Sheet",
+  "blurb": "Canned vegetarian burger bound with egg and bread crumbs into hand-formed patties, from Cheryl Miller's family recipe card, with her mayo-relish-catsup special sauce on the side.",
+  "tags": [
+    "Mains",
+    "American",
+    "Vegetarian"
+  ],
+  "meta": {
+    "version": "1.0",
+    "date": "August 24, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "1x Batch / About 8-10 Patties",
+    "source": {
+      "author": "Cheryl Miller",
+      "note": "Family recipe card, typed at 6x (yielding 50-60 burgers), with handwritten 1x annotations added for the core mix ingredients (vegetarian burger, eggs, bread crumbs, chopped onion). No publication or URL exists for this source."
+    },
+    "reconstruction": "The source card lists ingredients only, with no written mixing or cooking method beyond one detail the cook supplied directly: the onion is sautéed in butter before going into the mix. Everything else in the execution sequence below (mixing, forming, pan-frying) is standard technique for hand-formed vegetarian burger patties, reconstructed to make the card usable — adjust timing to how the mix holds together and browns in your pan."
+  },
+  "specs": [
+    {
+      "label": "Yield",
+      "value": "About 8-10 patties"
+    }
+  ],
+  "scalingPrinciple": "Component I is anchored to the canned Worthington Vegetarian Burger (A.01), the primary substrate the patty mix is built around, locked at 100.0%. Component II (the special sauce) is anchored to the mayonnaise (C.01), its base, at 100.0%. Both components were scaled down from the source card's 6x (50-60 burger) quantities to a 1x batch — using the cook's own handwritten 1x amounts where given (vegetarian burger, eggs, bread crumbs, chopped onion), and a straight 1/6 division of the typed quantity for every other line.",
+  "formulations": [
+    {
+      "title": "Component I — Core Patty Mix",
+      "intro": "The base mix, scaled to the handwritten 1x annotations on the source card where they exist.",
+      "rows": [
+        {
+          "group": "A — Core Mix"
+        },
+        {
+          "id": "A.01",
+          "name": "Worthington Vegetarian Burger, canned",
+          "volume": "1 can (15 oz)",
+          "mass": 425.2,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Primary protein substrate; break up with a fork before mixing so it incorporates evenly."
+        },
+        {
+          "id": "A.02",
+          "name": "Eggs, large",
+          "volume": "4 eggs",
+          "mass": 200.0,
+          "pct": 47.04,
+          "role": "Binder; holds the patty together and adds richness."
+        },
+        {
+          "id": "A.03",
+          "name": "Bread Crumbs",
+          "volume": "1/2 cup",
+          "mass": 54.0,
+          "pct": 12.7,
+          "estimated": true,
+          "role": "Absorbs excess moisture from the mix and firms the crumb."
+        },
+        {
+          "id": "A.04",
+          "name": "Soy Sauce",
+          "volume": "4 tsp (1 tbsp + 1 tsp)",
+          "mass": 23.0,
+          "pct": 5.41,
+          "estimated": true,
+          "role": "Seasons and darkens the mix; adds savory depth in place of meat drippings."
+        },
+        {
+          "id": "A.05",
+          "name": "Onion, chopped fine",
+          "volume": "1/2 cup",
+          "mass": 80.0,
+          "pct": 18.81,
+          "estimated": true,
+          "role": "Aromatic base; sautéed in the butter (A.06) until softened before folding into the mix, rather than added raw."
+        },
+        {
+          "id": "A.06",
+          "name": "Butter",
+          "volume": "1 tbsp",
+          "mass": 14.2,
+          "pct": 3.34,
+          "estimated": true,
+          "role": "User-added ingredient, not in the original list — used to sauté the onion; quantity is a typical estimate since no amount was specified."
+        },
+        {
+          "group": "B — Seasoning"
+        },
+        {
+          "id": "B.01",
+          "name": "Poultry Seasoning",
+          "volume": "1/3 tsp",
+          "mass": 0.7,
+          "pct": 0.16,
+          "estimated": true,
+          "role": "Background herbal note (sage, thyme, marjoram) typical of a savory patty blend."
+        },
+        {
+          "id": "B.02",
+          "name": "Parsley, dried",
+          "volume": "scant 1/4 tsp",
+          "mass": 0.3,
+          "pct": 0.07,
+          "estimated": true,
+          "role": "Color and mild herbal lift. Carried forward exactly as printed on the source card (1.2 tsp at 6x), an unusually small, non-round figure for a spice line."
+        },
+        {
+          "id": "B.03",
+          "name": "Garlic Powder",
+          "volume": "1/3 tsp",
+          "mass": 1.0,
+          "pct": 0.24,
+          "estimated": true,
+          "role": "Savory background note."
+        },
+        {
+          "id": "B.04",
+          "name": "Basil, dried",
+          "volume": "1/2 tsp",
+          "mass": 0.8,
+          "pct": 0.19,
+          "estimated": true,
+          "role": "Herbal note that rounds out the poultry seasoning."
+        },
+        {
+          "id": "B.05",
+          "name": "Beau Monde Seasoning",
+          "volume": "1/4 tsp",
+          "mass": 0.8,
+          "pct": 0.19,
+          "estimated": true,
+          "role": "Celery-and-onion spice blend (Spice Islands' Beau Monde); printed as 'Beaumont' on the source card, corrected per the cook."
+        }
+      ],
+      "total": {
+        "mass": 800.0,
+        "pct": 188.15,
+        "role": "Combined raw material input footprint for one batch of patty mix."
+      },
+      "note": "Vegetarian burger, egg, bread crumb, and chopped onion quantities are the cook's own handwritten 1x amounts, not a straight mathematical 1/6 of the typed 6x line — the handwritten onion amount (1/2 cup) is intentionally higher than the strict 1/6 division of 2.5 cups would give."
+    },
+    {
+      "title": "Component II — Special Sauce",
+      "intro": "Not annotated by hand on the source card; scaled by a straight 1/6 division of the typed 6x quantities to match the 1x batch of patties.",
+      "rows": [
+        {
+          "id": "C.01",
+          "name": "Mayonnaise",
+          "volume": "2/3 cup",
+          "mass": 146.7,
+          "pct": 100.0,
+          "estimated": true,
+          "role": "Base of the sauce."
+        },
+        {
+          "id": "C.02",
+          "name": "Dill Pickle Relish",
+          "volume": "2 oz",
+          "mass": 56.7,
+          "pct": 38.65,
+          "role": "Tang and texture."
+        },
+        {
+          "id": "C.03",
+          "name": "Catsup",
+          "volume": "~3 1/3 fl oz (about 6 tbsp)",
+          "mass": 94.5,
+          "pct": 64.42,
+          "estimated": true,
+          "role": "Sweetness and color. The source specifies only 'a small/medium bottle'; assumed here as a 20 fl oz bottle at 6x."
+        }
+      ],
+      "total": {
+        "mass": 297.9,
+        "pct": 203.07,
+        "role": "Combined raw material input footprint for one batch of special sauce."
+      },
+      "note": "Special sauce ratios were not annotated by hand; taste and adjust the catsup-to-relish balance, since the catsup mass above is an estimate of the source's vague 'small/medium bottle.'"
+    }
+  ],
+  "matrixFootnote": "*Bread crumbs, soy sauce, chopped onion, and butter (Component I), and mayonnaise (Component II) are volume measurements converted to grams using standard culinary bulk densities (dried bread crumbs ~108 g/cup, chopped onion ~160 g/cup, soy sauce ~5.7 g/tsp, butter ~14.2 g/tbsp, mayonnaise ~220 g/cup). The butter quantity itself (1 tbsp) is an estimate, since neither the source card nor the cook specified an amount for sautéing the onion. Catsup is additionally estimated because the source specifies only 'a small/medium bottle,' assumed here as ~20 fl oz at 6x. The small-quantity dried seasonings (poultry seasoning, parsley, garlic powder, basil, Beau Monde seasoning) are converted from teaspoons using typical per-teaspoon spice weights (roughly 1-3 g/tsp depending on the spice), since the source gives no gram figures for any of them.",
+  "miseTitle": "II. Pre-Assembly Processing (Mise en Place)",
+  "mise": [
+    {
+      "label": "Vegetarian Burger (A.01)",
+      "text": "Open the can and drain briefly if there's excess liquid. Break up the contents with a fork in the mixing bowl before adding anything else."
+    },
+    {
+      "label": "Onion (A.05)",
+      "text": "Chop fine, then sauté in the butter (A.06) over medium heat until softened and translucent, about 5 minutes. Let cool slightly before folding into the mix — adding it hot can start cooking the egg."
+    }
+  ],
+  "executionTitle": "III. Execution Sequence",
+  "execution": [
+    {
+      "name": "Combine the Mix",
+      "params": "~5 min | No heat",
+      "text": "In a large bowl, combine the broken-up vegetarian burger with the eggs, bread crumbs, soy sauce, cooled sautéed onion, poultry seasoning, parsley, garlic powder, basil, and Beaumont seasoning. Mix by hand just until evenly combined — overworking the mixture makes for a dense, tight patty."
+    },
+    {
+      "name": "Form the Patties",
+      "params": "~5 min | No heat",
+      "text": "Divide the mixture into 8-10 portions and press each firmly into a patty about 1/2 inch thick. A loose or crumbly edge at this stage means it will fall apart in the pan — press harder rather than adding liquid."
+    },
+    {
+      "name": "Pan-Fry",
+      "params": "~6-8 min | Medium heat",
+      "text": "Heat a thin film of oil in a skillet over medium heat. Cook the patties in batches without crowding until deeply browned on the first side, about 3-4 minutes, then flip and brown the second side, another 3-4 minutes. The canned vegetarian burger is already cooked, so this stage is about building a crust, not finishing the interior."
+    },
+    {
+      "name": "Whisk the Special Sauce",
+      "params": "~2 min | No heat",
+      "text": "In a small bowl, whisk together the mayonnaise, relish, and catsup until smooth. Taste and adjust the balance of catsup (sweet) to relish (tangy) before serving."
+    }
+  ],
+  "qcTitle": "IV. Quality Control Parameters",
+  "qc": [
+    {
+      "metric": "Patty Cohesion",
+      "target": "Mixture holds its shape when pressed into a patty and lifted, without cracking apart at the edges.",
+      "action": "If crumbling, work in an extra egg or 1-2 tbsp more bread crumbs to bind, then re-test before forming the full batch."
+    },
+    {
+      "metric": "Surface Browning",
+      "target": "Deep, even golden-brown crust on each side before flipping.",
+      "action": "If pale after the target time, raise the heat slightly for the next batch — the interior is already cooked, so extra time in the pan should go toward color, not doneness."
+    }
+  ],
+  "alternativesTitle": "V. Alternative Ingredients & Formulations",
+  "alternatives": [
+    {
+      "label": "Lentil-Mushroom Substitute:",
+      "text": "In place of the canned Worthington Vegetarian Burger (A.01), substitute cooked lentils combined with sautéed minced mushrooms, matched to roughly the same total mass (~425 g). User-suggested substitution, not part of the original recipe card — the split between lentils and mushrooms is untested and should be adjusted to taste and texture; expect to add a bit more bread crumbs if the swap makes the mix wetter."
+    }
+  ],
+  "directive": "Press the patties firmly into shape before they hit the pan — a loosely packed patty will fall apart on the flip, since there's no raw meat protein here to bind it as it cooks."
+}
