@@ -1,0 +1,198 @@
+{
+  "slug": "_template",
+  "title": "Template Sheet — Every Supported Field",
+  "subtitle": "Recipe Formulation Sheet",
+
+  "tags": ["Mains", "Vegetarian"],
+
+  "meta": {
+    "projectId": "#XX-01",
+    "version": "1.0",
+    "date": "January 1, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "4 Servings / 500 g Core Base",
+    "source": "Publication — \"Article Title,\" Author (updated Month Year)",
+    "sourceUrl": "https://example.com/recipe",
+    "reconstruction": "DELETE THIS FIELD unless the sheet is heavily reconstructed. When present it renders as a caution banner at the top of the page. Use it to state plainly how little came from the source and what the cook should expect to tune."
+  },
+
+  "summary": [
+    "Optional. One paragraph per technique finding — what actually makes the recipe work and why. This is not a preamble or a story; it is the reasoning a cook needs before starting.",
+    "Delete the whole field if the source offers no technique reasoning worth carrying over."
+  ],
+
+  "specs": [
+    { "label": "Yield", "value": "12 units" },
+    { "label": "Prep Time", "value": "25 minutes" },
+    { "label": "Cook Time", "value": "40 minutes" },
+    { "label": "Service", "value": "Hot, immediately" }
+  ],
+
+  "scalingPrinciple": "State which item is locked at 100.0% and why that choice is right for this recipe — primary substrate for a main, total flour for bread, the water for a brine where salinity is the spec. The batch scaler recomputes every mass from this baseline, so the choice is load-bearing.",
+
+  "formulationTitle": "I. Master Formulation Matrix",
+
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Core Substrate" },
+
+        {
+          "id": "A.01",
+          "name": "Baseline Ingredient",
+          "volume": "1 lb",
+          "mass": 453.6,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Exactly one row per sheet carries baseline:true and pct:100.0. Describe what the ingredient does and how it is prepped."
+        },
+
+        { "group": "B — Secondary Components" },
+
+        {
+          "id": "B.01",
+          "name": "Source-Stated Mass",
+          "volume": "12 oz",
+          "mass": 340.2,
+          "pct": 75.0,
+          "role": "Mass stated in the source or derived by exact unit conversion. No estimated flag, no asterisk."
+        },
+        {
+          "id": "B.02",
+          "name": "Estimated Mass",
+          "volume": "1 medium (~1 cup)",
+          "mass": 150.0,
+          "pct": 33.07,
+          "estimated": true,
+          "role": "Converted from a volume or a vague quantity. estimated:true renders an asterisk and REQUIRES a matrixFootnote explaining the basis."
+        },
+        {
+          "id": "B.03",
+          "name": "Ingredient With No Number",
+          "volume": "For serving (optional)",
+          "massText": "—",
+          "pctText": "—",
+          "role": "Use massText/pctText instead of mass/pct when there is genuinely no figure. These are plain text and do not scale."
+        },
+        {
+          "id": "B.04",
+          "name": "Seasoned To Taste",
+          "volume": "to taste",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Salt, pepper, and finishing seasoning that the source does not quantify."
+        }
+      ],
+      "total": {
+        "mass": 943.8,
+        "pct": 208.07,
+        "role": "Combined raw material input footprint. Must equal the sum of the numeric row masses."
+      }
+    },
+
+    {
+      "title": "Second Matrix — for multi-component recipes only",
+      "intro": "Optional lead-in. Delete this entire object for a single-matrix recipe. Use additional matrices for sheets with genuinely separate components — a filling and a crumble, two flavour streams off one base, a shared batch split into two salads.",
+      "columns": [
+        "Item ID",
+        "Ingredient Component",
+        "Prep Specification",
+        "Mass (g)",
+        "Formula % (Local Base)",
+        "Notes"
+      ],
+      "rows": [
+        {
+          "id": "C.01",
+          "name": "Component With Relabelled Columns",
+          "volume": "Shaved paper-thin across the grain",
+          "mass": 40,
+          "pct": 100.0,
+          "role": "WARNING: custom columns only relabels HEADERS. Cells always render id|name|volume|mass|pct|role, so prep text goes in the volume field. Supply exactly 6 labels."
+        }
+      ],
+      "note": "Optional footnote scoped to this matrix only."
+    }
+  ],
+
+  "matrixFootnote": "*Required whenever any row has estimated:true. Name which items were estimated and on what basis, e.g. 'Onion, carrot, and herb masses are standard culinary estimates for the stated volumes. All other masses are stated directly in the source or derived by unit conversion.'",
+
+  "miseTitle": "II. Pre-Assembly Processing (Mise en Place)",
+  "mise": [
+    {
+      "label": "Component (A.01)",
+      "text": "Preparation that happens before the execution sequence starts. Reference ingredient codes so the cook can trace each step back to the matrix."
+    },
+    {
+      "label": "Second Prep Phase",
+      "text": "Omit the whole mise field when a recipe has no meaningful prep stage — some sheets fold it into the first execution step instead."
+    }
+  ],
+
+  "executionTitle": "III. Execution Sequence",
+  "execution": [
+    {
+      "name": "Step Name",
+      "params": "~10 min | Medium heat",
+      "text": "Plain text is the common case. Say what to do, what changes, and how to tell when to advance. The params field is plain text only — no markdown."
+    },
+    {
+      "name": "Step With Multiple Paragraphs",
+      "params": "~20 min | 425°F / 218°C",
+      "text": [
+        "Pass an array when a step genuinely needs two paragraphs.",
+        "Each becomes its own paragraph. Do not split a single thought across two."
+      ]
+    },
+    {
+      "name": "Step With Sub-Bullets",
+      "params": "80 min | 4 folds at 20-minute intervals",
+      "items": [
+        "**Fold 1 (20 min):** Use items for genuinely enumerable sub-actions.",
+        "**Fold 2 (40 min):** Markdown bold and italic render here.",
+        "**Fold 3 (60 min):** text and items can both appear on one step."
+      ]
+    }
+  ],
+
+  "qcTitle": "IV. Quality Control Parameters",
+  "qc": [
+    {
+      "metric": "Cohesive Integrity",
+      "target": "The observable standard — what it should look, feel, or taste like when correct.",
+      "action": "What to DO when the target is missed. Every QC row must be actionable; if you cannot write a real corrective action, drop the row. Do not use the older actual/rating placeholder columns."
+    }
+  ],
+
+  "alternativesTitle": "V. Alternative Ingredients & Formulations",
+  "alternatives": [
+    {
+      "label": "Source-Stated Variation:",
+      "text": "ONLY variations the source itself offers. Never generate substitutions. Delete this field entirely when the source offers none."
+    }
+  ],
+
+  "sections": [
+    {
+      "id": "free-form",
+      "title": "Any Section The Schema Lacks",
+      "intro": "Optional lead-in paragraph.",
+      "paragraphs": [
+        "Use sections for content that does not fit the fixed fields — chef's notes, provenance, biochemistry, post-bake protocol, iteration history."
+      ],
+      "items": [
+        "A plain string renders as a simple bullet.",
+        { "label": "Bold lead-in:", "text": "An object renders with a bold label followed by body text." }
+      ],
+      "table": {
+        "columns": ["Feature", "This Version", "Traditional"],
+        "rows": [
+          ["Texture", "Tender", "Chewy"],
+          ["Method", "Steamed 10 min", "Simmered 1 hr"]
+        ]
+      }
+    }
+  ],
+
+  "directive": "The single highest-leverage warning for this recipe — the one thing that ruins it. Renders as a highlighted Operational Directive block at the foot of the page. One per sheet; do not pad it with a second point."
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "_template-minimal",
+  "title": "Minimal Sheet — The Smallest Valid Recipe",
+  "subtitle": "Recipe Formulation Sheet",
+
+  "tags": ["Mains", "Vegetarian"],
+
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "4 Servings / 400 g Base",
+    "source": "Where this came from — omit the whole line if there is no source."
+  },
+
+  "scalingPrinciple": "Item A.01 is locked at 100.0% as the primary substrate. All other percentages are calculated against that 400 g baseline.",
+
+  "formulations": [
+    {
+      "rows": [
+        {
+          "id": "A.01",
+          "name": "Primary Ingredient",
+          "volume": "1 lb",
+          "mass": 400,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "What it does in the dish."
+        },
+        {
+          "id": "B.01",
+          "name": "Second Ingredient",
+          "volume": "1 cup",
+          "mass": 200,
+          "pct": 50.0,
+          "role": "What it does in the dish."
+        },
+        {
+          "id": "B.02",
+          "name": "Third Ingredient",
+          "volume": "2 tbsp",
+          "mass": 30,
+          "pct": 7.5,
+          "estimated": true,
+          "role": "Mass converted from a volume, so it carries estimated:true."
+        }
+      ],
+      "total": {
+        "mass": 630,
+        "pct": 157.5,
+        "role": "Combined raw material input footprint."
+      }
+    }
+  ],
+
+  "matrixFootnote": "*Third Ingredient is a standard culinary estimate for the stated volume. All other masses are stated directly in the source.",
+
+  "mise": [
+    { "label": "Prep (A.01)", "text": "Anything that must happen before cooking starts." }
+  ],
+
+  "execution": [
+    {
+      "name": "First Step",
+      "params": "~10 min | Medium heat",
+      "text": "What to do, what changes, and how to tell when to move on."
+    },
+    {
+      "name": "Second Step",
+      "params": "~20 min | 400°F / 205°C",
+      "text": "Keep steps mechanical and specific. No filler."
+    }
+  ],
+
+  "directive": "The one thing that ruins this recipe if the cook gets it wrong."
+}

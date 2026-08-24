@@ -24,6 +24,25 @@ website renders every recipe through a single shared template; your job is to
 supply the data that template consumes. If a "Recipe Formulation Sheet" is
 requested, that means this JSON — not the .docx skill output.
 
+--- Templates ----------------------------------------------------------------
+Two reference files live in the repo. Both are valid JSON and both render, so
+you can preview either one in a browser before copying it:
+
+  data/recipes/_template.json
+      Kitchen sink. Every supported field, with the rule for each written into
+      its own placeholder value. Preview: recipe.html?r=_template
+
+  data/recipes/_template-minimal.json
+      The smallest valid sheet — matrix, mise, execution, directive. This is
+      the right starting point for most recipes.
+      Preview: recipe.html?r=_template-minimal
+
+Start from the minimal template and add fields only when the source justifies
+them. Copying the kitchen sink invites filling in sections that should not
+exist. Both files are deliberately absent from data/index.json, which is why
+they never appear on the home page; the leading underscore marks them as
+non-recipes.
+
 ================================================================================
 2. TONE
 ================================================================================
@@ -293,6 +312,7 @@ it out and flag it in your response.
 ================================================================================
 
   [ ] JSON parses. No trailing commas, no comments, no unescaped quotes.
+  [ ] No placeholder text survives from the template.
   [ ] "slug" matches between the recipe file and the index entry.
   [ ] Exactly one row has "baseline": true, with "pct": 100.0.
   [ ] Every pct = mass / baseline mass x 100, checked, not guessed.
