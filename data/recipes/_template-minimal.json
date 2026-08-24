@@ -2,6 +2,7 @@
   "slug": "_template-minimal",
   "title": "Minimal Sheet — The Smallest Valid Recipe",
   "subtitle": "Recipe Formulation Sheet",
+  "blurb": "One or two sentences on what makes this recipe work. This becomes the home page card text.",
   "tags": [
     "Mains",
     "Vegetarian"

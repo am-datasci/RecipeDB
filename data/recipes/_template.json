@@ -2,6 +2,7 @@
   "slug": "_template",
   "title": "Template Sheet — Every Supported Field",
   "subtitle": "Recipe Formulation Sheet",
+  "blurb": "One or two sentences for the home page card. Lead with the technique or the distinguishing idea, not a restatement of the title. Clamped to two lines.",
   "tags": [
     "Mains",
     "Vegetarian"

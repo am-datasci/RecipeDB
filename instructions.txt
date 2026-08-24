@@ -8,16 +8,21 @@ document, so every response ends in valid JSON matching the schema below.
 1. WHAT YOU PRODUCE
 ================================================================================
 
-Given a recipe (URL, pasted text, image, or document), produce TWO things:
+Given a recipe (URL, pasted text, image, or document), produce ONE thing:
 
-  A. A complete recipe sheet as JSON, to be saved as
-     data/recipes/<slug>.json
+  A complete recipe sheet as JSON, saved to data/recipes/<slug>.json
 
-  B. The matching index entry, to be added to the "recipes" array in
-     data/index.json
+Deliver it in a single fenced code block. Do not wrap it in prose explanation
+unless something genuinely needs flagging.
 
-Deliver both in separate, clearly labelled fenced code blocks. Do not wrap them
-in prose explanation unless something genuinely needs flagging.
+You do NOT write the data/index.json entry. It is generated from the sheet —
+title, tags, projectId and blurb are all read straight out of the file you
+produce — either by a GitHub Action on push, or locally with:
+
+    python3 tools/recipedb.py index --write
+
+This is why the sheet carries a "blurb" field: it is the home page card text,
+and it lives in the sheet so there is exactly one place to edit it.
 
 Do NOT produce a Word document, a Markdown sheet, or a formatted table. The
 website renders every recipe through a single shared template; your job is to
@@ -133,6 +138,7 @@ arrays or placeholder strings to fill the shape out.
   "slug":     "kebab-case-id",         // must equal the filename
   "title":    "Recipe Title",
   "subtitle": "Recipe Formulation Sheet",
+  "blurb":    "Card text for the home page. One or two sentences.",
 
   "tags": ["Mains", "Thai", "Vegetarian"],   // see section 7
 
@@ -249,28 +255,41 @@ They do NOT render (plain text only) in: title, subtitle, volume, massText,
 pctText, execution params, and every meta field except reconstruction.
 
 ================================================================================
-6. THE INDEX ENTRY
+6. THE INDEX ENTRY (GENERATED — DO NOT WRITE IT)
 ================================================================================
 
-{
-  "slug":      "tamarind-date-oat-bars",   // must match the JSON filename
-  "title":     "Tamarind Date Oat Energy Bars",
-  "projectId": "#TDO-01",                  // optional
-  "blurb":     "One or two sentences on what makes this recipe work.",
-  "tags":      ["Snacks & Bars", "Vegan", "Vegetarian", "Make-Ahead"]
-}
+data/index.json is derived from the sheets. `recipedb.py index` reads every
+data/recipes/*.json and writes the matching entry:
 
-Project IDs in the archive are inconsistent (#00-01, #BP-01, "Recipe #05",
-and many absent). Do not invent one to fill the field. Carry an ID forward only
-if the user supplies it or the source sheet already has one; otherwise omit it.
+  slug       from the filename
+  title      from the sheet
+  tags       from the sheet
+  projectId  from meta.projectId, if present
+  blurb      from the sheet's "blurb"; falling back to the first sentence of
+             summary[0]; falling back to a TODO placeholder that validate warns
+             about until it is replaced
 
-The blurb is the card text on the home page. Lead with the technique or the
-distinguishing idea, not a restatement of the title. Two lines maximum — it is
-clamped in the layout.
+Sheets are the source of truth. If a title or tag differs between the two
+files, the sync overwrites the index to match the sheet — so never hand-edit
+those fields in index.json.
 
-Slug rules: lowercase kebab-case, ASCII only, derived from the dish name.
-Slugs are public URLs — never encode personal, medical, or private context in
-them.
+Two things in index.json are NOT derived and are the user's alone:
+  - "collections" — the curated Favorites slug list
+  - "groups"      — which tags are filed under which heading
+
+--- Blurb ---------------------------------------------------------------------
+The card text on the home page. Lead with the technique or the distinguishing
+idea, not a restatement of the title. Two lines maximum — it is clamped in the
+layout.
+
+--- Project IDs ---------------------------------------------------------------
+Project IDs in the archive are inconsistent (#00-01, #BP-01, "Recipe #05", and
+many absent). Do not invent one. Carry an ID forward only if the user supplies
+it or the source sheet already has one; otherwise omit it.
+
+--- Slugs ---------------------------------------------------------------------
+Lowercase kebab-case, ASCII only, derived from the dish name. Slugs are public
+URLs — never encode personal, medical, or private context in them.
 
 ================================================================================
 7. TAGS
@@ -373,7 +392,8 @@ the total object so the sum check is skipped.
 
   [ ] JSON parses. No trailing commas, no comments, no unescaped quotes.
   [ ] No placeholder text survives from the template.
-  [ ] "slug" matches between the recipe file and the index entry.
+  [ ] "slug" matches the filename.
+  [ ] "blurb" is written and is not a restatement of the title.
   [ ] Exactly one row has "baseline": true, with "pct": 100.0.
   [ ] Every pct = mass / baseline mass x 100, checked, not guessed.
   [ ] Total mass equals the sum of the rows.

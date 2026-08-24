@@ -1,0 +1,73 @@
+name: Sync recipe index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/recipes/*.json'
+  pull_request:
+    paths:
+      - 'data/recipes/*.json'
+  workflow_dispatch:
+
+# One run at a time, so two quick pushes cannot race each other's commit.
+concurrency:
+  group: sync-index-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write          # needed to push the regenerated index back
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Check out the branch itself, not the detached merge commit, so a
+          # push has somewhere to land.
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # On a pull request, report only. Fork PRs get a read-only token, so
+      # committing would fail; the author runs `index --write` locally instead.
+      - name: Report index drift (pull request)
+        if: github.event_name == 'pull_request'
+        run: |
+          python3 tools/recipedb.py index
+          python3 tools/recipedb.py validate
+
+      - name: Sync index
+        if: github.event_name != 'pull_request'
+        id: sync
+        run: |
+          python3 tools/recipedb.py index --write
+          if git diff --quiet -- data/index.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Index already in sync."
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            git --no-pager diff --stat -- data/index.json
+          fi
+
+      # Never commit an index that fails validation.
+      - name: Validate
+        if: github.event_name != 'pull_request'
+        run: python3 tools/recipedb.py validate
+
+      - name: Commit and push
+        if: github.event_name != 'pull_request' && steps.sync.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/index.json
+          git commit -m "Sync recipe index
+
+          Regenerated data/index.json from the sheets in data/recipes/.
+          Applied automatically by the Sync recipe index workflow."
+          # Another push may have landed while this job ran.
+          git pull --rebase --autostash origin "${{ github.ref_name }}"
+          git push origin HEAD:"${{ github.ref_name }}"

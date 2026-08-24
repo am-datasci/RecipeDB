@@ -277,6 +277,8 @@ def cmd_validate(args):
                 rep.warn(slug, 'tags differ between index and sheet')
             if not ie.get('blurb'):
                 rep.warn(slug, 'no blurb — the home page card will be bare')
+            elif ie['blurb'].startswith('TODO'):
+                rep.warn(slug, 'blurb is still the auto-generated placeholder')
 
     for where, msg in rep.errors:
         print(f'  ERROR  {where}: {msg}')
@@ -392,6 +394,108 @@ def cmd_new(args):
     return 0
 
 
+# --------------------------------------------------------------------- index
+
+def derive_blurb(r):
+    """Card text for the home page, in order of preference."""
+    if r.get('blurb'):
+        return r['blurb'], 'sheet.blurb'
+    summ = r.get('summary') or []
+    if summ:
+        # first sentence of the first summary paragraph, trimmed to card length
+        first = re.split(r'(?<=[.!?])\s', summ[0].strip())[0]
+        if len(first) > 190:
+            first = first[:187].rsplit(' ', 1)[0] + '...'
+        return first, 'summary[0]'
+    return TODO_BLURB, 'placeholder'
+
+
+TODO_BLURB = 'TODO - one or two sentences on what makes this recipe work.'
+
+
+def sync_index(write):
+    """Rebuild index entries from the sheets. Sheets are the source of truth for
+    title, tags and projectId; blurb is kept unless the sheet supplies one."""
+    db = load(INDEX)
+    by_slug = {e['slug']: e for e in db['recipes']}
+    added, updated, orphaned = [], [], []
+
+    for path in sheet_paths():
+        slug = os.path.basename(path)[:-5]
+        if is_template(slug):
+            continue
+        r = load(path)
+        blurb, src = derive_blurb(r)
+        # Key order is fixed so regenerating the file produces a stable diff.
+        pid = (r.get('meta') or {}).get('projectId')
+        want = {'slug': slug, 'title': r.get('title', slug)}
+        if pid:
+            want['projectId'] = pid
+        want['blurb'] = blurb
+        want['tags'] = r.get('tags', [])
+
+        e = by_slug.get(slug)
+        if e is None:
+            db['recipes'].append(want)
+            added.append((slug, src))
+            continue
+
+        diffs = []
+        for k in ('title', 'projectId'):
+            if k in want and e.get(k) != want[k]:
+                diffs.append(k); e[k] = want[k]
+        if sorted(e.get('tags', [])) != sorted(want['tags']):
+            diffs.append('tags'); e['tags'] = want['tags']
+        if r.get('blurb') and e.get('blurb') != r['blurb']:
+            diffs.append('blurb'); e['blurb'] = r['blurb']
+        if not e.get('blurb'):
+            diffs.append('blurb'); e['blurb'] = blurb
+        if diffs:
+            updated.append((slug, diffs))
+
+    files = {os.path.basename(p)[:-5] for p in sheet_paths()}
+    for e in db['recipes']:
+        if e['slug'] not in files:
+            orphaned.append(e['slug'])
+
+    # Keep entries ordered by title so diffs stay readable.
+    db['recipes'].sort(key=lambda x: x['title'].lower())
+
+    changed = bool(added or updated)
+    if changed and write:
+        with open(INDEX, 'w', encoding='utf-8') as fh:
+            json.dump(db, fh, indent=2, ensure_ascii=False)
+            fh.write('\n')
+    return added, updated, orphaned, changed
+
+
+def cmd_index(args):
+    added, updated, orphaned, changed = sync_index(args.write)
+
+    for slug, src in added:
+        print(f'  + added    {slug}  (blurb from {src})')
+    for slug, diffs in updated:
+        print(f'  ~ updated  {slug}  ({", ".join(diffs)})')
+    for slug in orphaned:
+        print(f'  ! orphaned {slug}  indexed but data/recipes/{slug}.json is missing')
+
+    todo = [s for s, src in added if src == 'placeholder']
+    if todo:
+        print(f'\n  {len(todo)} entry(ies) need a real blurb: {", ".join(todo)}')
+
+    if not changed:
+        print('  Index is in sync with the sheets.')
+    elif not args.write:
+        print(f'\n{len(added)} to add, {len(updated)} to update. '
+              f'Re-run with --write to apply.')
+    else:
+        print(f'\n{len(added)} added, {len(updated)} updated.')
+
+    # Orphans are a real error, but deleting a user's index entry is worse than
+    # failing loudly — never auto-remove.
+    return 1 if orphaned else 0
+
+
 # --------------------------------------------------------------------- stats
 
 def cmd_stats(args):
@@ -470,6 +574,10 @@ def main():
     n.add_argument('slug')
     n.add_argument('--title', help='display title (defaults to the slug, title-cased)')
     n.set_defaults(fn=cmd_new)
+
+    ix = sub.add_parser('index', help='sync data/index.json from the sheet files')
+    ix.add_argument('--write', action='store_true', help='apply changes (default: dry run)')
+    ix.set_defaults(fn=cmd_index)
 
     s = sub.add_parser('stats', help='archive overview')
     s.set_defaults(fn=cmd_stats)

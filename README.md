@@ -63,9 +63,25 @@ favorite is just adding `"Favorites"` to its tags — that pins it to the top se
 
 ## Adding a recipe
 
-1. Drop a new `data/recipes/<slug>.json` file in, following the shape of an
-   existing one.
-2. Add a matching entry to the `recipes` array in `data/index.json`.
+Drop a `data/recipes/<slug>.json` file in. That's the whole step.
+
+`data/index.json` is **generated** from the sheets — title, tags, projectId and
+blurb are read out of the sheet itself. On push, the *Sync recipe index* Action
+regenerates it and commits the result. Locally:
+
+```
+python3 tools/recipedb.py index          # dry run
+python3 tools/recipedb.py index --write
+```
+
+Sheets are the source of truth: if a title or tag disagrees, the sync overwrites
+the index to match the sheet. Deleting a sheet is reported as an error rather
+than silently removing its entry — the sync never deletes your data.
+
+Two parts of `index.json` are NOT generated and are yours to edit by hand:
+`collections` (the curated Favorites list) and `groups` (tag filing).
+
+## Sheet fields
 
 Core fields: `meta`, `summary`, `specs`, `scalingPrinciple`, `formulations`,
 `mise`, `execution`, `qc`, `alternatives`, `sections`, `directive`. All are
