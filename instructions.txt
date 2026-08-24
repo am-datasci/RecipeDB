@@ -323,6 +323,20 @@ it out and flag it in your response.
   [ ] No personal or medical content in any field, including the slug.
   [ ] Tone check: no "substrate"/"thermal enclosure"/"organoleptic" padding.
 
+A validator enforces most of this list. After the sheet is saved, it is checked
+with:
+
+    python3 tools/recipedb.py validate
+
+Percentage drift and total mismatches can be repaired automatically with
+`recalc all --write`, but do not rely on that — get the arithmetic right the
+first time. Diet-tag conflicts and privacy terms are hard errors and must be
+fixed by hand.
+
+If a total deliberately excludes rows (an optional garnish, or a baker's
+"total flour" row that is the sum of its parts), set "partial": true inside
+the total object so the sum check is skipped.
+
 State any assumption you had to make — an estimated mass basis, an ambiguous
 source quantity, a new tag — in one short note after the code blocks. Do not
 bury it inside the JSON.

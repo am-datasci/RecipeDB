@@ -33,7 +33,7 @@
           "name": "Dried Apricots",
           "volume": "1/2 cup",
           "mass": 65.0,
-          "pct": 43.3,
+          "pct": 43.33,
           "role": "Secondary structural binder and tartness balancing agent; high pectin content and low-glycemic carbohydrate source."
         },
         {
@@ -41,7 +41,7 @@
           "name": "Peanut or Almond Butter",
           "volume": "1/2 cup",
           "mass": 130.0,
-          "pct": 86.7,
+          "pct": 86.67,
           "role": "Lipid emulsifier and structural softener; provides monounsaturated fatty acids and plant protein for sustained satiety."
         },
         {
@@ -49,7 +49,7 @@
           "name": "Vanilla Extract",
           "volume": "1 tsp",
           "mass": 5.0,
-          "pct": 3.3,
+          "pct": 3.33,
           "role": "Aromatic enhancer; contains volatile vanillin compounds to optimize sensory perception."
         },
         {
@@ -57,7 +57,7 @@
           "name": "Fine Sea Salt",
           "volume": "1 pinch",
           "mass": 0.5,
-          "pct": 0.3,
+          "pct": 0.33,
           "role": "Sodium electrolyte and flavor potentiator; suppresses seed bitterness and enhances sweetness perception."
         },
         {
@@ -73,7 +73,7 @@
           "name": "Hemp Hearts",
           "volume": "2 tbsp",
           "mass": 20.0,
-          "pct": 13.3,
+          "pct": 13.33,
           "role": "Superfood texturizer; concentrated source of Omega-3/Omega-6 essential fatty acids and complete proteins."
         },
         {
@@ -87,7 +87,7 @@
       ],
       "total": {
         "mass": 469.5,
-        "pct": 312.9,
+        "pct": 313.0,
         "role": "Combined raw material input footprint."
       }
     }

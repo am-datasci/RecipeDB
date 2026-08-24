@@ -2,7 +2,12 @@
   "slug": "flax-chia-peanut-butter-bites",
   "title": "Flax & Chia Dark Peanut Butter Bites",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Snacks & Bars", "Sweets & Desserts", "Vegetarian", "Make-Ahead"],
+  "tags": [
+    "Snacks & Bars",
+    "Sweets & Desserts",
+    "Vegetarian",
+    "Make-Ahead"
+  ],
   "meta": {
     "projectId": "#PB-CHIA-01",
     "version": "1.0",
@@ -14,32 +19,126 @@
   "formulations": [
     {
       "rows": [
-        { "id": "A.01", "name": "Natural Smooth Peanut Butter", "volume": "1/2 cup", "mass": 128.0, "pct": 100.0, "baseline": true, "role": "Core foundational substrate; provides fat and protein structure." },
-        { "id": "B.01", "name": "85% Dark Chocolate", "volume": "3.0 oz", "mass": 85.0, "pct": 66.4, "role": "Hard shell barrier; cacao bitter profile and low sugar loading." },
-        { "id": "B.02", "name": "Fine Golden Flaxseed Meal", "volume": "3 tbsp", "mass": 21.0, "pct": 16.4, "role": "Dry binder; lipid absorber; insoluble/soluble fiber structural matrix." },
-        { "id": "B.03", "name": "Melted Coconut Oil / Butter", "volume": "1.5 tbsp + 1 tsp", "mass": 20.0, "pct": 15.6, "role": "Thermal fat modifier; smooth melt point adjustment." },
-        { "id": "B.04", "name": "Whole Chia Seeds", "volume": "1 tbsp", "mass": 12.0, "pct": 9.4, "role": "Hydrocolloid seed matrix; tactile crisp pop texture." },
-        { "id": "B.05", "name": "Pure Vanilla Extract", "volume": "1/2 tsp", "mass": 2.5, "pct": 2.0, "role": "Aromatic enhancer and bitterness masking agent." },
-        { "id": "C.01", "name": "Maldon Flaky Sea Salt", "volume": "Pinch", "mass": 1.5, "pct": 1.2, "role": "Sodium accent; ionic contrast on top shell surface." }
+        {
+          "id": "A.01",
+          "name": "Natural Smooth Peanut Butter",
+          "volume": "1/2 cup",
+          "mass": 128.0,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Core foundational substrate; provides fat and protein structure."
+        },
+        {
+          "id": "B.01",
+          "name": "85% Dark Chocolate",
+          "volume": "3.0 oz",
+          "mass": 85.0,
+          "pct": 66.41,
+          "role": "Hard shell barrier; cacao bitter profile and low sugar loading."
+        },
+        {
+          "id": "B.02",
+          "name": "Fine Golden Flaxseed Meal",
+          "volume": "3 tbsp",
+          "mass": 21.0,
+          "pct": 16.41,
+          "role": "Dry binder; lipid absorber; insoluble/soluble fiber structural matrix."
+        },
+        {
+          "id": "B.03",
+          "name": "Melted Coconut Oil / Butter",
+          "volume": "1.5 tbsp + 1 tsp",
+          "mass": 20.0,
+          "pct": 15.62,
+          "role": "Thermal fat modifier; smooth melt point adjustment."
+        },
+        {
+          "id": "B.04",
+          "name": "Whole Chia Seeds",
+          "volume": "1 tbsp",
+          "mass": 12.0,
+          "pct": 9.38,
+          "role": "Hydrocolloid seed matrix; tactile crisp pop texture."
+        },
+        {
+          "id": "B.05",
+          "name": "Pure Vanilla Extract",
+          "volume": "1/2 tsp",
+          "mass": 2.5,
+          "pct": 1.95,
+          "role": "Aromatic enhancer and bitterness masking agent."
+        },
+        {
+          "id": "C.01",
+          "name": "Maldon Flaky Sea Salt",
+          "volume": "Pinch",
+          "mass": 1.5,
+          "pct": 1.17,
+          "role": "Sodium accent; ionic contrast on top shell surface."
+        }
       ],
-      "total": { "mass": 270.0, "pct": 211.0, "role": "Combined raw material input footprint." }
+      "total": {
+        "mass": 270.0,
+        "pct": 210.94,
+        "role": "Combined raw material input footprint."
+      }
     }
   ],
   "mise": [
-    { "label": "Golden Flax & Seed Integration (B.02, B.04)", "text": "Ensure golden flaxseed meal is used (rather than brown) to avoid sharp astringent tannins. In a stainless mixing bowl, combine fine golden flaxseed meal (B.02), chia seeds (B.04), natural peanut butter (A.01), vanilla extract (B.05), and 1.5 tbsp (~16 g) of melted coconut oil (B.03)." },
-    { "label": "Hydration & Binding Wait State", "text": "Allow the seed and peanut butter base to rest at ambient room temperature (70°F/21°C) for 3 to 5 minutes. Soluble fiber mucilage in the flax and chia will bind free oil, transforming the liquid paste into a pliable dough-like matrix." },
-    { "label": "Shell Temper Preparation (B.01, B.03)", "text": "Chop 85% dark chocolate (B.01) into uniform 5 mm pieces. Place in a heatproof bowl with 1 tsp (~4 g) of coconut oil (B.03)." }
+    {
+      "label": "Golden Flax & Seed Integration (B.02, B.04)",
+      "text": "Ensure golden flaxseed meal is used (rather than brown) to avoid sharp astringent tannins. In a stainless mixing bowl, combine fine golden flaxseed meal (B.02), chia seeds (B.04), natural peanut butter (A.01), vanilla extract (B.05), and 1.5 tbsp (~16 g) of melted coconut oil (B.03)."
+    },
+    {
+      "label": "Hydration & Binding Wait State",
+      "text": "Allow the seed and peanut butter base to rest at ambient room temperature (70°F/21°C) for 3 to 5 minutes. Soluble fiber mucilage in the flax and chia will bind free oil, transforming the liquid paste into a pliable dough-like matrix."
+    },
+    {
+      "label": "Shell Temper Preparation (B.01, B.03)",
+      "text": "Chop 85% dark chocolate (B.01) into uniform 5 mm pieces. Place in a heatproof bowl with 1 tsp (~4 g) of coconut oil (B.03)."
+    }
   ],
   "execution": [
-    { "name": "Core Matrix Base Portioning", "params": "3–5 min | Ambient temp", "text": "Line a 12-cup mini muffin tin with parchment paper cups. Portion approximately 13–14 g of hydrated peanut-seed dough into each liner. Press down gently with a clean utensil to form flat, uniform foundation discs." },
-    { "name": "Chocolate Shell Liquefaction", "params": "3–4 min | Indirect heat <115°F / 46°C", "text": "Set the dark chocolate bowl over a double boiler of gently simmering water. Whisk slowly until smooth, glossy, and fully fluid (working temp 88–90°F / 31–32°C)." },
-    { "name": "Encapsulation & Leveling", "params": "2 min | Ambient temp", "text": "Evenly spoon ~7–8 g of melted chocolate over each peanut butter disc base. Tap the tray firmly against the counter surface twice to release trapped air bubbles and smooth the top layer." },
-    { "name": "Top Finish & Thermal Setting", "params": "25–30 min | 0°F / -18°C freezer", "text": "Allow chocolate to cool for 2 minutes, then top each cup with flaky sea salt (C.01). Transfer the tray to the freezer to achieve a crisp shell snap and firm fudge core." }
+    {
+      "name": "Core Matrix Base Portioning",
+      "params": "3–5 min | Ambient temp",
+      "text": "Line a 12-cup mini muffin tin with parchment paper cups. Portion approximately 13–14 g of hydrated peanut-seed dough into each liner. Press down gently with a clean utensil to form flat, uniform foundation discs."
+    },
+    {
+      "name": "Chocolate Shell Liquefaction",
+      "params": "3–4 min | Indirect heat <115°F / 46°C",
+      "text": "Set the dark chocolate bowl over a double boiler of gently simmering water. Whisk slowly until smooth, glossy, and fully fluid (working temp 88–90°F / 31–32°C)."
+    },
+    {
+      "name": "Encapsulation & Leveling",
+      "params": "2 min | Ambient temp",
+      "text": "Evenly spoon ~7–8 g of melted chocolate over each peanut butter disc base. Tap the tray firmly against the counter surface twice to release trapped air bubbles and smooth the top layer."
+    },
+    {
+      "name": "Top Finish & Thermal Setting",
+      "params": "25–30 min | 0°F / -18°C freezer",
+      "text": "Allow chocolate to cool for 2 minutes, then top each cup with flaky sea salt (C.01). Transfer the tray to the freezer to achieve a crisp shell snap and firm fudge core."
+    }
   ],
   "qc": [
-    { "metric": "Texture & Core Density", "target": "Dense, fudge-like interior free of grittiness; sharp snap on outer dark chocolate shell with subtle seed pop.", "actual": "[Pending Run]", "rating": "/ 10" },
-    { "metric": "Surface Optics & Finish", "target": "Glossy, un-bloomed dark cap with evenly distributed sea salt crystals.", "actual": "[Pending Run]", "rating": "/ 10" },
-    { "metric": "Flavor Balance", "target": "Deep roasted peanut and cocoa synergy; subtle natural sweetness without artificial aftertaste.", "actual": "[Pending Run]", "rating": "/ 10" }
+    {
+      "metric": "Texture & Core Density",
+      "target": "Dense, fudge-like interior free of grittiness; sharp snap on outer dark chocolate shell with subtle seed pop.",
+      "actual": "[Pending Run]",
+      "rating": "/ 10"
+    },
+    {
+      "metric": "Surface Optics & Finish",
+      "target": "Glossy, un-bloomed dark cap with evenly distributed sea salt crystals.",
+      "actual": "[Pending Run]",
+      "rating": "/ 10"
+    },
+    {
+      "metric": "Flavor Balance",
+      "target": "Deep roasted peanut and cocoa synergy; subtle natural sweetness without artificial aftertaste.",
+      "actual": "[Pending Run]",
+      "rating": "/ 10"
+    }
   ],
   "directive": "Store finished mini cups in an airtight container under refrigeration (40°F/4°C) or freezing (0°F/-18°C) to maintain lipid network integrity and snap profile."
 }

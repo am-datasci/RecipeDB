@@ -2,7 +2,11 @@
   "slug": "vinaigrettes-and-dressings",
   "title": "Five House Dressings",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Sauces & Dressings", "Vegetarian", "No-Cook", "Favorites"],
+  "tags": [
+    "Sauces & Dressings",
+    "No-Cook",
+    "Favorites"
+  ],
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
@@ -19,76 +23,378 @@
       "title": "1. All-Purpose Vinaigrette",
       "intro": "The default. Reduce oil to 1/3 cup (~72 g, 66.7%) if you like your dressing more aggressive. Vegan.",
       "rows": [
-        { "id": "A.01", "name": "Neutral or Olive Oil", "volume": "1/2 cup", "mass": 108, "pct": 100.0, "baseline": true, "estimated": true, "role": "Lipid phase; streamed in last to build the emulsion." },
-        { "id": "A.02", "name": "Vinegar (red, white, white balsamic, or sherry)", "volume": "1/4 cup", "mass": 60, "pct": 55.56, "estimated": true, "role": "Primary acid. Any vinegar works — this is the flexible axis." },
-        { "id": "A.03", "name": "Dijon Mustard", "volume": "1 tbsp", "mass": 15, "pct": 13.89, "estimated": true, "role": "Emulsifier; the lecithin that holds oil and acid together." },
-        { "id": "A.04", "name": "Fresh Lemon Juice", "volume": "1 tbsp", "mass": 15, "pct": 13.89, "estimated": true, "role": "Secondary acid; adds a brighter top note than vinegar alone." },
-        { "id": "A.05", "name": "Sugar", "volume": "1/2 tsp", "mass": 2, "pct": 1.85, "estimated": true, "role": "Rounds the acid edge." },
-        { "id": "A.06", "name": "Fresh Chopped Herbs (parsley, chives, tarragon, dill, basil)", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Whatever is on hand — the second flexible axis." },
-        { "id": "A.07", "name": "Salt and Pepper", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Seasoning." }
+        {
+          "id": "A.01",
+          "name": "Neutral or Olive Oil",
+          "volume": "1/2 cup",
+          "mass": 108,
+          "pct": 100.0,
+          "baseline": true,
+          "estimated": true,
+          "role": "Lipid phase; streamed in last to build the emulsion."
+        },
+        {
+          "id": "A.02",
+          "name": "Vinegar (red, white, white balsamic, or sherry)",
+          "volume": "1/4 cup",
+          "mass": 60,
+          "pct": 55.56,
+          "estimated": true,
+          "role": "Primary acid. Any vinegar works — this is the flexible axis."
+        },
+        {
+          "id": "A.03",
+          "name": "Dijon Mustard",
+          "volume": "1 tbsp",
+          "mass": 15,
+          "pct": 13.89,
+          "estimated": true,
+          "role": "Emulsifier; the lecithin that holds oil and acid together."
+        },
+        {
+          "id": "A.04",
+          "name": "Fresh Lemon Juice",
+          "volume": "1 tbsp",
+          "mass": 15,
+          "pct": 13.89,
+          "estimated": true,
+          "role": "Secondary acid; adds a brighter top note than vinegar alone."
+        },
+        {
+          "id": "A.05",
+          "name": "Sugar",
+          "volume": "1/2 tsp",
+          "mass": 2,
+          "pct": 1.85,
+          "estimated": true,
+          "role": "Rounds the acid edge."
+        },
+        {
+          "id": "A.06",
+          "name": "Fresh Chopped Herbs (parsley, chives, tarragon, dill, basil)",
+          "volume": "to taste",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Whatever is on hand — the second flexible axis."
+        },
+        {
+          "id": "A.07",
+          "name": "Salt and Pepper",
+          "volume": "to taste",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Seasoning."
+        }
       ]
     },
     {
       "title": "2. Lemon-Dijon",
       "intro": "Interchangeable with the All-Purpose, but reach for it when you want brightness without adding much flavor of its own. Vegan if you swap sugar for the honey.",
       "rows": [
-        { "id": "B.01", "name": "Olive Oil", "volume": "1/3 cup", "mass": 72, "pct": 100.0, "estimated": true, "role": "Lipid phase." },
-        { "id": "B.02", "name": "Fresh Lemon Juice", "volume": "1/4 cup (about 1 1/2 lemons)", "mass": 60, "pct": 83.33, "estimated": true, "role": "Sole acid; the point of the dressing." },
-        { "id": "B.03", "name": "Dijon Mustard", "volume": "1 1/2 tsp", "mass": 7.5, "pct": 10.42, "estimated": true, "role": "Emulsifier." },
-        { "id": "B.04", "name": "Honey", "volume": "1 1/2 tsp", "mass": 10.5, "pct": 14.58, "estimated": true, "role": "Balances the high lemon load." },
-        { "id": "B.05", "name": "Salt and Pepper", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Seasoning." }
+        {
+          "id": "B.01",
+          "name": "Olive Oil",
+          "volume": "1/3 cup",
+          "mass": 72,
+          "pct": 100.0,
+          "estimated": true,
+          "role": "Lipid phase."
+        },
+        {
+          "id": "B.02",
+          "name": "Fresh Lemon Juice",
+          "volume": "1/4 cup (about 1 1/2 lemons)",
+          "mass": 60,
+          "pct": 83.33,
+          "estimated": true,
+          "role": "Sole acid; the point of the dressing."
+        },
+        {
+          "id": "B.03",
+          "name": "Dijon Mustard",
+          "volume": "1 1/2 tsp",
+          "mass": 7.5,
+          "pct": 10.42,
+          "estimated": true,
+          "role": "Emulsifier."
+        },
+        {
+          "id": "B.04",
+          "name": "Honey",
+          "volume": "1 1/2 tsp",
+          "mass": 10.5,
+          "pct": 14.58,
+          "estimated": true,
+          "role": "Balances the high lemon load."
+        },
+        {
+          "id": "B.05",
+          "name": "Salt and Pepper",
+          "volume": "to taste",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Seasoning."
+        }
       ]
     },
     {
       "title": "3. Sesame-Soy Dressing",
       "intro": "Best on slaws, where the job is cutting richness. Add chives, cilantro, or dill freely. Substitute tamari for the soy sauce to make it gluten-free. Vegan.",
       "rows": [
-        { "id": "C.01", "name": "Grapeseed or Other Neutral Oil", "volume": "1/3 cup", "mass": 72, "pct": 100.0, "estimated": true, "role": "Lipid phase; neutral so the sesame reads clearly." },
-        { "id": "C.02", "name": "Rice Wine Vinegar", "volume": "1/3 cup", "mass": 80, "pct": 111.11, "estimated": true, "role": "Primary acid; unusually high ratio, which is what makes this one bright." },
-        { "id": "C.03", "name": "Soy Sauce (or tamari)", "volume": "2 tbsp", "mass": 30, "pct": 41.67, "estimated": true, "role": "Salt and umami backbone." },
-        { "id": "C.04", "name": "Minced Shallot or Scallions", "volume": "2 tbsp", "mass": 20, "pct": 27.78, "estimated": true, "role": "Aromatic body." },
-        { "id": "C.05", "name": "Toasted Sesame Oil", "volume": "1 tsp", "mass": 4.5, "pct": 6.25, "estimated": true, "role": "Aromatic finishing oil — not a structural fat." },
-        { "id": "C.06", "name": "Brown Sugar", "volume": "pinch", "massText": "Pinch", "pctText": "—", "role": "Balances the soy salt." },
-        { "id": "C.07", "name": "Fresh Lime Juice", "volume": "squeeze", "massText": "To taste", "pctText": "—", "role": "Final lift." }
+        {
+          "id": "C.01",
+          "name": "Grapeseed or Other Neutral Oil",
+          "volume": "1/3 cup",
+          "mass": 72,
+          "pct": 100.0,
+          "estimated": true,
+          "role": "Lipid phase; neutral so the sesame reads clearly."
+        },
+        {
+          "id": "C.02",
+          "name": "Rice Wine Vinegar",
+          "volume": "1/3 cup",
+          "mass": 80,
+          "pct": 111.11,
+          "estimated": true,
+          "role": "Primary acid; unusually high ratio, which is what makes this one bright."
+        },
+        {
+          "id": "C.03",
+          "name": "Soy Sauce (or tamari)",
+          "volume": "2 tbsp",
+          "mass": 30,
+          "pct": 41.67,
+          "estimated": true,
+          "role": "Salt and umami backbone."
+        },
+        {
+          "id": "C.04",
+          "name": "Minced Shallot or Scallions",
+          "volume": "2 tbsp",
+          "mass": 20,
+          "pct": 27.78,
+          "estimated": true,
+          "role": "Aromatic body."
+        },
+        {
+          "id": "C.05",
+          "name": "Toasted Sesame Oil",
+          "volume": "1 tsp",
+          "mass": 4.5,
+          "pct": 6.25,
+          "estimated": true,
+          "role": "Aromatic finishing oil — not a structural fat."
+        },
+        {
+          "id": "C.06",
+          "name": "Brown Sugar",
+          "volume": "pinch",
+          "massText": "Pinch",
+          "pctText": "—",
+          "role": "Balances the soy salt."
+        },
+        {
+          "id": "C.07",
+          "name": "Fresh Lime Juice",
+          "volume": "squeeze",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Final lift."
+        }
       ]
     },
     {
       "title": "4. Classic Caesar",
       "intro": "Drizzle on any salad, not just a Caesar. Mayonnaise replaces the traditional raw egg. For a stronger version, increase garlic to two cloves and anchovies to three fillets.",
       "rows": [
-        { "id": "D.01", "name": "Olive Oil", "volume": "1/4 cup", "mass": 54, "pct": 100.0, "estimated": true, "role": "Lipid phase." },
-        { "id": "D.02", "name": "Mayonnaise", "volume": "2 tbsp", "mass": 28, "pct": 51.85, "estimated": true, "role": "Pre-made emulsion standing in for raw egg yolk." },
-        { "id": "D.03", "name": "Parmesan, finely grated", "volume": "1/4 cup", "mass": 25, "pct": 46.30, "estimated": true, "role": "Salt, umami, and body." },
-        { "id": "D.04", "name": "Fresh Lemon Juice", "volume": "1 tbsp", "mass": 15, "pct": 27.78, "estimated": true, "role": "Acid." },
-        { "id": "D.05", "name": "Red Wine Vinegar", "volume": "1 tbsp", "mass": 15, "pct": 27.78, "estimated": true, "role": "Second acid; sharper than lemon alone." },
-        { "id": "D.06", "name": "Anchovy Fillet, drained", "volume": "1 fillet", "mass": 4, "pct": 7.41, "estimated": true, "role": "Umami depth." },
-        { "id": "D.07", "name": "Garlic, minced", "volume": "1 small clove", "mass": 3, "pct": 5.56, "estimated": true, "role": "Aromatic." },
-        { "id": "D.08", "name": "Salt and Pepper", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Seasoning." }
+        {
+          "id": "D.01",
+          "name": "Olive Oil",
+          "volume": "1/4 cup",
+          "mass": 54,
+          "pct": 100.0,
+          "estimated": true,
+          "role": "Lipid phase."
+        },
+        {
+          "id": "D.02",
+          "name": "Mayonnaise",
+          "volume": "2 tbsp",
+          "mass": 28,
+          "pct": 51.85,
+          "estimated": true,
+          "role": "Pre-made emulsion standing in for raw egg yolk."
+        },
+        {
+          "id": "D.03",
+          "name": "Parmesan, finely grated",
+          "volume": "1/4 cup",
+          "mass": 25,
+          "pct": 46.3,
+          "estimated": true,
+          "role": "Salt, umami, and body."
+        },
+        {
+          "id": "D.04",
+          "name": "Fresh Lemon Juice",
+          "volume": "1 tbsp",
+          "mass": 15,
+          "pct": 27.78,
+          "estimated": true,
+          "role": "Acid."
+        },
+        {
+          "id": "D.05",
+          "name": "Red Wine Vinegar",
+          "volume": "1 tbsp",
+          "mass": 15,
+          "pct": 27.78,
+          "estimated": true,
+          "role": "Second acid; sharper than lemon alone."
+        },
+        {
+          "id": "D.06",
+          "name": "Anchovy Fillet, drained",
+          "volume": "1 fillet",
+          "mass": 4,
+          "pct": 7.41,
+          "estimated": true,
+          "role": "Umami depth."
+        },
+        {
+          "id": "D.07",
+          "name": "Garlic, minced",
+          "volume": "1 small clove",
+          "mass": 3,
+          "pct": 5.56,
+          "estimated": true,
+          "role": "Aromatic."
+        },
+        {
+          "id": "D.08",
+          "name": "Salt and Pepper",
+          "volume": "to taste",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Seasoning."
+        }
       ]
     },
     {
       "title": "5. Creamy Herby Green Dressing",
       "intro": "Worth the blender. Best when herbs are abundant. Try it over roasted beets or broccoli, or alongside grilled fish. Vegan if you replace the yogurt with a slightly smaller quantity of cashew cream (about 1/3 cup).",
       "rows": [
-        { "id": "E.01", "name": "Plain Yogurt", "volume": "1/2 cup", "mass": 122, "pct": 100.0, "estimated": true, "role": "Creamy base; the structural phase in place of a pure oil emulsion." },
-        { "id": "E.02", "name": "Avocado", "volume": "1/2 medium", "mass": 100, "pct": 81.97, "estimated": true, "role": "Body and richness; carries the green color." },
-        { "id": "E.03", "name": "Olive Oil", "volume": "1/4 cup", "mass": 54, "pct": 44.26, "estimated": true, "role": "Lipid phase." },
-        { "id": "E.04", "name": "Scallions (light green and white parts), chopped", "volume": "3 units", "mass": 45, "pct": 36.89, "estimated": true, "role": "Aromatic." },
-        { "id": "E.05", "name": "Parsley, roughly chopped", "volume": "1/2 cup", "mass": 30, "pct": 24.59, "estimated": true, "role": "Primary herb." },
-        { "id": "E.06", "name": "White Wine Vinegar", "volume": "2 tbsp", "mass": 30, "pct": 24.59, "estimated": true, "role": "Acid." },
-        { "id": "E.07", "name": "Water", "volume": "~2 tbsp", "mass": 30, "pct": 24.59, "estimated": true, "role": "Consistency control; add 1 tbsp at a time until pourable." },
-        { "id": "E.08", "name": "Chives, roughly chopped", "volume": "2 tbsp", "mass": 6, "pct": 4.92, "estimated": true, "role": "Secondary herb." },
-        { "id": "E.09", "name": "Honey or Sugar", "volume": "squeeze / 1 tsp", "mass": 7, "pct": 5.74, "estimated": true, "role": "Balance." },
-        { "id": "E.10", "name": "Salt and Pepper", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Seasoning." }
+        {
+          "id": "E.01",
+          "name": "Plain Yogurt",
+          "volume": "1/2 cup",
+          "mass": 122,
+          "pct": 100.0,
+          "estimated": true,
+          "role": "Creamy base; the structural phase in place of a pure oil emulsion."
+        },
+        {
+          "id": "E.02",
+          "name": "Avocado",
+          "volume": "1/2 medium",
+          "mass": 100,
+          "pct": 81.97,
+          "estimated": true,
+          "role": "Body and richness; carries the green color."
+        },
+        {
+          "id": "E.03",
+          "name": "Olive Oil",
+          "volume": "1/4 cup",
+          "mass": 54,
+          "pct": 44.26,
+          "estimated": true,
+          "role": "Lipid phase."
+        },
+        {
+          "id": "E.04",
+          "name": "Scallions (light green and white parts), chopped",
+          "volume": "3 units",
+          "mass": 45,
+          "pct": 36.89,
+          "estimated": true,
+          "role": "Aromatic."
+        },
+        {
+          "id": "E.05",
+          "name": "Parsley, roughly chopped",
+          "volume": "1/2 cup",
+          "mass": 30,
+          "pct": 24.59,
+          "estimated": true,
+          "role": "Primary herb."
+        },
+        {
+          "id": "E.06",
+          "name": "White Wine Vinegar",
+          "volume": "2 tbsp",
+          "mass": 30,
+          "pct": 24.59,
+          "estimated": true,
+          "role": "Acid."
+        },
+        {
+          "id": "E.07",
+          "name": "Water",
+          "volume": "~2 tbsp",
+          "mass": 30,
+          "pct": 24.59,
+          "estimated": true,
+          "role": "Consistency control; add 1 tbsp at a time until pourable."
+        },
+        {
+          "id": "E.08",
+          "name": "Chives, roughly chopped",
+          "volume": "2 tbsp",
+          "mass": 6,
+          "pct": 4.92,
+          "estimated": true,
+          "role": "Secondary herb."
+        },
+        {
+          "id": "E.09",
+          "name": "Honey or Sugar",
+          "volume": "squeeze / 1 tsp",
+          "mass": 7,
+          "pct": 5.74,
+          "estimated": true,
+          "role": "Balance."
+        },
+        {
+          "id": "E.10",
+          "name": "Salt and Pepper",
+          "volume": "to taste",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Seasoning."
+        }
       ]
     }
   ],
   "matrixFootnote": "*These formulations are given entirely in volumetric kitchen units in the source. All gram values are standard culinary conversions and are marked accordingly; none are source-stated weights. Percentages are calculated within each dressing against its own lipid or dairy base, not across formulations.",
   "executionTitle": "II. Method",
   "execution": [
-    { "name": "Shaken Vinaigrettes (1, 2, 3)", "params": "~2 min | Jar or measuring cup", "text": "In a small jar or measuring cup, shake or whisk together everything except the oil until the salt and any sugar have fully dissolved. Then shake or whisk the oil into the jar in a steady stream until emulsified. Adding the oil last and gradually is what separates a stable dressing from one that splits on the plate." },
-    { "name": "Blended Caesar (4)", "params": "~1 min | Blender or food processor", "text": "Purée the garlic, anchovy, lemon juice, red wine vinegar, olive oil, mayonnaise, Parmesan, salt, and pepper until smooth." },
-    { "name": "Blended Green (5)", "params": "~2 min | Blender", "text": "Add the yogurt, parsley, chives, white wine vinegar, avocado, olive oil, scallions, honey, salt, pepper, and about 2 tbsp of water to a blender. Process until creamy but not too thick, and pourable — keeping in mind you may have to add more water, one tablespoon at a time." }
+    {
+      "name": "Shaken Vinaigrettes (1, 2, 3)",
+      "params": "~2 min | Jar or measuring cup",
+      "text": "In a small jar or measuring cup, shake or whisk together everything except the oil until the salt and any sugar have fully dissolved. Then shake or whisk the oil into the jar in a steady stream until emulsified. Adding the oil last and gradually is what separates a stable dressing from one that splits on the plate."
+    },
+    {
+      "name": "Blended Caesar (4)",
+      "params": "~1 min | Blender or food processor",
+      "text": "Purée the garlic, anchovy, lemon juice, red wine vinegar, olive oil, mayonnaise, Parmesan, salt, and pepper until smooth."
+    },
+    {
+      "name": "Blended Green (5)",
+      "params": "~2 min | Blender",
+      "text": "Add the yogurt, parsley, chives, white wine vinegar, avocado, olive oil, scallions, honey, salt, pepper, and about 2 tbsp of water to a blender. Process until creamy but not too thick, and pourable — keeping in mind you may have to add more water, one tablespoon at a time."
+    }
   ],
   "directive": "For the three shaken vinaigrettes, dissolve the salt in the acid phase before any oil goes in. Salt will not dissolve into an established emulsion, and undissolved crystals read as harsh grit on the greens."
 }

@@ -2,7 +2,15 @@
   "slug": "crispy-roast-potatoes",
   "title": "The Best Crispy Roast Potatoes Ever",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Sides", "American", "Vegetarian", "Vegan", "Gluten-Free", "Roasting", "Favorites"],
+  "tags": [
+    "Sides",
+    "American",
+    "Vegetarian",
+    "Vegan",
+    "Gluten-Free",
+    "Roasting",
+    "Favorites"
+  ],
   "meta": {
     "projectId": "#01-16",
     "version": "1.0",
@@ -20,29 +28,126 @@
   "formulations": [
     {
       "rows": [
-        { "id": "A.01", "name": "Russet or Yukon Gold Potatoes", "volume": "4 lb", "mass": 1814.4, "pct": 100.0, "baseline": true, "role": "Peeled, cut into quarters, sixths, or eighths (2–3 in. chunks)." },
-        { "id": "B.01", "name": "Kosher Salt (boiling water)", "volume": "2 tbsp (~1 oz)", "mass": 25.0, "pct": 1.38, "role": "Seasons potato interior during simmer; dissolved in boiling water prior to potato addition." },
-        { "id": "B.02", "name": "Baking Soda", "volume": "1/2 tsp", "mass": 4.0, "pct": 0.22, "role": "Alkalizes boiling water to accelerate pectin breakdown, generating starchy exterior slurry for maximum crust." },
-        { "id": "C.01", "name": "Extra-Virgin Olive Oil, Duck Fat, Goose Fat, or Beef Fat", "volume": "5 tbsp (75 ml)", "mass": 68.3, "pct": 3.76, "role": "Carrier fat for aromatic infusion and roasting medium; drives crust crispness and flavor." },
-        { "id": "C.02", "name": "Fresh Rosemary Leaves, finely chopped", "volume": "Small handful", "mass": 4.5, "pct": 0.25, "estimated": true, "role": "Aromatic; infused into carrier oil, then reserved and folded back in at finish." },
-        { "id": "C.03", "name": "Garlic, minced", "volume": "3 medium cloves", "mass": 15.0, "pct": 0.83, "role": "Aromatic; infused into carrier oil until just golden, then reserved and folded back in at finish." },
-        { "id": "D.01", "name": "Freshly Ground Black Pepper", "volume": "To taste", "mass": 0.5, "pct": 0.03, "estimated": true, "role": "Seasoning; added to infusion oil and again to taste at final toss." },
-        { "id": "D.02", "name": "Fresh Parsley Leaves, minced", "volume": "Small handful", "mass": 3.5, "pct": 0.19, "estimated": true, "role": "Finishing aromatic; folded in raw at the very end for fresh, unmuted flavor." }
+        {
+          "id": "A.01",
+          "name": "Russet or Yukon Gold Potatoes",
+          "volume": "4 lb",
+          "mass": 1814.4,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Peeled, cut into quarters, sixths, or eighths (2–3 in. chunks)."
+        },
+        {
+          "id": "B.01",
+          "name": "Kosher Salt (boiling water)",
+          "volume": "2 tbsp (~1 oz)",
+          "mass": 25.0,
+          "pct": 1.38,
+          "role": "Seasons potato interior during simmer; dissolved in boiling water prior to potato addition."
+        },
+        {
+          "id": "B.02",
+          "name": "Baking Soda",
+          "volume": "1/2 tsp",
+          "mass": 4.0,
+          "pct": 0.22,
+          "role": "Alkalizes boiling water to accelerate pectin breakdown, generating starchy exterior slurry for maximum crust."
+        },
+        {
+          "id": "C.01",
+          "name": "Extra-Virgin Olive Oil",
+          "volume": "5 tbsp (75 ml)",
+          "mass": 68.3,
+          "pct": 3.76,
+          "role": "Carrier fat for aromatic infusion and roasting medium; drives crust crispness and flavor. The source also permits duck, goose, or beef fat — see Alternatives."
+        },
+        {
+          "id": "C.02",
+          "name": "Fresh Rosemary Leaves, finely chopped",
+          "volume": "Small handful",
+          "mass": 4.5,
+          "pct": 0.25,
+          "estimated": true,
+          "role": "Aromatic; infused into carrier oil, then reserved and folded back in at finish."
+        },
+        {
+          "id": "C.03",
+          "name": "Garlic, minced",
+          "volume": "3 medium cloves",
+          "mass": 15.0,
+          "pct": 0.83,
+          "role": "Aromatic; infused into carrier oil until just golden, then reserved and folded back in at finish."
+        },
+        {
+          "id": "D.01",
+          "name": "Freshly Ground Black Pepper",
+          "volume": "To taste",
+          "mass": 0.5,
+          "pct": 0.03,
+          "estimated": true,
+          "role": "Seasoning; added to infusion oil and again to taste at final toss."
+        },
+        {
+          "id": "D.02",
+          "name": "Fresh Parsley Leaves, minced",
+          "volume": "Small handful",
+          "mass": 3.5,
+          "pct": 0.19,
+          "estimated": true,
+          "role": "Finishing aromatic; folded in raw at the very end for fresh, unmuted flavor."
+        }
       ],
-      "total": { "mass": 1931.2, "pct": 106.5, "estimated": true, "role": "Combined raw material input footprint." }
+      "total": {
+        "mass": 1935.2,
+        "pct": 106.66,
+        "estimated": true,
+        "role": "Combined raw material input footprint."
+      }
     }
   ],
   "matrixFootnote": "*Rosemary, black pepper, and parsley quantities are not given as precise weights in the source article (\"small handful,\" \"few grinds,\" \"to taste\"). Gram values shown are standard culinary estimates for the stated volumes and are marked accordingly; all other masses are either stated directly in the source or derived by standard unit conversion from source-stated volumes.",
   "mise": [
-    { "label": "Potato Cut", "text": "Peel A.01 and cut into large chunks — quarters, sixths, or eighths depending on potato size — targeting 2 to 3 inches per piece. Larger chunks maximize the crisp-exterior-to-creamy-interior contrast; uniform sizing across the batch ensures even cook-through." },
-    { "label": "Aromatic Prep", "text": "Finely chop C.02 (rosemary) and mince C.03 (garlic). Mince D.02 (parsley) separately; reserve for finishing only — it is not cooked." }
+    {
+      "label": "Potato Cut",
+      "text": "Peel A.01 and cut into large chunks — quarters, sixths, or eighths depending on potato size — targeting 2 to 3 inches per piece. Larger chunks maximize the crisp-exterior-to-creamy-interior contrast; uniform sizing across the batch ensures even cook-through."
+    },
+    {
+      "label": "Aromatic Prep",
+      "text": "Finely chop C.02 (rosemary) and mince C.03 (garlic). Mince D.02 (parsley) separately; reserve for finishing only — it is not cooked."
+    }
   ],
   "execution": [
-    { "name": "Boil & Break Down", "params": "~10 min after return to boil | Rolling simmer", "text": "Adjust oven rack to center position; preheat to 450°F (230°C), or 400°F (200°C) with convection. Bring 2 quarts (2 L) water to a boil in a large pot. Add B.01 and B.02, stir, then add A.01. Return to a boil, reduce to a simmer, and cook until a knife meets little resistance, approximately 10 minutes after returning to boil." },
-    { "name": "Infuse Aromatic Oil", "params": "~3 min | Medium heat", "text": "Concurrent with Step 1: combine C.01, C.02, C.03, and a few grinds of D.01 in a small saucepan over medium heat. Cook, stirring and shaking constantly, until garlic just turns golden — about 3 minutes. Immediately strain through a fine-mesh strainer into a large bowl, separating the infused oil from the solids. Reserve the garlic/rosemary solids separately." },
-    { "name": "Drain & Rough Up", "params": "~30 sec rest | Off heat", "text": "Drain potatoes carefully and let rest in the pot for approximately 30 seconds to evaporate excess surface moisture. Transfer to the bowl of infused oil, season to taste with additional salt and pepper, and toss to coat — shaking the bowl roughly until a thick, mashed-potato-like starchy paste builds up across the potato exteriors. This roughed-up surface is what crisps in the oven." },
-    { "name": "Roast", "params": "50–60 min total | 450°F / 230°C, or 400°F / 200°C convection", "text": "Spread potatoes in a single, separated layer on a large rimmed baking sheet. Roast without moving for 20 minutes. Using a thin, flexible metal spatula, release any stuck potatoes, then shake the pan and flip. Continue roasting 30–40 minutes longer, turning and shaking a few times, until potatoes are deep brown and crisp on all sides. Visual and textural monitoring takes precedence over the timer — sugar and starch content vary by potato batch and affect browning speed." },
-    { "name": "Finish & Serve", "params": "Immediate | Off heat", "text": "Transfer roasted potatoes to a large bowl. Add reserved garlic/rosemary solids and D.02 (minced parsley). Toss to coat and season with additional salt and pepper to taste. Serve immediately." }
+    {
+      "name": "Boil & Break Down",
+      "params": "~10 min after return to boil | Rolling simmer",
+      "text": "Adjust oven rack to center position; preheat to 450°F (230°C), or 400°F (200°C) with convection. Bring 2 quarts (2 L) water to a boil in a large pot. Add B.01 and B.02, stir, then add A.01. Return to a boil, reduce to a simmer, and cook until a knife meets little resistance, approximately 10 minutes after returning to boil."
+    },
+    {
+      "name": "Infuse Aromatic Oil",
+      "params": "~3 min | Medium heat",
+      "text": "Concurrent with Step 1: combine C.01, C.02, C.03, and a few grinds of D.01 in a small saucepan over medium heat. Cook, stirring and shaking constantly, until garlic just turns golden — about 3 minutes. Immediately strain through a fine-mesh strainer into a large bowl, separating the infused oil from the solids. Reserve the garlic/rosemary solids separately."
+    },
+    {
+      "name": "Drain & Rough Up",
+      "params": "~30 sec rest | Off heat",
+      "text": "Drain potatoes carefully and let rest in the pot for approximately 30 seconds to evaporate excess surface moisture. Transfer to the bowl of infused oil, season to taste with additional salt and pepper, and toss to coat — shaking the bowl roughly until a thick, mashed-potato-like starchy paste builds up across the potato exteriors. This roughed-up surface is what crisps in the oven."
+    },
+    {
+      "name": "Roast",
+      "params": "50–60 min total | 450°F / 230°C, or 400°F / 200°C convection",
+      "text": "Spread potatoes in a single, separated layer on a large rimmed baking sheet. Roast without moving for 20 minutes. Using a thin, flexible metal spatula, release any stuck potatoes, then shake the pan and flip. Continue roasting 30–40 minutes longer, turning and shaking a few times, until potatoes are deep brown and crisp on all sides. Visual and textural monitoring takes precedence over the timer — sugar and starch content vary by potato batch and affect browning speed."
+    },
+    {
+      "name": "Finish & Serve",
+      "params": "Immediate | Off heat",
+      "text": "Transfer roasted potatoes to a large bowl. Add reserved garlic/rosemary solids and D.02 (minced parsley). Toss to coat and season with additional salt and pepper to taste. Serve immediately."
+    }
   ],
-  "directive": "Fold raw parsley (D.02) in only at the final toss, off heat — never during roasting. Garlic and rosemary solids must be infused into oil and reserved separately (Step 2), never roasted directly on the potato surface; direct high-heat exposure scorches raw aromatics and produces an acrid flavor."
+  "directive": "Fold raw parsley (D.02) in only at the final toss, off heat — never during roasting. Garlic and rosemary solids must be infused into oil and reserved separately (Step 2), never roasted directly on the potato surface; direct high-heat exposure scorches raw aromatics and produces an acrid flavor.",
+  "alternatives": [
+    {
+      "label": "Carrier fat (C.01):",
+      "text": "The source permits duck fat, goose fat, or beef fat in place of extra-virgin olive oil, substituted 1:1 by mass. Any of these makes the recipe no longer vegan or vegetarian."
+    }
+  ]
 }

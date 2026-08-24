@@ -2,7 +2,14 @@
   "slug": "senegalese-black-eyed-pea-salad",
   "title": "Senegalese Black-Eyed Pea Salad (Saladou Niébé)",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Salads", "Senegalese", "Vegan", "Vegetarian", "No-Cook", "Meal Prep"],
+  "tags": [
+    "Salads",
+    "Senegalese",
+    "Vegan",
+    "Vegetarian",
+    "No-Cook",
+    "Meal Prep"
+  ],
   "meta": {
     "projectId": "#SN-01",
     "version": "1.0",
@@ -14,34 +21,143 @@
   "formulations": [
     {
       "rows": [
-        { "id": "A.01", "name": "Cooked Black-Eyed Peas", "volume": "2 cups", "mass": 400.0, "pct": 100.0, "baseline": true, "role": "Primary foundational ingredient; locks baseline mass." },
-        { "id": "B.01", "name": "Red Onion", "volume": "1 small", "mass": 100.0, "pct": 25.0, "role": "Sharp aromatic profile, savory crunch, and color contrast." },
-        { "id": "B.02", "name": "Red Bell Pepper", "volume": "1 medium", "mass": 150.0, "pct": 37.5, "role": "Crisp sweet element, structural body, and visual inclusion." },
-        { "id": "B.03", "name": "Green Bell Pepper", "volume": "1 medium", "mass": 150.0, "pct": 37.5, "role": "Crisp vegetal element, balanced bitterness, and color contrast." },
-        { "id": "B.04", "name": "Fresh Lime Juice", "volume": "1/4 cup", "mass": 60.0, "pct": 15.0, "role": "Acid profile; denatures raw onions and brightens overall profile." },
-        { "id": "B.05", "name": "Extra-Virgin Olive Oil", "volume": "1/4 cup", "mass": 55.0, "pct": 13.75, "role": "Lipid vehicle; rich mouthfeel coat and suspension base for dressing." },
-        { "id": "B.06", "name": "Kosher Salt", "volume": "1 tsp", "mass": 5.0, "pct": 1.25, "role": "Primary electrolyte seasoning; flavor enhancer and cell wall softener." },
-        { "id": "B.07", "name": "Black Pepper", "volume": "1/2 tsp", "mass": 2.0, "pct": 0.5, "role": "Secondary warming spice profile; subtle pungent top note." },
-        { "id": "C.01", "name": "Fresh Flat-Leaf Parsley", "volume": "1/2 cup", "mass": 15.0, "pct": 3.75, "role": "Finishing herb bed; provides clean, earthy chlorophyll notes." },
-        { "id": "C.02", "name": "Bird's Eye Chili (Optional)", "volume": "1 small", "mass": 2.0, "pct": 0.5, "role": "Optional heat modifier; introduces localized capsicum spikes." }
+        {
+          "id": "A.01",
+          "name": "Cooked Black-Eyed Peas",
+          "volume": "2 cups",
+          "mass": 400.0,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Primary foundational ingredient; locks baseline mass."
+        },
+        {
+          "id": "B.01",
+          "name": "Red Onion",
+          "volume": "1 small",
+          "mass": 100.0,
+          "pct": 25.0,
+          "role": "Sharp aromatic profile, savory crunch, and color contrast."
+        },
+        {
+          "id": "B.02",
+          "name": "Red Bell Pepper",
+          "volume": "1 medium",
+          "mass": 150.0,
+          "pct": 37.5,
+          "role": "Crisp sweet element, structural body, and visual inclusion."
+        },
+        {
+          "id": "B.03",
+          "name": "Green Bell Pepper",
+          "volume": "1 medium",
+          "mass": 150.0,
+          "pct": 37.5,
+          "role": "Crisp vegetal element, balanced bitterness, and color contrast."
+        },
+        {
+          "id": "B.04",
+          "name": "Fresh Lime Juice",
+          "volume": "1/4 cup",
+          "mass": 60.0,
+          "pct": 15.0,
+          "role": "Acid profile; denatures raw onions and brightens overall profile."
+        },
+        {
+          "id": "B.05",
+          "name": "Extra-Virgin Olive Oil",
+          "volume": "1/4 cup",
+          "mass": 55.0,
+          "pct": 13.75,
+          "role": "Lipid vehicle; rich mouthfeel coat and suspension base for dressing."
+        },
+        {
+          "id": "B.06",
+          "name": "Kosher Salt",
+          "volume": "1 tsp",
+          "mass": 5.0,
+          "pct": 1.25,
+          "role": "Primary electrolyte seasoning; flavor enhancer and cell wall softener."
+        },
+        {
+          "id": "B.07",
+          "name": "Black Pepper",
+          "volume": "1/2 tsp",
+          "mass": 2.0,
+          "pct": 0.5,
+          "role": "Secondary warming spice profile; subtle pungent top note."
+        },
+        {
+          "id": "C.01",
+          "name": "Fresh Flat-Leaf Parsley",
+          "volume": "1/2 cup",
+          "mass": 15.0,
+          "pct": 3.75,
+          "role": "Finishing herb bed; provides clean, earthy chlorophyll notes."
+        },
+        {
+          "id": "C.02",
+          "name": "Bird's Eye Chili (Optional)",
+          "volume": "1 small",
+          "mass": 2.0,
+          "pct": 0.5,
+          "role": "Optional heat modifier; introduces localized capsicum spikes."
+        }
       ],
-      "total": { "mass": 939.0, "pct": 234.3, "role": "Combined raw material input footprint." }
+      "total": {
+        "mass": 939.0,
+        "pct": 234.75,
+        "role": "Combined raw material input footprint."
+      }
     }
   ],
   "mise": [
-    { "label": "Substrate Hydration & Cooling (A.01)", "text": "Ensure cooked black-eyed peas are completely cooled to room temperature, thoroughly rinsed under cold water, and entirely drained of excess unbound moisture to prevent starch bleeding." },
-    { "label": "Uniform Vegetable Dicing (B.01–B.03)", "text": "Core, seed, and finely dice the red and green bell peppers to a uniform 1/4\" specification to precisely match the physical geometry of the black-eyed peas. Finely dice the red onion to a matching profile." },
-    { "label": "Herb Comminution (C.01)", "text": "Wash, spin dry completely, and finely chop flat-leaf parsley, isolating leaf tissue and discarding thick structural stems." },
-    { "label": "Citrus Extraction (B.04)", "text": "Express fresh lime juice mechanically, filtering out internal pulp and seeds to maintain a completely clear liquid state." }
+    {
+      "label": "Substrate Hydration & Cooling (A.01)",
+      "text": "Ensure cooked black-eyed peas are completely cooled to room temperature, thoroughly rinsed under cold water, and entirely drained of excess unbound moisture to prevent starch bleeding."
+    },
+    {
+      "label": "Uniform Vegetable Dicing (B.01–B.03)",
+      "text": "Core, seed, and finely dice the red and green bell peppers to a uniform 1/4\" specification to precisely match the physical geometry of the black-eyed peas. Finely dice the red onion to a matching profile."
+    },
+    {
+      "label": "Herb Comminution (C.01)",
+      "text": "Wash, spin dry completely, and finely chop flat-leaf parsley, isolating leaf tissue and discarding thick structural stems."
+    },
+    {
+      "label": "Citrus Extraction (B.04)",
+      "text": "Express fresh lime juice mechanically, filtering out internal pulp and seeds to maintain a completely clear liquid state."
+    }
   ],
   "execution": [
-    { "name": "Base Amalgamation", "params": "2–3 min | Ambient", "text": "In a clean, non-reactive stainless steel mixing vessel, combine the cooled black-eyed peas (A.01), diced red onion (B.01), red bell pepper (B.02), green bell pepper (B.03), and chopped parsley (C.01). If using the optional bird's eye chili (C.02), incorporate it at this step. Toss gently with a silicone spatula to achieve homogenous distribution without marring the exterior skins of the legumes." },
-    { "name": "Dressing Emulsification", "params": "1–2 min | Manual whisk", "text": "In a separate glass or stainless bowl, combine the fresh lime juice (B.04), kosher salt (B.06), and black pepper (B.07). Whisk vigorously until the salt crystals are entirely dissolved in the acid phase. While continuing to whisk, slowly stream in the extra-virgin olive oil (B.05) to create a temporary uniform suspension." },
-    { "name": "Matrix Integration & Curing Wait-State", "params": "30 min | 34–40°F / Refrigerated", "text": "Pour the whisked dressing immediately over the base amalgamation. Fold the salad delicately using an under-and-over sweeping motion to fully coat all component surfaces without crushing the ingredients. Seal the vessel with an airtight lid and transfer to cold storage for a minimum 30-minute marination wait state to permit osmotic flavor equilibration. Give it a brief toss right before serving." }
+    {
+      "name": "Base Amalgamation",
+      "params": "2–3 min | Ambient",
+      "text": "In a clean, non-reactive stainless steel mixing vessel, combine the cooled black-eyed peas (A.01), diced red onion (B.01), red bell pepper (B.02), green bell pepper (B.03), and chopped parsley (C.01). If using the optional bird's eye chili (C.02), incorporate it at this step. Toss gently with a silicone spatula to achieve homogenous distribution without marring the exterior skins of the legumes."
+    },
+    {
+      "name": "Dressing Emulsification",
+      "params": "1–2 min | Manual whisk",
+      "text": "In a separate glass or stainless bowl, combine the fresh lime juice (B.04), kosher salt (B.06), and black pepper (B.07). Whisk vigorously until the salt crystals are entirely dissolved in the acid phase. While continuing to whisk, slowly stream in the extra-virgin olive oil (B.05) to create a temporary uniform suspension."
+    },
+    {
+      "name": "Matrix Integration & Curing Wait-State",
+      "params": "30 min | 34–40°F / Refrigerated",
+      "text": "Pour the whisked dressing immediately over the base amalgamation. Fold the salad delicately using an under-and-over sweeping motion to fully coat all component surfaces without crushing the ingredients. Seal the vessel with an airtight lid and transfer to cold storage for a minimum 30-minute marination wait state to permit osmotic flavor equilibration. Give it a brief toss right before serving."
+    }
   ],
   "qc": [
-    { "metric": "Texture & Core", "target": "Legumes must retain an al dente, resilient core profile with zero mushy collapse; raw vegetables must deliver a clean, crisp mechanical snap.", "actual": "[Pending Run]", "rating": "/ 10" },
-    { "metric": "Surface Optics", "target": "Uniform color distribution showing high contrast between deep red, vibrant green, and pale cream; all surfaces coated in a thin, translucent gloss sheen with zero pooled liquid at the base.", "actual": "[Pending Run]", "rating": "/ 10" }
+    {
+      "metric": "Texture & Core",
+      "target": "Legumes must retain an al dente, resilient core profile with zero mushy collapse; raw vegetables must deliver a clean, crisp mechanical snap.",
+      "actual": "[Pending Run]",
+      "rating": "/ 10"
+    },
+    {
+      "metric": "Surface Optics",
+      "target": "Uniform color distribution showing high contrast between deep red, vibrant green, and pale cream; all surfaces coated in a thin, translucent gloss sheen with zero pooled liquid at the base.",
+      "actual": "[Pending Run]",
+      "rating": "/ 10"
+    }
   ],
   "directive": "Execute all blending motions manually with low shear forces to preserve physical structural definition. Ensure the substrate is below 45°F before dressing application to prevent thermal wilting of the aromatic herbs."
 }

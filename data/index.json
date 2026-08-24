@@ -73,31 +73,61 @@
   ],
   "recipes": [
     {
-      "slug": "mushroom-bolognese",
-      "title": "Pasta With Rich and Hearty Mushroom Bolognese",
-      "projectId": "#00-01",
-      "blurb": "Button and shiitake mushrooms fried to a chewy, meat-analogue texture, bound with roasted eggplant purée and layered glutamates.",
+      "slug": "beet-pickle-lunch",
+      "title": "Basic Beet Pickle",
+      "blurb": "A 1:1 rice wine vinegar quick pickle — deliberately herb-free so it stays structural next to stronger ferments.",
+      "tags": [
+        "Pickles & Ferments",
+        "Vegan",
+        "Vegetarian",
+        "Meal Prep",
+        "No-Cook"
+      ]
+    },
+    {
+      "slug": "shiso-quinoa-asian-dolmas",
+      "title": "Bicolor Shiso & Quinoa \"Asian Dolmas\"",
+      "blurb": "Flash-blanched shiso leaves rolled around a sushi rice and quinoa filling, steamed then chilled so the starch locks the roll.",
+      "tags": [
+        "Appetizers",
+        "Japanese",
+        "Thai",
+        "Make-Ahead"
+      ]
+    },
+    {
+      "slug": "braised-chickpeas-fennel-olives",
+      "title": "Braised Chickpeas with Fennel, Olives & Preserved Lemon",
+      "blurb": "Seared fennel braised with chickpeas, briny olives, and preserved lemon rind until tender and citrus-forward.",
       "tags": [
         "Mains",
-        "Italian",
+        "Mediterranean",
+        "Vegan",
         "Vegetarian",
-        "Braising",
+        "Braising"
+      ]
+    },
+    {
+      "slug": "bubbies-clone-dill-pickles",
+      "title": "Bubbies Clone Kosher Dill Pickles",
+      "blurb": "A 3.5% salinity lacto-ferment with bay tannins to protect crunch, held anaerobic for 7–10 days then cold-cured.",
+      "tags": [
+        "Pickles & Ferments",
+        "Vegan",
+        "Vegetarian",
+        "Fermentation",
         "Favorites"
       ]
     },
     {
-      "slug": "crispy-roast-potatoes",
-      "title": "The Best Crispy Roast Potatoes Ever",
-      "projectId": "#01-16",
-      "blurb": "Alkaline-boiled then roasted at 450°F — baking soda breaks down pectin to build the starchy slurry that becomes the crust.",
+      "slug": "capunet-vegetariani",
+      "title": "Capunet Vegetariani alle Lenticchie",
+      "blurb": "Piedmontese cabbage rolls filled with red lentils, potato, and stale bread, bound with egg and grated cheese, then baked.",
       "tags": [
-        "Sides",
-        "American",
+        "Appetizers",
+        "Italian",
         "Vegetarian",
-        "Vegan",
-        "Gluten-Free",
-        "Roasting",
-        "Favorites"
+        "Baking"
       ]
     },
     {
@@ -114,39 +144,92 @@
       ]
     },
     {
-      "slug": "vegetarian-crying-tiger",
-      "title": "Vegetarian Crying Tiger (Sua Rong Hai)",
-      "projectId": "Recipe #05",
-      "blurb": "King oyster mushroom planks dry-seared under weight, lacquered with a palm sugar glaze, and flashed under the broiler. Served with nam jim jaew.",
+      "slug": "dual-cheese-gougeres",
+      "title": "Dual-Cheese Gougères",
+      "blurb": "One choux base split into two equal masses — aged gouda with smoked paprika, extra-sharp cheddar with cracked pepper.",
       "tags": [
-        "Mains",
-        "Thai",
+        "Appetizers",
+        "French",
         "Vegetarian",
-        "Vegan",
+        "Baking",
         "Favorites"
       ]
     },
     {
-      "slug": "vegan-bun-bo-hue-broth",
-      "title": "Vegan Bún Bò Huế Broth",
-      "projectId": "#BBH-01",
-      "blurb": "A clarified sweet-vegetable and shiitake extraction, finished with a crimson annatto-lemongrass sate infusion.",
+      "slug": "lemon-chess-pie",
+      "title": "Edna Lewis and Scott Peacock's Lemon Chess Pie",
+      "blurb": "A single-crust Southern chess pie — cornmeal and flour thickened, buttermilk and lemon forward, pulled while the center is still loose.",
       "tags": [
-        "Mains",
-        "Soups & Broths",
-        "Vietnamese",
-        "Vegan",
-        "Vegetarian"
+        "Sweets & Desserts",
+        "Southern US",
+        "Vegetarian",
+        "Baking"
       ]
     },
     {
-      "slug": "sunflower-tofu-veggie-burger",
-      "title": "Sunflower-Tofu Veggie Burger",
-      "projectId": "#01-01",
-      "blurb": "A reconstruction of the Nearly Normal's Sunburger — pressed tofu and toasted seed meal, egg-bound at a deliberately high ratio.",
+      "slug": "vinaigrettes-and-dressings",
+      "title": "Five House Dressings",
+      "blurb": "All-Purpose, Lemon-Dijon, Sesame-Soy, Classic Caesar, and Creamy Herby Green — one sheet, five emulsions.",
+      "tags": [
+        "Sauces & Dressings",
+        "No-Cook",
+        "Favorites"
+      ]
+    },
+    {
+      "slug": "flax-chia-peanut-butter-bites",
+      "title": "Flax & Chia Dark Peanut Butter Bites",
+      "projectId": "#PB-CHIA-01",
+      "blurb": "Flax and chia bind free oil in a peanut butter base; capped with 85% dark chocolate and flaky salt, set in the freezer.",
+      "tags": [
+        "Snacks & Bars",
+        "Sweets & Desserts",
+        "Vegetarian",
+        "Make-Ahead"
+      ]
+    },
+    {
+      "slug": "key-lime-chia-verrine",
+      "title": "Key Lime Pie Chia Verrine",
+      "blurb": "Chia-set lime and Greek yogurt cream layered over a toasted coconut graham crumble, assembled only at service.",
+      "tags": [
+        "Sweets & Desserts",
+        "Vegetarian",
+        "No-Cook",
+        "Make-Ahead"
+      ]
+    },
+    {
+      "slug": "lule-kebab",
+      "title": "Lule Kebab ala Father Vartan Joulfayan",
+      "blurb": "Armenian ground-beef kebabs bound with breadcrumb and onion liquid, hand-rolled and grilled or oven-roasted.",
       "tags": [
         "Mains",
-        "American",
+        "Armenian",
+        "Contains Meat",
+        "Grilling"
+      ]
+    },
+    {
+      "slug": "marine-energy-bites",
+      "title": "Nutrient-Dense Marine Energy Bites",
+      "projectId": "#NB-01",
+      "blurb": "Date and apricot paste bound with nut butter, pulsed with oats, hemp hearts, and black sesame — built to hold shape in a cooler. Ten minutes, no baking.",
+      "tags": [
+        "Snacks & Bars",
+        "Vegetarian",
+        "No-Cook",
+        "Make-Ahead"
+      ]
+    },
+    {
+      "slug": "rye-hemp-seeded-loaf",
+      "title": "Organic Rye & Hemp Seeded Loaf",
+      "blurb": "100% whole rye at 82% hydration with a seed soaker, high-frequency folds, and a 12–24 hour cold proof.",
+      "tags": [
+        "Breads",
+        "Baking",
+        "Vegan",
         "Vegetarian"
       ]
     },
@@ -162,26 +245,36 @@
       ]
     },
     {
-      "slug": "braised-chickpeas-fennel-olives",
-      "title": "Braised Chickpeas with Fennel, Olives & Preserved Lemon",
-      "blurb": "Seared fennel braised with chickpeas, briny olives, and preserved lemon rind until tender and citrus-forward.",
+      "slug": "mushroom-bolognese",
+      "title": "Pasta With Rich and Hearty Mushroom Bolognese",
+      "projectId": "#00-01",
+      "blurb": "Button and shiitake mushrooms fried to a chewy, meat-analogue texture, bound with roasted eggplant purée and layered glutamates.",
       "tags": [
         "Mains",
-        "Mediterranean",
-        "Vegan",
+        "Italian",
         "Vegetarian",
-        "Braising"
+        "Braising",
+        "Favorites"
       ]
     },
     {
-      "slug": "lule-kebab",
-      "title": "Lule Kebab ala Father Vartan Joulfayan",
-      "blurb": "Armenian ground-beef kebabs bound with breadcrumb and onion liquid, hand-rolled and grilled or oven-roasted.",
+      "slug": "popovers-prosciutto-mascarpone",
+      "title": "Popovers with Prosciutto and Herbed Mascarpone",
+      "blurb": "Kefir-acidulated batter into a screaming-hot popover pan, baked in two thermal stages and pierced immediately to de-steam.",
       "tags": [
-        "Mains",
-        "Armenian",
-        "Contains Meat",
-        "Grilling"
+        "Appetizers",
+        "Baking",
+        "Contains Meat"
+      ]
+    },
+    {
+      "slug": "rye-spelt-kefir-loaf",
+      "title": "Rye & Spelt Kefir Loaf (1.2 kg)",
+      "blurb": "A 12-hour milk kefir levain driving a 650 g flour base at 80% hydration, scaled to a single large pan loaf.",
+      "tags": [
+        "Breads",
+        "Baking",
+        "Vegetarian"
       ]
     },
     {
@@ -205,120 +298,19 @@
       "tags": [
         "Salads",
         "Meal Prep",
-        "Vegetarian",
         "Thai",
         "Mediterranean"
       ]
     },
     {
-      "slug": "shiso-quinoa-asian-dolmas",
-      "title": "Bicolor Shiso & Quinoa \"Asian Dolmas\"",
-      "blurb": "Flash-blanched shiso leaves rolled around a sushi rice and quinoa filling, steamed then chilled so the starch locks the roll.",
+      "slug": "sunflower-tofu-veggie-burger",
+      "title": "Sunflower-Tofu Veggie Burger",
+      "projectId": "#01-01",
+      "blurb": "A reconstruction of the Nearly Normal's Sunburger — pressed tofu and toasted seed meal, egg-bound at a deliberately high ratio.",
       "tags": [
-        "Appetizers",
-        "Japanese",
-        "Thai",
-        "Make-Ahead"
-      ]
-    },
-    {
-      "slug": "dual-cheese-gougeres",
-      "title": "Dual-Cheese Gougères",
-      "blurb": "One choux base split into two equal masses — aged gouda with smoked paprika, extra-sharp cheddar with cracked pepper.",
-      "tags": [
-        "Appetizers",
-        "French",
-        "Vegetarian",
-        "Baking",
-        "Favorites"
-      ]
-    },
-    {
-      "slug": "popovers-prosciutto-mascarpone",
-      "title": "Popovers with Prosciutto and Herbed Mascarpone",
-      "blurb": "Kefir-acidulated batter into a screaming-hot popover pan, baked in two thermal stages and pierced immediately to de-steam.",
-      "tags": [
-        "Appetizers",
-        "Baking",
-        "Contains Meat"
-      ]
-    },
-    {
-      "slug": "capunet-vegetariani",
-      "title": "Capunet Vegetariani alle Lenticchie",
-      "blurb": "Piedmontese cabbage rolls filled with red lentils, potato, and stale bread, bound with egg and grated cheese, then baked.",
-      "tags": [
-        "Appetizers",
-        "Italian",
-        "Vegetarian",
-        "Baking"
-      ]
-    },
-    {
-      "slug": "rye-hemp-seeded-loaf",
-      "title": "Organic Rye & Hemp Seeded Loaf",
-      "blurb": "100% whole rye at 82% hydration with a seed soaker, high-frequency folds, and a 12–24 hour cold proof.",
-      "tags": [
-        "Breads",
-        "Baking",
-        "Vegan",
+        "Mains",
+        "American",
         "Vegetarian"
-      ]
-    },
-    {
-      "slug": "rye-spelt-kefir-loaf",
-      "title": "Rye & Spelt Kefir Loaf (1.2 kg)",
-      "blurb": "A 12-hour milk kefir levain driving a 650 g flour base at 80% hydration, scaled to a single large pan loaf.",
-      "tags": [
-        "Breads",
-        "Baking",
-        "Vegetarian"
-      ]
-    },
-    {
-      "slug": "lemon-chess-pie",
-      "title": "Edna Lewis and Scott Peacock's Lemon Chess Pie",
-      "blurb": "A single-crust Southern chess pie — cornmeal and flour thickened, buttermilk and lemon forward, pulled while the center is still loose.",
-      "tags": [
-        "Sweets & Desserts",
-        "Southern US",
-        "Vegetarian",
-        "Baking"
-      ]
-    },
-    {
-      "slug": "key-lime-chia-verrine",
-      "title": "Key Lime Pie Chia Verrine",
-      "blurb": "Chia-set lime and Greek yogurt cream layered over a toasted coconut graham crumble, assembled only at service.",
-      "tags": [
-        "Sweets & Desserts",
-        "Vegetarian",
-        "No-Cook",
-        "Make-Ahead"
-      ]
-    },
-    {
-      "slug": "flax-chia-peanut-butter-bites",
-      "title": "Flax & Chia Dark Peanut Butter Bites",
-      "projectId": "#PB-CHIA-01",
-      "blurb": "Flax and chia bind free oil in a peanut butter base; capped with 85% dark chocolate and flaky salt, set in the freezer.",
-      "tags": [
-        "Snacks & Bars",
-        "Sweets & Desserts",
-        "Vegetarian",
-        "Make-Ahead"
-      ]
-    },
-    {
-      "slug": "marine-energy-bites",
-      "title": "Nutrient-Dense Marine Energy Bites",
-      "projectId": "#NB-01",
-      "blurb": "Date and apricot paste bound with nut butter, pulsed with oats, hemp hearts, and black sesame — built to hold shape in a cooler. Ten minutes, no baking.",
-      "tags": [
-        "Snacks & Bars",
-        "Vegetarian",
-        "No-Cook",
-        "Make-Ahead"
       ]
     },
     {
@@ -334,38 +326,44 @@
       ]
     },
     {
-      "slug": "vinaigrettes-and-dressings",
-      "title": "Five House Dressings",
-      "blurb": "All-Purpose, Lemon-Dijon, Sesame-Soy, Classic Caesar, and Creamy Herby Green — one sheet, five emulsions.",
+      "slug": "crispy-roast-potatoes",
+      "title": "The Best Crispy Roast Potatoes Ever",
+      "projectId": "#01-16",
+      "blurb": "Alkaline-boiled then roasted at 450°F — baking soda breaks down pectin to build the starchy slurry that becomes the crust.",
       "tags": [
-        "Sauces & Dressings",
+        "Sides",
+        "American",
         "Vegetarian",
-        "No-Cook",
+        "Vegan",
+        "Gluten-Free",
+        "Roasting",
         "Favorites"
       ]
     },
     {
-      "slug": "bubbies-clone-dill-pickles",
-      "title": "Bubbies Clone Kosher Dill Pickles",
-      "blurb": "A 3.5% salinity lacto-ferment with bay tannins to protect crunch, held anaerobic for 7–10 days then cold-cured.",
+      "slug": "vegan-bun-bo-hue-broth",
+      "title": "Vegan Bún Bò Huế Broth",
+      "projectId": "#BBH-01",
+      "blurb": "A clarified sweet-vegetable and shiitake extraction, finished with a crimson annatto-lemongrass sate infusion.",
       "tags": [
-        "Pickles & Ferments",
+        "Mains",
+        "Soups & Broths",
+        "Vietnamese",
         "Vegan",
-        "Vegetarian",
-        "Fermentation",
-        "Favorites"
+        "Vegetarian"
       ]
     },
     {
-      "slug": "beet-pickle-lunch",
-      "title": "Basic Beet Pickle",
-      "blurb": "A 1:1 rice wine vinegar quick pickle — deliberately herb-free so it stays structural next to stronger ferments.",
+      "slug": "vegetarian-crying-tiger",
+      "title": "Vegetarian Crying Tiger (Sua Rong Hai)",
+      "projectId": "Recipe #05",
+      "blurb": "King oyster mushroom planks dry-seared under weight, lacquered with a palm sugar glaze, and flashed under the broiler. Served with nam jim jaew.",
       "tags": [
-        "Pickles & Ferments",
-        "Vegan",
+        "Mains",
+        "Thai",
         "Vegetarian",
-        "Meal Prep",
-        "No-Cook"
+        "Vegan",
+        "Favorites"
       ]
     }
   ]

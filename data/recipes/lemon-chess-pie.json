@@ -2,7 +2,12 @@
   "slug": "lemon-chess-pie",
   "title": "Edna Lewis and Scott Peacock's Lemon Chess Pie",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Sweets & Desserts", "Southern US", "Vegetarian", "Baking"],
+  "tags": [
+    "Sweets & Desserts",
+    "Southern US",
+    "Vegetarian",
+    "Baking"
+  ],
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
@@ -13,37 +18,165 @@
   "formulations": [
     {
       "rows": [
-        { "group": "A — Filling Baseline" },
-        { "id": "A.01", "name": "Granulated Sugar", "volume": "1 1/2 cups", "mass": 297, "pct": 100.0, "baseline": true, "role": "Defining mass of the chess custard; source states this weight directly." },
-        { "group": "B — Custard Structure" },
-        { "id": "B.01", "name": "Eggs, room temperature", "volume": "4 each", "mass": 200, "pct": 67.34, "estimated": true, "role": "Primary structure and set; whisked briefly to blend before anything else is added." },
-        { "id": "B.02", "name": "White or Yellow Cornmeal", "volume": "1 tbsp", "mass": 10, "pct": 3.37, "estimated": true, "role": "The signature chess-pie thickener; leaves a faint gritty texture at the base." },
-        { "id": "B.03", "name": "Unbleached All-Purpose Flour", "volume": "1 tbsp", "mass": 8, "pct": 2.69, "estimated": true, "role": "Secondary thickener; smooths what cornmeal alone would leave coarse." },
-        { "id": "B.04", "name": "Kosher Salt", "volume": "1/2 tsp", "mass": 1.5, "pct": 0.51, "estimated": true, "role": "Cuts the sugar load and sharpens the lemon." },
-        { "group": "C — Fat & Liquid" },
-        { "id": "C.01", "name": "Unsalted Butter, melted and cooled", "volume": "5 tbsp", "mass": 71, "pct": 23.91, "estimated": true, "role": "Richness; must be cooled to room temperature before it meets the eggs." },
-        { "id": "C.02", "name": "Buttermilk, room temperature", "volume": "1/2 cup", "mass": 122, "pct": 41.08, "estimated": true, "role": "Acid and liquid; tenderizes the custard set." },
-        { "group": "D — Flavor" },
-        { "id": "D.01", "name": "Fresh Lemon Juice, room temperature", "volume": "1/3 cup", "mass": 80, "pct": 26.94, "estimated": true, "role": "Primary acid; balances the high sugar percentage." },
-        { "id": "D.02", "name": "Lemon Zest, packed tightly", "volume": "1 tbsp", "mass": 6, "pct": 2.02, "estimated": true, "role": "Volatile citrus oils — carries the aroma the juice alone cannot." },
-        { "id": "D.03", "name": "Vanilla Extract", "volume": "1 tsp", "mass": 4, "pct": 1.35, "estimated": true, "role": "Rounds the citrus edge." },
-        { "group": "E — Shell" },
-        { "id": "E.01", "name": "Single-Crust Pie Dough, par-baked and cooled", "volume": "1/2 recipe", "mass": 230, "pct": 77.44, "estimated": true, "role": "Must be par-baked and fully cooled before filling, or the base will not crisp." }
+        {
+          "group": "A — Filling Baseline"
+        },
+        {
+          "id": "A.01",
+          "name": "Granulated Sugar",
+          "volume": "1 1/2 cups",
+          "mass": 297,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Defining mass of the chess custard; source states this weight directly."
+        },
+        {
+          "group": "B — Custard Structure"
+        },
+        {
+          "id": "B.01",
+          "name": "Eggs, room temperature",
+          "volume": "4 each",
+          "mass": 200,
+          "pct": 67.34,
+          "estimated": true,
+          "role": "Primary structure and set; whisked briefly to blend before anything else is added."
+        },
+        {
+          "id": "B.02",
+          "name": "White or Yellow Cornmeal",
+          "volume": "1 tbsp",
+          "mass": 10,
+          "pct": 3.37,
+          "estimated": true,
+          "role": "The signature chess-pie thickener; leaves a faint gritty texture at the base."
+        },
+        {
+          "id": "B.03",
+          "name": "Unbleached All-Purpose Flour",
+          "volume": "1 tbsp",
+          "mass": 8,
+          "pct": 2.69,
+          "estimated": true,
+          "role": "Secondary thickener; smooths what cornmeal alone would leave coarse."
+        },
+        {
+          "id": "B.04",
+          "name": "Kosher Salt",
+          "volume": "1/2 tsp",
+          "mass": 1.5,
+          "pct": 0.51,
+          "estimated": true,
+          "role": "Cuts the sugar load and sharpens the lemon."
+        },
+        {
+          "group": "C — Fat & Liquid"
+        },
+        {
+          "id": "C.01",
+          "name": "Unsalted Butter, melted and cooled",
+          "volume": "5 tbsp",
+          "mass": 71,
+          "pct": 23.91,
+          "estimated": true,
+          "role": "Richness; must be cooled to room temperature before it meets the eggs."
+        },
+        {
+          "id": "C.02",
+          "name": "Buttermilk, room temperature",
+          "volume": "1/2 cup",
+          "mass": 122,
+          "pct": 41.08,
+          "estimated": true,
+          "role": "Acid and liquid; tenderizes the custard set."
+        },
+        {
+          "group": "D — Flavor"
+        },
+        {
+          "id": "D.01",
+          "name": "Fresh Lemon Juice, room temperature",
+          "volume": "1/3 cup",
+          "mass": 80,
+          "pct": 26.94,
+          "estimated": true,
+          "role": "Primary acid; balances the high sugar percentage."
+        },
+        {
+          "id": "D.02",
+          "name": "Lemon Zest, packed tightly",
+          "volume": "1 tbsp",
+          "mass": 6,
+          "pct": 2.02,
+          "estimated": true,
+          "role": "Volatile citrus oils — carries the aroma the juice alone cannot."
+        },
+        {
+          "id": "D.03",
+          "name": "Vanilla Extract",
+          "volume": "1 tsp",
+          "mass": 4,
+          "pct": 1.35,
+          "estimated": true,
+          "role": "Rounds the citrus edge."
+        },
+        {
+          "group": "E — Shell"
+        },
+        {
+          "id": "E.01",
+          "name": "Single-Crust Pie Dough, par-baked and cooled",
+          "volume": "1/2 recipe",
+          "mass": 230,
+          "pct": 77.44,
+          "estimated": true,
+          "role": "Must be par-baked and fully cooled before filling, or the base will not crisp."
+        }
       ],
-      "total": { "mass": 1029.5, "pct": 346.65, "estimated": true, "role": "Combined raw material input footprint, including the shell." }
+      "total": {
+        "mass": 1029.5,
+        "pct": 346.63,
+        "estimated": true,
+        "role": "Combined raw material input footprint, including the shell."
+      }
     }
   ],
   "matrixFootnote": "*Only the sugar mass (297 g) is stated directly in the source. All other gram values are standard culinary conversions from the source's volumetric measures and unit counts, and are marked accordingly.",
   "mise": [
-    { "label": "Temperature Discipline", "text": "Bring the eggs, buttermilk, and lemon juice to room temperature, and cool the melted butter to room temperature. Cold liquid hitting warm butter will seize it into flecks that never fully reincorporate." },
-    { "label": "Shell Preparation (E.01)", "text": "Par-bake the single pie crust and let it cool completely before filling." },
-    { "label": "Oven Setup", "text": "Position the oven rack in the center position and preheat to 350°F." }
+    {
+      "label": "Temperature Discipline",
+      "text": "Bring the eggs, buttermilk, and lemon juice to room temperature, and cool the melted butter to room temperature. Cold liquid hitting warm butter will seize it into flecks that never fully reincorporate."
+    },
+    {
+      "label": "Shell Preparation (E.01)",
+      "text": "Par-bake the single pie crust and let it cool completely before filling."
+    },
+    {
+      "label": "Oven Setup",
+      "text": "Position the oven rack in the center position and preheat to 350°F."
+    }
   ],
   "execution": [
-    { "name": "Blend the Eggs", "params": "Brief | Whisk", "text": "Place the eggs in a large mixing bowl and whisk briefly to blend." },
-    { "name": "Sequential Incorporation", "params": "~5 min | Whisk", "text": "One at a time, whisk in the rest of the ingredients — sugar, cornmeal, flour, salt, melted butter, buttermilk, lemon juice, lemon zest, and vanilla — blending until each ingredient has been fully incorporated before proceeding to the next. This sequencing is the whole technique; dumping everything at once gives an uneven set." },
-    { "name": "Fill and Bake", "params": "30–40 min | 350°F", "text": "Pour the filling into the par-baked pie crust and bake until the pie is golden brown on top and almost set. The center of the pie should remain slightly loose." },
-    { "name": "Cool Completely", "params": "To room temperature | Wire rack", "text": "Cool completely on a cooling rack and serve at room temperature, with or without whipped cream." }
+    {
+      "name": "Blend the Eggs",
+      "params": "Brief | Whisk",
+      "text": "Place the eggs in a large mixing bowl and whisk briefly to blend."
+    },
+    {
+      "name": "Sequential Incorporation",
+      "params": "~5 min | Whisk",
+      "text": "One at a time, whisk in the rest of the ingredients — sugar, cornmeal, flour, salt, melted butter, buttermilk, lemon juice, lemon zest, and vanilla — blending until each ingredient has been fully incorporated before proceeding to the next. This sequencing is the whole technique; dumping everything at once gives an uneven set."
+    },
+    {
+      "name": "Fill and Bake",
+      "params": "30–40 min | 350°F",
+      "text": "Pour the filling into the par-baked pie crust and bake until the pie is golden brown on top and almost set. The center of the pie should remain slightly loose."
+    },
+    {
+      "name": "Cool Completely",
+      "params": "To room temperature | Wire rack",
+      "text": "Cool completely on a cooling rack and serve at room temperature, with or without whipped cream."
+    }
   ],
   "directive": "Pull the pie while the center is still slightly loose. Chess custard finishes setting on the cooling rack — baking it to a firm center in the oven produces a dense, over-set pie by the time it reaches room temperature."
 }

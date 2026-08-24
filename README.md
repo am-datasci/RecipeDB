@@ -59,6 +59,36 @@ Masses marked with an asterisk (`*`) are standard culinary conversions from
 volumetric measures, not weights stated by the source. Sheets built from sources
 that give few or no quantities carry a reconstruction notice at the top.
 
+## Maintenance scripts
+
+Stdlib Python 3, no dependencies:
+
+```
+python3 tools/recipedb.py validate       # check every sheet and the index
+python3 tools/recipedb.py validate --strict
+python3 tools/recipedb.py recalc all     # dry run: show percentage/total drift
+python3 tools/recipedb.py recalc all --write
+python3 tools/recipedb.py new <slug>     # scaffold a sheet and register it
+python3 tools/recipedb.py stats          # archive overview
+```
+
+`validate` exits non-zero on errors, so it drops straight into CI or a
+pre-commit hook. It checks slug/filename agreement, exactly one baseline row at
+100%, percentages against the baseline mass, totals against the row sum,
+estimated masses having a footnote, index/file cross-references, unfiled tags,
+leftover template placeholders, private terms, and diet tags against the actual
+ingredient list (it knows almond milk is not dairy and that vegan fish sauce is
+not fish).
+
+Two escape hatches for legitimate exceptions:
+
+- `total.partial = true` — the total deliberately excludes rows (an optional
+  garnish) or would double-count (a baker's "total flour" row that is the sum
+  of its parts).
+- Diet conflicts are errors, not warnings. If a substitution makes a recipe
+  non-vegan, name the default ingredient in the matrix row and put the
+  substitution in `alternatives`.
+
 ## Running locally
 
 Browsers block `fetch()` on `file://` URLs, so open it over HTTP:

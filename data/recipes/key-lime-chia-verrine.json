@@ -2,7 +2,12 @@
   "slug": "key-lime-chia-verrine",
   "title": "Key Lime Pie Chia Verrine",
   "subtitle": "Pastry Formulation Sheet",
-  "tags": ["Sweets & Desserts", "Vegetarian", "No-Cook", "Make-Ahead"],
+  "tags": [
+    "Sweets & Desserts",
+    "Vegetarian",
+    "No-Cook",
+    "Make-Ahead"
+  ],
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
@@ -12,10 +17,22 @@
     "A pastry chef's elevated interpretation of the traditional Florida Key Lime Pie, re-imagined as an elegant breakfast verrine or pre-dessert. This formulation balances the sharp, aromatic acidity of fresh lime with the rich, velvety texture of cultured full-fat Greek yogurt and the natural texturizing properties of organic chia seeds, offset by a crisp graham cracker and toasted coconut crumble."
   ],
   "specs": [
-    { "label": "Yield", "value": "2 elegant verrines" },
-    { "label": "Preparation Time", "value": "10 minutes" },
-    { "label": "Maturation Time", "value": "Minimum 4 hours (preferably overnight)" },
-    { "label": "Service Temperature", "value": "Cold (4°C / 39°F)" }
+    {
+      "label": "Yield",
+      "value": "2 elegant verrines"
+    },
+    {
+      "label": "Preparation Time",
+      "value": "10 minutes"
+    },
+    {
+      "label": "Maturation Time",
+      "value": "Minimum 4 hours (preferably overnight)"
+    },
+    {
+      "label": "Service Temperature",
+      "value": "Cold (4°C / 39°F)"
+    }
   ],
   "scalingPrinciple": "Item A.01 (Greek Yogurt) is locked at 100.0% as the baseline mass for the cream component. Component II (the crumble) is expressed against the same baseline so the cream-to-crumble ratio holds when the batch is scaled. Gram values are conversions from the source's volumetric measures and are marked as estimates throughout.",
   "formulationTitle": "I. Component Formulation Matrices",
@@ -23,50 +40,194 @@
     {
       "title": "Component I — La Crème de Chia au Limon (Chia Lime Cream)",
       "rows": [
-        { "id": "A.01", "name": "Greek Yogurt", "volume": "1 cup", "mass": 245, "pct": 100.0, "baseline": true, "estimated": true, "role": "Full-fat, strained, traditional style for luxurious mouthfeel." },
-        { "id": "A.02", "name": "Whole Milk", "volume": "2/3 cup", "mass": 163, "pct": 66.53, "estimated": true, "role": "Adjusts viscosity and optimizes chia hydration." },
-        { "id": "A.03", "name": "Artisanal Honey / Maple Syrup", "volume": "2 1/2 tbsp", "mass": 53, "pct": 21.63, "estimated": true, "role": "Liquid, clear, mild floral profile to complement citrus." },
-        { "id": "A.04", "name": "Fresh Key Lime Zest", "volume": "2 tsp", "mass": 4, "pct": 1.63, "estimated": true, "role": "Finely microplaned from approximately 2 whole fruits." },
-        { "id": "A.05", "name": "Fresh Key Lime Juice", "volume": "2 tbsp", "mass": 30, "pct": 12.24, "estimated": true, "role": "Freshly squeezed, fine-filtered to remove stray pulp." },
-        { "id": "A.06", "name": "Pure Vanilla Extract", "volume": "1 tsp", "mass": 4.5, "pct": 1.84, "estimated": true, "role": "Bourbon or Tahitian vanilla for delicate depth." },
-        { "id": "A.07", "name": "Organic Chia Seeds", "volume": "4 tbsp", "mass": 48, "pct": 19.59, "estimated": true, "role": "White or black seeds; ensure high purity and dryness." }
+        {
+          "id": "A.01",
+          "name": "Greek Yogurt",
+          "volume": "1 cup",
+          "mass": 245,
+          "pct": 100.0,
+          "baseline": true,
+          "estimated": true,
+          "role": "Full-fat, strained, traditional style for luxurious mouthfeel."
+        },
+        {
+          "id": "A.02",
+          "name": "Whole Milk",
+          "volume": "2/3 cup",
+          "mass": 163,
+          "pct": 66.53,
+          "estimated": true,
+          "role": "Adjusts viscosity and optimizes chia hydration."
+        },
+        {
+          "id": "A.03",
+          "name": "Artisanal Honey / Maple Syrup",
+          "volume": "2 1/2 tbsp",
+          "mass": 53,
+          "pct": 21.63,
+          "estimated": true,
+          "role": "Liquid, clear, mild floral profile to complement citrus."
+        },
+        {
+          "id": "A.04",
+          "name": "Fresh Key Lime Zest",
+          "volume": "2 tsp",
+          "mass": 4,
+          "pct": 1.63,
+          "estimated": true,
+          "role": "Finely microplaned from approximately 2 whole fruits."
+        },
+        {
+          "id": "A.05",
+          "name": "Fresh Key Lime Juice",
+          "volume": "2 tbsp",
+          "mass": 30,
+          "pct": 12.24,
+          "estimated": true,
+          "role": "Freshly squeezed, fine-filtered to remove stray pulp."
+        },
+        {
+          "id": "A.06",
+          "name": "Pure Vanilla Extract",
+          "volume": "1 tsp",
+          "mass": 4.5,
+          "pct": 1.84,
+          "estimated": true,
+          "role": "Bourbon or Tahitian vanilla for delicate depth."
+        },
+        {
+          "id": "A.07",
+          "name": "Organic Chia Seeds",
+          "volume": "4 tbsp",
+          "mass": 48,
+          "pct": 19.59,
+          "estimated": true,
+          "role": "White or black seeds; ensure high purity and dryness."
+        }
       ],
-      "total": { "mass": 547.5, "pct": 223.46, "estimated": true, "role": "Chia lime cream batch mass." }
+      "total": {
+        "mass": 547.5,
+        "pct": 223.47,
+        "estimated": true,
+        "role": "Chia lime cream batch mass."
+      }
     },
     {
       "title": "Component II — Le Crumble de Graham Exotic (Graham & Coconut Crunch)",
-      "columns": ["Item ID", "Ingredient", "Chef's Specification", "Mass (g)", "% of Baseline", "Notes"],
-      "rows": [
-        { "id": "B.01", "name": "Graham Crackers", "volume": "6 tbsp, crushed", "mass": 45, "pct": 18.37, "estimated": true, "role": "Crushed into fine, irregular crumbs with structural bite." },
-        { "id": "B.02", "name": "Shredded Coconut", "volume": "3 tbsp", "mass": 15, "pct": 6.12, "estimated": true, "role": "Unsweetened, fine shred, lightly toasted for aroma." },
-        { "id": "B.03", "name": "Fresh Lime Zest", "volume": "1/2 tsp", "mass": 1, "pct": 0.41, "estimated": true, "role": "Microplaned strictly at the moment of assembly." }
+      "columns": [
+        "Item ID",
+        "Ingredient",
+        "Chef's Specification",
+        "Mass (g)",
+        "% of Baseline",
+        "Notes"
       ],
-      "total": { "mass": 61, "pct": 24.9, "estimated": true, "role": "Crumble batch mass." }
+      "rows": [
+        {
+          "id": "B.01",
+          "name": "Graham Crackers",
+          "volume": "6 tbsp, crushed",
+          "mass": 45,
+          "pct": 18.37,
+          "estimated": true,
+          "role": "Crushed into fine, irregular crumbs with structural bite."
+        },
+        {
+          "id": "B.02",
+          "name": "Shredded Coconut",
+          "volume": "3 tbsp",
+          "mass": 15,
+          "pct": 6.12,
+          "estimated": true,
+          "role": "Unsweetened, fine shred, lightly toasted for aroma."
+        },
+        {
+          "id": "B.03",
+          "name": "Fresh Lime Zest",
+          "volume": "1/2 tsp",
+          "mass": 1,
+          "pct": 0.41,
+          "estimated": true,
+          "role": "Microplaned strictly at the moment of assembly."
+        }
+      ],
+      "total": {
+        "mass": 61,
+        "pct": 24.9,
+        "estimated": true,
+        "role": "Crumble batch mass."
+      }
     }
   ],
   "matrixFootnote": "*The source specifies this formulation entirely in volumetric kitchen units. All gram values are standard culinary conversions and are marked accordingly; none are source-stated weights.",
   "mise": [
-    { "label": "Amalgamate the Base", "text": "In a flawless stainless steel or glass mixing bowl, whisk together the full-fat Greek yogurt, milk, and liquid sweetener until completely smooth, glossy, and uniform." },
-    { "label": "Infuse the Aromatics", "text": "Introduce the microplaned lime zest, strained lime juice, and pure vanilla extract. Whisk thoroughly. The natural acidity of the lime juice will immediately interact with the dairy lipids and proteins, building a base layer of tanginess." },
-    { "label": "Process the Biscuit Base", "text": "Crush high-quality honey graham crackers inside a parchment folder using a rolling pin, or pulse briefly in a kitchen cutter. Aim for an irregular grind — mostly fine sand, but interspersed with tiny crunch shards." }
+    {
+      "label": "Amalgamate the Base",
+      "text": "In a flawless stainless steel or glass mixing bowl, whisk together the full-fat Greek yogurt, milk, and liquid sweetener until completely smooth, glossy, and uniform."
+    },
+    {
+      "label": "Infuse the Aromatics",
+      "text": "Introduce the microplaned lime zest, strained lime juice, and pure vanilla extract. Whisk thoroughly. The natural acidity of the lime juice will immediately interact with the dairy lipids and proteins, building a base layer of tanginess."
+    },
+    {
+      "label": "Process the Biscuit Base",
+      "text": "Crush high-quality honey graham crackers inside a parchment folder using a rolling pin, or pulse briefly in a kitchen cutter. Aim for an irregular grind — mostly fine sand, but interspersed with tiny crunch shards."
+    }
   ],
   "execution": [
-    { "name": "Disperse the Chia", "params": "60 sec | Continuous whisk", "text": "Rain the chia seeds into the cream mixture while whisking continuously. Vigorously whisk for 60 seconds to suspend the seeds evenly and prevent gravity-assisted clumping at the base of the bowl." },
-    { "name": "Cryo-Maturation", "params": "Minimum 4 hr | 4°C", "text": "Cover the surface with plastic wrap placed in direct contact with the surface to prevent skin formation, and refrigerate. Allow to fully set and bloom for at least 4 hours, though a full overnight maturation achieves a perfectly tender texture." },
-    { "name": "The Toasting Cycle", "params": "2–3 min | Medium-low, dry skillet", "text": "Gently toast the unsweetened shredded coconut until light, golden-brown, and intensely fragrant. Transfer immediately to a cold dish to halt cooking and let cool." },
-    { "name": "Aromatization", "params": "Brief | Ambient", "text": "Combine the cooled coconut and the graham crumbs in a small mixing vessel. Grate the fresh lime zest over the top. Rub the blend gently between your fingertips to express the essential citrus oils directly into the crumb matrix. Store in an airtight container until service." },
-    { "name": "The Foundation Layer", "params": "Assembly | Chilled glassware", "text": "Arrange two elegant, chilled glass verrines. Dispense exactly one-third of the crumble mixture into the bottom of each glass. Press down very gently with a small pastry tamper or spoon handle to form a defined \"pie-crust\" foundation." },
-    { "name": "The Pastry Piping", "params": "Assembly | Cold", "text": "Retrieve the fully matured chia cream from the cold station. Give it a gentle fold with a silicone spatula to soften. Transfer the pudding into a pastry piping bag fitted with a large plain tube to ensure an impeccable, clean fill without smudging the pristine walls of the verrine. Pipe evenly into the vessels." },
-    { "name": "The Crown & Final Garnish", "params": "Immediate | Service", "text": "Uniformly blanket the surface of the chia cream with the remaining two-thirds of the crumble topping. Finish with a microplane dusting of fresh lime zest across the top. Serve immediately while thoroughly chilled to preserve the sharp textural barrier between the yielding cream and the snappy crumble." }
+    {
+      "name": "Disperse the Chia",
+      "params": "60 sec | Continuous whisk",
+      "text": "Rain the chia seeds into the cream mixture while whisking continuously. Vigorously whisk for 60 seconds to suspend the seeds evenly and prevent gravity-assisted clumping at the base of the bowl."
+    },
+    {
+      "name": "Cryo-Maturation",
+      "params": "Minimum 4 hr | 4°C",
+      "text": "Cover the surface with plastic wrap placed in direct contact with the surface to prevent skin formation, and refrigerate. Allow to fully set and bloom for at least 4 hours, though a full overnight maturation achieves a perfectly tender texture."
+    },
+    {
+      "name": "The Toasting Cycle",
+      "params": "2–3 min | Medium-low, dry skillet",
+      "text": "Gently toast the unsweetened shredded coconut until light, golden-brown, and intensely fragrant. Transfer immediately to a cold dish to halt cooking and let cool."
+    },
+    {
+      "name": "Aromatization",
+      "params": "Brief | Ambient",
+      "text": "Combine the cooled coconut and the graham crumbs in a small mixing vessel. Grate the fresh lime zest over the top. Rub the blend gently between your fingertips to express the essential citrus oils directly into the crumb matrix. Store in an airtight container until service."
+    },
+    {
+      "name": "The Foundation Layer",
+      "params": "Assembly | Chilled glassware",
+      "text": "Arrange two elegant, chilled glass verrines. Dispense exactly one-third of the crumble mixture into the bottom of each glass. Press down very gently with a small pastry tamper or spoon handle to form a defined \"pie-crust\" foundation."
+    },
+    {
+      "name": "The Pastry Piping",
+      "params": "Assembly | Cold",
+      "text": "Retrieve the fully matured chia cream from the cold station. Give it a gentle fold with a silicone spatula to soften. Transfer the pudding into a pastry piping bag fitted with a large plain tube to ensure an impeccable, clean fill without smudging the pristine walls of the verrine. Pipe evenly into the vessels."
+    },
+    {
+      "name": "The Crown & Final Garnish",
+      "params": "Immediate | Service",
+      "text": "Uniformly blanket the surface of the chia cream with the remaining two-thirds of the crumble topping. Finish with a microplane dusting of fresh lime zest across the top. Serve immediately while thoroughly chilled to preserve the sharp textural barrier between the yielding cream and the snappy crumble."
+    }
   ],
   "sections": [
     {
       "id": "chef-notes",
       "title": "Chef's Executive Technical Notes",
       "items": [
-        { "label": "The Lipid Commandment:", "text": "Never downgrade to low-fat or fat-free Greek yogurts. The absence of sufficient fat particles leads to syneresis (water weeping), which compromises the integrity of the emulsion and dampens the sharp pop of the citrus." },
-        { "label": "The Citrus Sequence:", "text": "Zest your limes before cutting and juicing them. Attempting to zest a squashed, empty lime hull results in uneven friction, causing you to shave off the bitter white mesocarp (pith) which ruins the dessert." },
-        { "label": "Moisture Control Protocol:", "text": "If prepping ahead for service, do not assemble the verrines more than 60 minutes prior. Graham crackers are highly hygroscopic and will readily pull ambient moisture from the pudding, destroying the crisp textures that anchor this dish. Keep elements separated until service." }
+        {
+          "label": "The Lipid Commandment:",
+          "text": "Never downgrade to low-fat or fat-free Greek yogurts. The absence of sufficient fat particles leads to syneresis (water weeping), which compromises the integrity of the emulsion and dampens the sharp pop of the citrus."
+        },
+        {
+          "label": "The Citrus Sequence:",
+          "text": "Zest your limes before cutting and juicing them. Attempting to zest a squashed, empty lime hull results in uneven friction, causing you to shave off the bitter white mesocarp (pith) which ruins the dessert."
+        },
+        {
+          "label": "Moisture Control Protocol:",
+          "text": "If prepping ahead for service, do not assemble the verrines more than 60 minutes prior. Graham crackers are highly hygroscopic and will readily pull ambient moisture from the pudding, destroying the crisp textures that anchor this dish. Keep elements separated until service."
+        }
       ]
     }
   ],

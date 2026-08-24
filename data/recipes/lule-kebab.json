@@ -2,7 +2,12 @@
   "slug": "lule-kebab",
   "title": "Lule Kebab ala Father Vartan Joulfayan",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Mains", "Armenian", "Contains Meat", "Grilling"],
+  "tags": [
+    "Mains",
+    "Armenian",
+    "Contains Meat",
+    "Grilling"
+  ],
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
@@ -13,49 +18,220 @@
     "Just as there are numerous recipes and spellings for other Armenian foods, lule kebab is no exception. This is Father Vartan Joulfayan's savory version — notable for retaining the onion and garlic liquid released during processing rather than draining it, which is what keeps a lean grind moist on the grill."
   ],
   "specs": [
-    { "label": "Prep Time", "value": "15 minutes" },
-    { "label": "Cook Time", "value": "35 minutes" },
-    { "label": "Course", "value": "Main Course" },
-    { "label": "Yield", "value": "12 lule kebabs" }
+    {
+      "label": "Prep Time",
+      "value": "15 minutes"
+    },
+    {
+      "label": "Cook Time",
+      "value": "35 minutes"
+    },
+    {
+      "label": "Course",
+      "value": "Main Course"
+    },
+    {
+      "label": "Yield",
+      "value": "12 lule kebabs"
+    }
   ],
   "scalingPrinciple": "Item A.01 (Lean Ground Beef) is locked at 100.0% as the mathematical baseline. Binder, aromatic, and spice percentages read against that 907 g meat mass — the binder ratio in particular must hold, since too little breadcrumb at a higher meat weight will not carry the extra onion liquid.",
   "formulations": [
     {
       "rows": [
-        { "group": "A — Core Substrate" },
-        { "id": "A.01", "name": "Lean Ground Beef", "volume": "2 lb", "mass": 907.2, "pct": 100.0, "baseline": true, "role": "Primary protein substrate; lean grind relies on the onion liquid and egg for moisture." },
-        { "group": "B — Aromatics & Binder" },
-        { "id": "B.01", "name": "Onion, quartered", "volume": "1 medium", "mass": 150, "pct": 16.53, "estimated": true, "role": "Processed very fine — the extracted juice is retained and added to the meat, not discarded." },
-        { "id": "B.02", "name": "Garlic Cloves", "volume": "2 cloves", "mass": 10, "pct": 1.10, "estimated": true, "role": "Processed with the onion." },
-        { "id": "B.03", "name": "Plain Bread Crumb", "volume": "1/2 cup", "mass": 54, "pct": 5.95, "estimated": true, "role": "Primary binder; absorbs the retained onion and garlic liquid." },
-        { "id": "B.04", "name": "Egg, raw", "volume": "1 each", "mass": 50, "pct": 5.51, "estimated": true, "role": "Secondary binder; sets during cooking to hold the lule shape." },
-        { "group": "C — Tomato & Acid" },
-        { "id": "C.01", "name": "Tomato Paste", "volume": "1 tbsp", "mass": 16, "pct": 1.76, "estimated": true, "role": "Concentrated depth and color." },
-        { "id": "C.02", "name": "Tomato Sauce", "volume": "5 tbsp", "mass": 76, "pct": 8.38, "estimated": true, "role": "Moisture and mild acidity." },
-        { "id": "C.03", "name": "Lemon, juiced", "volume": "1/2 lemon", "mass": 22, "pct": 2.42, "estimated": true, "role": "Brightening acid." },
-        { "group": "D — Spice & Herb" },
-        { "id": "D.01", "name": "Fresh Parsley, finely chopped", "volume": "1 bunch", "mass": 60, "pct": 6.61, "estimated": true, "role": "Primary herb; substantial quantity, chopped fine." },
-        { "id": "D.02", "name": "Salt", "volume": "1 1/2 tsp", "mass": 9, "pct": 0.99, "estimated": true, "role": "Seasoning; also aids myosin extraction for a cohesive bind." },
-        { "id": "D.03", "name": "Cumin", "volume": "1 tsp", "mass": 2, "pct": 0.22, "estimated": true, "role": "Warm earthy base note." },
-        { "id": "D.04", "name": "Paprika", "volume": "1 tsp", "mass": 2.3, "pct": 0.25, "estimated": true, "role": "Color and mild sweetness." },
-        { "id": "D.05", "name": "Aleppo Pepper", "volume": "1 tsp", "mass": 2.5, "pct": 0.28, "estimated": true, "role": "Characteristic fruity, moderate heat." },
-        { "id": "D.06", "name": "Black Pepper", "volume": "1 tsp", "mass": 2.3, "pct": 0.25, "estimated": true, "role": "Pungency." },
-        { "id": "D.07", "name": "Dried Oregano", "volume": "1/2 tsp", "mass": 0.5, "pct": 0.06, "estimated": true, "role": "Background herb note." }
+        {
+          "group": "A — Core Substrate"
+        },
+        {
+          "id": "A.01",
+          "name": "Lean Ground Beef",
+          "volume": "2 lb",
+          "mass": 907.2,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Primary protein substrate; lean grind relies on the onion liquid and egg for moisture."
+        },
+        {
+          "group": "B — Aromatics & Binder"
+        },
+        {
+          "id": "B.01",
+          "name": "Onion, quartered",
+          "volume": "1 medium",
+          "mass": 150,
+          "pct": 16.53,
+          "estimated": true,
+          "role": "Processed very fine — the extracted juice is retained and added to the meat, not discarded."
+        },
+        {
+          "id": "B.02",
+          "name": "Garlic Cloves",
+          "volume": "2 cloves",
+          "mass": 10,
+          "pct": 1.1,
+          "estimated": true,
+          "role": "Processed with the onion."
+        },
+        {
+          "id": "B.03",
+          "name": "Plain Bread Crumb",
+          "volume": "1/2 cup",
+          "mass": 54,
+          "pct": 5.95,
+          "estimated": true,
+          "role": "Primary binder; absorbs the retained onion and garlic liquid."
+        },
+        {
+          "id": "B.04",
+          "name": "Egg, raw",
+          "volume": "1 each",
+          "mass": 50,
+          "pct": 5.51,
+          "estimated": true,
+          "role": "Secondary binder; sets during cooking to hold the lule shape."
+        },
+        {
+          "group": "C — Tomato & Acid"
+        },
+        {
+          "id": "C.01",
+          "name": "Tomato Paste",
+          "volume": "1 tbsp",
+          "mass": 16,
+          "pct": 1.76,
+          "estimated": true,
+          "role": "Concentrated depth and color."
+        },
+        {
+          "id": "C.02",
+          "name": "Tomato Sauce",
+          "volume": "5 tbsp",
+          "mass": 76,
+          "pct": 8.38,
+          "estimated": true,
+          "role": "Moisture and mild acidity."
+        },
+        {
+          "id": "C.03",
+          "name": "Lemon, juiced",
+          "volume": "1/2 lemon",
+          "mass": 22,
+          "pct": 2.43,
+          "estimated": true,
+          "role": "Brightening acid."
+        },
+        {
+          "group": "D — Spice & Herb"
+        },
+        {
+          "id": "D.01",
+          "name": "Fresh Parsley, finely chopped",
+          "volume": "1 bunch",
+          "mass": 60,
+          "pct": 6.61,
+          "estimated": true,
+          "role": "Primary herb; substantial quantity, chopped fine."
+        },
+        {
+          "id": "D.02",
+          "name": "Salt",
+          "volume": "1 1/2 tsp",
+          "mass": 9,
+          "pct": 0.99,
+          "estimated": true,
+          "role": "Seasoning; also aids myosin extraction for a cohesive bind."
+        },
+        {
+          "id": "D.03",
+          "name": "Cumin",
+          "volume": "1 tsp",
+          "mass": 2,
+          "pct": 0.22,
+          "estimated": true,
+          "role": "Warm earthy base note."
+        },
+        {
+          "id": "D.04",
+          "name": "Paprika",
+          "volume": "1 tsp",
+          "mass": 2.3,
+          "pct": 0.25,
+          "estimated": true,
+          "role": "Color and mild sweetness."
+        },
+        {
+          "id": "D.05",
+          "name": "Aleppo Pepper",
+          "volume": "1 tsp",
+          "mass": 2.5,
+          "pct": 0.28,
+          "estimated": true,
+          "role": "Characteristic fruity, moderate heat."
+        },
+        {
+          "id": "D.06",
+          "name": "Black Pepper",
+          "volume": "1 tsp",
+          "mass": 2.3,
+          "pct": 0.25,
+          "estimated": true,
+          "role": "Pungency."
+        },
+        {
+          "id": "D.07",
+          "name": "Dried Oregano",
+          "volume": "1/2 tsp",
+          "mass": 0.5,
+          "pct": 0.06,
+          "estimated": true,
+          "role": "Background herb note."
+        }
       ],
-      "total": { "mass": 1363.8, "pct": 150.31, "estimated": true, "role": "Combined raw material input footprint." }
+      "total": {
+        "mass": 1363.8,
+        "pct": 150.33,
+        "estimated": true,
+        "role": "Combined raw material input footprint."
+      }
     }
   ],
   "matrixFootnote": "*The source specifies this recipe in volumetric kitchen units and counts apart from the 2 lb meat weight. All other gram values are standard culinary conversions and are marked accordingly.",
   "mise": [
-    { "label": "Onion and Garlic Processing (B.01, B.02)", "text": "Place the quartered onion and 2 cloves of garlic in a food processor. Process until very finely chopped. Do not discard the juice extracted from the onion and garlic — it will be added to the meat mixture and is the primary moisture source in this lean formulation." },
-    { "label": "Herb Prep (D.01)", "text": "Finely chop the parsley bunch." }
+    {
+      "label": "Onion and Garlic Processing (B.01, B.02)",
+      "text": "Place the quartered onion and 2 cloves of garlic in a food processor. Process until very finely chopped. Do not discard the juice extracted from the onion and garlic — it will be added to the meat mixture and is the primary moisture source in this lean formulation."
+    },
+    {
+      "label": "Herb Prep (D.01)",
+      "text": "Finely chop the parsley bunch."
+    }
   ],
   "execution": [
-    { "name": "Combine Meat and Aromatics", "params": "~2 min | Hand mix", "text": "Place the meat into a large mixing bowl. Add the processed onion and garlic — along with all of their liquid — to the meat." },
-    { "name": "Add Remaining Ingredients", "params": "~5 min | Hand mix", "text": "Add the breadcrumb, egg, tomato paste, tomato sauce, lemon juice, parsley, and the full spice block to the meat. Mix well by hand until completely uniform." },
-    { "name": "Portion", "params": "~5 min | 1/2 cup measure", "text": "Using a 1/2 cup measure, make 12 balls." },
-    { "name": "Shape and Grill", "params": "Until cooked through | Outdoor grill or grill pan", "text": "Roll each ball into the traditional lule (sausage-like) shape and grill until cooked through. An outdoor grill or an indoor grill pan may be used." },
-    { "name": "Oven Alternative", "params": "~35 min | 375°F", "text": "If outdoor grilling isn't an option, place the kebabs on a roasting rack over a foil-lined baking pan. Bake at 375°F for about 35 minutes, turning them after about 20 minutes." }
+    {
+      "name": "Combine Meat and Aromatics",
+      "params": "~2 min | Hand mix",
+      "text": "Place the meat into a large mixing bowl. Add the processed onion and garlic — along with all of their liquid — to the meat."
+    },
+    {
+      "name": "Add Remaining Ingredients",
+      "params": "~5 min | Hand mix",
+      "text": "Add the breadcrumb, egg, tomato paste, tomato sauce, lemon juice, parsley, and the full spice block to the meat. Mix well by hand until completely uniform."
+    },
+    {
+      "name": "Portion",
+      "params": "~5 min | 1/2 cup measure",
+      "text": "Using a 1/2 cup measure, make 12 balls."
+    },
+    {
+      "name": "Shape and Grill",
+      "params": "Until cooked through | Outdoor grill or grill pan",
+      "text": "Roll each ball into the traditional lule (sausage-like) shape and grill until cooked through. An outdoor grill or an indoor grill pan may be used."
+    },
+    {
+      "name": "Oven Alternative",
+      "params": "~35 min | 375°F",
+      "text": "If outdoor grilling isn't an option, place the kebabs on a roasting rack over a foil-lined baking pan. Bake at 375°F for about 35 minutes, turning them after about 20 minutes."
+    }
   ],
   "directive": "Retain every drop of the onion and garlic liquid. At 2 lb of lean grind this liquid, absorbed into the breadcrumb, is the difference between a juicy lule and a dry one — draining the processor bowl is the single most common way this recipe fails."
 }

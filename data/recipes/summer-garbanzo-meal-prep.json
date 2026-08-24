@@ -2,7 +2,12 @@
   "slug": "summer-garbanzo-meal-prep",
   "title": "Summer Garbanzo Meal Prep",
   "subtitle": "Technical Formulation Sheet",
-  "tags": ["Salads", "Meal Prep", "Vegetarian", "Thai", "Mediterranean"],
+  "tags": [
+    "Salads",
+    "Meal Prep",
+    "Thai",
+    "Mediterranean"
+  ],
   "meta": {
     "version": "1.0",
     "date": "July 18, 2026",
@@ -19,62 +24,305 @@
       "title": "1. Component Baseline: Cooked Garbanzo Beans",
       "intro": "To ensure structural integrity and a deeply savory foundation, the garbanzos are prepared as a single uniform batch using a marine botanical input (kombu) to naturally enhance umami and break down complex sugars.",
       "rows": [
-        { "id": "A.01", "name": "Dry Garbanzo Beans", "volume": "—", "mass": 320, "pct": 100.0, "baseline": true, "role": "Core substrate." },
-        { "id": "A.02", "name": "Filtered Water", "volume": "—", "mass": 1280, "pct": 400.0, "role": "Hydration and cooking medium." },
-        { "id": "A.03", "name": "Dried Kombu (Kelp)", "volume": "—", "mass": 5, "pct": 1.5, "role": "Glutamic acid source; enzymatic breakdown aid." },
-        { "id": "A.04", "name": "Kosher Salt", "volume": "—", "mass": 6.4, "pct": 2.0, "role": "Internal starch seasoning; ionic structural stability." }
+        {
+          "id": "A.01",
+          "name": "Dry Garbanzo Beans",
+          "volume": "—",
+          "mass": 320,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Core substrate."
+        },
+        {
+          "id": "A.02",
+          "name": "Filtered Water",
+          "volume": "—",
+          "mass": 1280,
+          "pct": 400.0,
+          "role": "Hydration and cooking medium."
+        },
+        {
+          "id": "A.03",
+          "name": "Dried Kombu (Kelp)",
+          "volume": "—",
+          "mass": 5,
+          "pct": 1.56,
+          "role": "Glutamic acid source; enzymatic breakdown aid."
+        },
+        {
+          "id": "A.04",
+          "name": "Kosher Salt",
+          "volume": "—",
+          "mass": 6.4,
+          "pct": 2.0,
+          "role": "Internal starch seasoning; ionic structural stability."
+        }
       ],
       "note": "Execution: Hydrate beans in excess water for 12 hours. Drain, rinse, and combine with the 1280 g water, kombu, and salt. Simmer gently until beans reach 165°F internally and are tender but completely intact (~45–60 minutes). Cool directly in the cooking liquor to prevent skin splitting. Drain completely before dividing: 400 g for Formulation 1, 350 g for Formulation 2."
     },
     {
       "title": "2. Formulation 1 — Southeast Asian Larb-Style Chickpea Salad",
       "intro": "A high-acid, herb-dense salad using rapid surface-area integration of aromatics to mimic traditional minced-meat larb profiles. Percentages here are relative to the 400 g cooked bean portion.",
-      "columns": ["Item ID", "Ingredient Component", "Prep Specification", "Mass (g)", "Formula % (Bean Base)", "Notes"],
+      "columns": [
+        "Item ID",
+        "Ingredient Component",
+        "Prep Specification",
+        "Mass (g)",
+        "Formula % (Bean Base)",
+        "Notes"
+      ],
       "rows": [
-        { "id": "B.01", "name": "Cooked Garbanzo Beans", "volume": "Chilled, fully drained", "mass": 400, "pct": 100.0, "baseline": true, "role": "Local baseline for this formulation." },
-        { "id": "B.02", "name": "Fresh Lime Juice", "volume": "Freshly squeezed", "mass": 45, "pct": 11.25, "role": "Primary acid agent." },
-        { "id": "B.03", "name": "Premium Fish Sauce", "volume": "—", "mass": 30, "pct": 7.5, "role": "Umami/sodium baseline." },
-        { "id": "B.04", "name": "Palm Sugar", "volume": "Finely shaved", "mass": 12, "pct": 3.0, "role": "Sweetness balancer." },
-        { "id": "B.05", "name": "Shallots", "volume": "Shaved paper-thin across the grain", "mass": 40, "pct": 10.0, "role": "Macerated in the acid base to denature sulfur compounds." },
-        { "id": "B.06", "name": "Carrot", "volume": "Fine julienne (1 × 1 × 40 mm)", "mass": 80, "pct": 20.0, "role": "Structural crunch." },
-        { "id": "B.07", "name": "Celery", "volume": "Thin bias cuts (1.5 mm)", "mass": 60, "pct": 15.0, "role": "Structural crunch." },
-        { "id": "B.08", "name": "Bird's Eye Chiles", "volume": "Minced fine, with seeds", "mass": 4, "pct": 1.0, "role": "Heat driver." },
-        { "id": "B.09", "name": "Khao Khua (Toasted Sticky Rice Powder)", "volume": "Ground to fine sand", "mass": 15, "pct": 3.75, "role": "Service-only addition; drinks up excess dressing and adds nuttiness." },
-        { "id": "B.10", "name": "Fresh Herb Matrix (Mint, Cilantro, Thai Basil)", "volume": "Whole mint leaves, torn basil, chopped cilantro", "mass": 30, "pct": 7.5, "role": "Service-only addition." },
-        { "id": "B.11", "name": "Roasted Peanuts", "volume": "Coarsely crushed", "mass": 25, "pct": 6.25, "role": "Service-only garnish." }
+        {
+          "id": "B.01",
+          "name": "Cooked Garbanzo Beans",
+          "volume": "Chilled, fully drained",
+          "mass": 400,
+          "pct": 100.0,
+          "role": "Local baseline for this formulation."
+        },
+        {
+          "id": "B.02",
+          "name": "Fresh Lime Juice",
+          "volume": "Freshly squeezed",
+          "mass": 45,
+          "pct": 11.25,
+          "role": "Primary acid agent."
+        },
+        {
+          "id": "B.03",
+          "name": "Premium Fish Sauce",
+          "volume": "—",
+          "mass": 30,
+          "pct": 7.5,
+          "role": "Umami/sodium baseline."
+        },
+        {
+          "id": "B.04",
+          "name": "Palm Sugar",
+          "volume": "Finely shaved",
+          "mass": 12,
+          "pct": 3.0,
+          "role": "Sweetness balancer."
+        },
+        {
+          "id": "B.05",
+          "name": "Shallots",
+          "volume": "Shaved paper-thin across the grain",
+          "mass": 40,
+          "pct": 10.0,
+          "role": "Macerated in the acid base to denature sulfur compounds."
+        },
+        {
+          "id": "B.06",
+          "name": "Carrot",
+          "volume": "Fine julienne (1 × 1 × 40 mm)",
+          "mass": 80,
+          "pct": 20.0,
+          "role": "Structural crunch."
+        },
+        {
+          "id": "B.07",
+          "name": "Celery",
+          "volume": "Thin bias cuts (1.5 mm)",
+          "mass": 60,
+          "pct": 15.0,
+          "role": "Structural crunch."
+        },
+        {
+          "id": "B.08",
+          "name": "Bird's Eye Chiles",
+          "volume": "Minced fine, with seeds",
+          "mass": 4,
+          "pct": 1.0,
+          "role": "Heat driver."
+        },
+        {
+          "id": "B.09",
+          "name": "Khao Khua (Toasted Sticky Rice Powder)",
+          "volume": "Ground to fine sand",
+          "mass": 15,
+          "pct": 3.75,
+          "role": "Service-only addition; drinks up excess dressing and adds nuttiness."
+        },
+        {
+          "id": "B.10",
+          "name": "Fresh Herb Matrix (Mint, Cilantro, Thai Basil)",
+          "volume": "Whole mint leaves, torn basil, chopped cilantro",
+          "mass": 30,
+          "pct": 7.5,
+          "role": "Service-only addition."
+        },
+        {
+          "id": "B.11",
+          "name": "Roasted Peanuts",
+          "volume": "Coarsely crushed",
+          "mass": 25,
+          "pct": 6.25,
+          "role": "Service-only garnish."
+        }
       ]
     },
     {
       "title": "3. Formulation 2 — Mediterranean Garbanzo & Pasta Salad with Dill Pickles",
       "intro": "An emulsified vinaigrette pasta salad engineered to use lactic-fermented pickle brine as an acidic binder. Percentages here are relative to the combined 530 g starch mass (beans plus dry pasta).",
-      "columns": ["Item ID", "Ingredient Component", "Prep Specification", "Mass (g)", "Formula % (Starch Base)", "Notes"],
+      "columns": [
+        "Item ID",
+        "Ingredient Component",
+        "Prep Specification",
+        "Mass (g)",
+        "Formula % (Starch Base)",
+        "Notes"
+      ],
       "rows": [
-        { "id": "C.01", "name": "Cooked Garbanzo Beans", "volume": "Chilled, fully drained", "mass": 350, "pct": 66.0, "role": "Component of the combined starch baseline." },
-        { "id": "C.02", "name": "Dry Orecchiette or Campanelle Pasta", "volume": "Boiled slightly past al dente (~400 g cooked yield)", "mass": 180, "pct": 34.0, "role": "Component of the combined starch baseline." },
-        { "id": "C.03", "name": "Dill Pickles (Lacto-Fermented)", "volume": "Clean 6 mm dice", "mass": 90, "pct": 17.0, "role": "Matched to bean scale for uniform bite." },
-        { "id": "C.04", "name": "Celery", "volume": "Clean 6 mm dice", "mass": 60, "pct": 11.3, "role": "Structural crunch." },
-        { "id": "C.05", "name": "Red Onion", "volume": "Finely minced (2 mm)", "mass": 35, "pct": 6.6, "role": "Sharp aromatic." },
-        { "id": "C.06", "name": "Cherry Tomatoes", "volume": "Halved longitudinally", "mass": 120, "pct": 22.6, "role": "Sweet-acid inclusion." },
-        { "id": "C.07", "name": "Extra Virgin Olive Oil", "volume": "Cold pressed mono-varietal", "mass": 60, "pct": 11.3, "role": "Emulsion lipid phase." },
-        { "id": "C.08", "name": "Dill Pickle Brine", "volume": "Strained from pickle reservoir", "mass": 25, "pct": 4.7, "role": "Primary acid binder." },
-        { "id": "C.09", "name": "Red Wine Vinegar", "volume": "—", "mass": 10, "pct": 1.9, "role": "Sharp acetic balancer." },
-        { "id": "C.10", "name": "Dijon Mustard", "volume": "—", "mass": 5, "pct": 0.9, "role": "Emulsification catalyst (lecithin agent)." },
-        { "id": "C.11", "name": "Fresh Garlic", "volume": "Microplaned to paste", "mass": 3, "pct": 0.5, "role": "Aromatic." },
-        { "id": "C.12", "name": "Dried Sicilian Oregano & Fresh Herbs", "volume": "Dried oregano, chopped parsley and dill", "mass": 15, "pct": 2.8, "role": "Herb matrix." },
-        { "id": "C.13", "name": "Pecorino Romano", "volume": "Finely grated", "mass": 30, "pct": 5.6, "role": "Finishing hard sheep's cheese." }
+        {
+          "id": "C.01",
+          "name": "Cooked Garbanzo Beans",
+          "volume": "Chilled, fully drained",
+          "mass": 350,
+          "pct": 66.0,
+          "role": "Component of the combined starch baseline."
+        },
+        {
+          "id": "C.02",
+          "name": "Dry Orecchiette or Campanelle Pasta",
+          "volume": "Boiled slightly past al dente (~400 g cooked yield)",
+          "mass": 180,
+          "pct": 34.0,
+          "role": "Component of the combined starch baseline."
+        },
+        {
+          "id": "C.03",
+          "name": "Dill Pickles (Lacto-Fermented)",
+          "volume": "Clean 6 mm dice",
+          "mass": 90,
+          "pct": 17.0,
+          "role": "Matched to bean scale for uniform bite."
+        },
+        {
+          "id": "C.04",
+          "name": "Celery",
+          "volume": "Clean 6 mm dice",
+          "mass": 60,
+          "pct": 11.3,
+          "role": "Structural crunch."
+        },
+        {
+          "id": "C.05",
+          "name": "Red Onion",
+          "volume": "Finely minced (2 mm)",
+          "mass": 35,
+          "pct": 6.6,
+          "role": "Sharp aromatic."
+        },
+        {
+          "id": "C.06",
+          "name": "Cherry Tomatoes",
+          "volume": "Halved longitudinally",
+          "mass": 120,
+          "pct": 22.6,
+          "role": "Sweet-acid inclusion."
+        },
+        {
+          "id": "C.07",
+          "name": "Extra Virgin Olive Oil",
+          "volume": "Cold pressed mono-varietal",
+          "mass": 60,
+          "pct": 11.3,
+          "role": "Emulsion lipid phase."
+        },
+        {
+          "id": "C.08",
+          "name": "Dill Pickle Brine",
+          "volume": "Strained from pickle reservoir",
+          "mass": 25,
+          "pct": 4.7,
+          "role": "Primary acid binder."
+        },
+        {
+          "id": "C.09",
+          "name": "Red Wine Vinegar",
+          "volume": "—",
+          "mass": 10,
+          "pct": 1.9,
+          "role": "Sharp acetic balancer."
+        },
+        {
+          "id": "C.10",
+          "name": "Dijon Mustard",
+          "volume": "—",
+          "mass": 5,
+          "pct": 0.9,
+          "role": "Emulsification catalyst (lecithin agent)."
+        },
+        {
+          "id": "C.11",
+          "name": "Fresh Garlic",
+          "volume": "Microplaned to paste",
+          "mass": 3,
+          "pct": 0.5,
+          "role": "Aromatic."
+        },
+        {
+          "id": "C.12",
+          "name": "Dried Sicilian Oregano & Fresh Herbs",
+          "volume": "Dried oregano, chopped parsley and dill",
+          "mass": 15,
+          "pct": 2.8,
+          "role": "Herb matrix."
+        },
+        {
+          "id": "C.13",
+          "name": "Pecorino Romano",
+          "volume": "Finely grated",
+          "mass": 30,
+          "pct": 5.6,
+          "role": "Finishing hard sheep's cheese."
+        }
       ]
     }
   ],
   "executionTitle": "II. Assembly & Storage Protocols",
   "execution": [
-    { "name": "F1 — Liquid Dressing Base", "params": "Formulation 1", "text": "In a large formulation bowl, vigorously whisk lime juice, fish sauce, and palm sugar until the sugar solids are entirely dissolved. Add minced chiles." },
-    { "name": "F1 — Maceration Phase", "params": "5 min | Ambient", "text": "Add shaved shallots directly to the liquid base. Allow to macerate; the acid will partially denature the sharp allium sulfur compounds." },
-    { "name": "F1 — Bulk Integration", "params": "Formulation 1", "text": "Introduce the 400 g of cold garbanzo beans, julienned carrots, and sliced celery. Fold comprehensively to ensure surface coating." },
-    { "name": "F1 — Storage & Service Finish", "params": "3-day window | Refrigerated", "text": "If packing for a 3-day window, store the base mixture in airtight containers. Do not add the khao khua, herbs, or peanuts to the bulk storage — pack these dry components separately. Just prior to consumption, fold in the khao khua, fresh herbs, and top with peanuts." },
-    { "name": "F2 — Starch Handling", "params": "Formulation 2", "text": "Boil the pasta in heavily salted water. Cook ~30 seconds past standard package al dente instructions so the structure stays tender when refrigerated. Drain, do not rinse, spread on a flat tray, and coat with a fraction of the olive oil to retain surface starch matrix. Let cool to room temp." },
-    { "name": "F2 — Emulsion Construction", "params": "Formulation 2", "text": "In an immersion blender cup or small deep bowl, blend the pickle brine, red wine vinegar, Dijon mustard, microplaned garlic, and dried oregano. Slowly stream in the extra virgin olive oil while whisking vigorously to create a tight, stable, creamy emulsion. Stir in the chopped fresh herbs." },
-    { "name": "F2 — Bulk Fusion", "params": "Formulation 2", "text": "In a storage tub, combine the cooled pasta, 350 g garbanzos, diced pickles, celery, minced red onion, and cherry tomato halves. Pour the emulsified dressing entirely over the mixture and fold cleanly until thoroughly integrated." },
-    { "name": "F2 — Maturation", "params": "Minimum 2 hr | Below 38°F", "text": "Seal airtight and place in cold storage. The pasta will absorb the pickle-brine vinaigrette during this phase. Top with fresh Pecorino Romano immediately before boxing or serving." }
+    {
+      "name": "F1 — Liquid Dressing Base",
+      "params": "Formulation 1",
+      "text": "In a large formulation bowl, vigorously whisk lime juice, fish sauce, and palm sugar until the sugar solids are entirely dissolved. Add minced chiles."
+    },
+    {
+      "name": "F1 — Maceration Phase",
+      "params": "5 min | Ambient",
+      "text": "Add shaved shallots directly to the liquid base. Allow to macerate; the acid will partially denature the sharp allium sulfur compounds."
+    },
+    {
+      "name": "F1 — Bulk Integration",
+      "params": "Formulation 1",
+      "text": "Introduce the 400 g of cold garbanzo beans, julienned carrots, and sliced celery. Fold comprehensively to ensure surface coating."
+    },
+    {
+      "name": "F1 — Storage & Service Finish",
+      "params": "3-day window | Refrigerated",
+      "text": "If packing for a 3-day window, store the base mixture in airtight containers. Do not add the khao khua, herbs, or peanuts to the bulk storage — pack these dry components separately. Just prior to consumption, fold in the khao khua, fresh herbs, and top with peanuts."
+    },
+    {
+      "name": "F2 — Starch Handling",
+      "params": "Formulation 2",
+      "text": "Boil the pasta in heavily salted water. Cook ~30 seconds past standard package al dente instructions so the structure stays tender when refrigerated. Drain, do not rinse, spread on a flat tray, and coat with a fraction of the olive oil to retain surface starch matrix. Let cool to room temp."
+    },
+    {
+      "name": "F2 — Emulsion Construction",
+      "params": "Formulation 2",
+      "text": "In an immersion blender cup or small deep bowl, blend the pickle brine, red wine vinegar, Dijon mustard, microplaned garlic, and dried oregano. Slowly stream in the extra virgin olive oil while whisking vigorously to create a tight, stable, creamy emulsion. Stir in the chopped fresh herbs."
+    },
+    {
+      "name": "F2 — Bulk Fusion",
+      "params": "Formulation 2",
+      "text": "In a storage tub, combine the cooled pasta, 350 g garbanzos, diced pickles, celery, minced red onion, and cherry tomato halves. Pour the emulsified dressing entirely over the mixture and fold cleanly until thoroughly integrated."
+    },
+    {
+      "name": "F2 — Maturation",
+      "params": "Minimum 2 hr | Below 38°F",
+      "text": "Seal airtight and place in cold storage. The pasta will absorb the pickle-brine vinaigrette during this phase. Top with fresh Pecorino Romano immediately before boxing or serving."
+    }
   ],
   "directive": "In Formulation 1, the khao khua, herbs, and peanuts are service-only components. Packing them into the bulk container converts the toasted rice powder into paste within hours and collapses the entire textural premise of the dish."
 }

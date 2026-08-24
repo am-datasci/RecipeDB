@@ -2,7 +2,11 @@
   "slug": "popovers-prosciutto-mascarpone",
   "title": "Popovers with Prosciutto and Herbed Mascarpone",
   "subtitle": "Recipe Formulation Sheet",
-  "tags": ["Appetizers", "Baking", "Contains Meat"],
+  "tags": [
+    "Appetizers",
+    "Baking",
+    "Contains Meat"
+  ],
   "meta": {
     "version": "1.0",
     "status": "Production Ready",
@@ -17,49 +21,210 @@
     {
       "title": "Popover Base (Yield: 12 Popovers)",
       "rows": [
-        { "id": "A.01", "name": "All-Purpose Flour", "volume": "~2.5 cups, spooned and leveled", "mass": 300, "pct": 100.0, "baseline": true, "role": "Structural starch and gluten baseline." },
-        { "id": "B.01", "name": "Whole Milk", "volume": "250 ml (~1 cup + 1 tbsp)", "mass": 258, "pct": 86.0, "estimated": true, "role": "Primary hydration; lactose drives Maillard browning on the crust." },
-        { "id": "B.02", "name": "Kefir (Plain, Unsweetened)", "volume": "50 ml (~3.5 tbsp)", "mass": 52, "pct": 17.33, "estimated": true, "role": "Acidulant; tenderizes gluten for a more delicate wall structure." },
-        { "id": "B.03", "name": "Large Eggs", "volume": "5 units, room temperature", "mass": 250, "pct": 83.33, "estimated": true, "role": "Steam leavening, protein structure, and custardy interior." },
-        { "id": "B.04", "name": "Unsalted Butter, Melted", "volume": "3 tbsp", "mass": 45, "pct": 15.0, "role": "Enrichment fat; shortens the crumb and aids release." },
-        { "id": "B.05", "name": "Fine Sea Salt", "volume": "1 level tsp", "mass": 6, "pct": 2.0, "role": "Flavor and gluten stabilization." }
+        {
+          "id": "A.01",
+          "name": "All-Purpose Flour",
+          "volume": "~2.5 cups, spooned and leveled",
+          "mass": 300,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Structural starch and gluten baseline."
+        },
+        {
+          "id": "B.01",
+          "name": "Whole Milk",
+          "volume": "250 ml (~1 cup + 1 tbsp)",
+          "mass": 258,
+          "pct": 86.0,
+          "estimated": true,
+          "role": "Primary hydration; lactose drives Maillard browning on the crust."
+        },
+        {
+          "id": "B.02",
+          "name": "Kefir (Plain, Unsweetened)",
+          "volume": "50 ml (~3.5 tbsp)",
+          "mass": 52,
+          "pct": 17.33,
+          "estimated": true,
+          "role": "Acidulant; tenderizes gluten for a more delicate wall structure."
+        },
+        {
+          "id": "B.03",
+          "name": "Large Eggs",
+          "volume": "5 units, room temperature",
+          "mass": 250,
+          "pct": 83.33,
+          "estimated": true,
+          "role": "Steam leavening, protein structure, and custardy interior."
+        },
+        {
+          "id": "B.04",
+          "name": "Unsalted Butter, Melted",
+          "volume": "3 tbsp",
+          "mass": 45,
+          "pct": 15.0,
+          "role": "Enrichment fat; shortens the crumb and aids release."
+        },
+        {
+          "id": "B.05",
+          "name": "Fine Sea Salt",
+          "volume": "1 level tsp",
+          "mass": 6,
+          "pct": 2.0,
+          "role": "Flavor and gluten stabilization."
+        }
       ],
-      "total": { "mass": 911, "pct": 303.66, "estimated": true, "role": "Popover batter batch mass." }
+      "total": {
+        "mass": 911,
+        "pct": 303.67,
+        "estimated": true,
+        "role": "Popover batter batch mass."
+      }
     },
     {
       "title": "Herbed Mascarpone Accompaniment",
-      "columns": ["Item ID", "Ingredient", "Home Chef Equivalent", "Mass (g)", "% of Flour Base", "Chef's Specification"],
+      "columns": [
+        "Item ID",
+        "Ingredient",
+        "Home Chef Equivalent",
+        "Mass (g)",
+        "% of Flour Base",
+        "Chef's Specification"
+      ],
       "rows": [
-        { "id": "C.01", "name": "Mascarpone Cheese", "volume": "1 cup (standard tub)", "mass": 227, "pct": 75.67, "estimated": true, "role": "Cold, rich lipid counterpoint to the hot pastry." },
-        { "id": "C.02", "name": "Fresh Chives", "volume": "1 tbsp, finely minced", "mass": 3, "pct": 1.0, "estimated": true, "role": "Primary herbal note." },
-        { "id": "C.03", "name": "Fresh Tarragon", "volume": "1 tsp, finely minced", "mass": 1, "pct": 0.33, "estimated": true, "role": "Anise-adjacent aromatic accent." },
-        { "id": "C.04", "name": "Lemon Zest", "volume": "1/2 tsp, finely grated", "mass": 1, "pct": 0.33, "estimated": true, "role": "Volatile citrus oils." },
-        { "id": "C.05", "name": "Fresh Lemon Juice", "volume": "1/4 tsp", "mass": 1.25, "pct": 0.42, "estimated": true, "role": "Trace acid to lift the dairy fat." },
-        { "id": "C.06", "name": "Fine Sea Salt", "volume": "One healthy pinch", "massText": "To taste", "pctText": "—", "role": "Seasoning." },
-        { "id": "C.07", "name": "White Pepper", "volume": "A light dusting for finishing", "massText": "To taste", "pctText": "—", "role": "Finishing spice; dusted on the surface." }
+        {
+          "id": "C.01",
+          "name": "Mascarpone Cheese",
+          "volume": "1 cup (standard tub)",
+          "mass": 227,
+          "pct": 75.67,
+          "estimated": true,
+          "role": "Cold, rich lipid counterpoint to the hot pastry."
+        },
+        {
+          "id": "C.02",
+          "name": "Fresh Chives",
+          "volume": "1 tbsp, finely minced",
+          "mass": 3,
+          "pct": 1.0,
+          "estimated": true,
+          "role": "Primary herbal note."
+        },
+        {
+          "id": "C.03",
+          "name": "Fresh Tarragon",
+          "volume": "1 tsp, finely minced",
+          "mass": 1,
+          "pct": 0.33,
+          "estimated": true,
+          "role": "Anise-adjacent aromatic accent."
+        },
+        {
+          "id": "C.04",
+          "name": "Lemon Zest",
+          "volume": "1/2 tsp, finely grated",
+          "mass": 1,
+          "pct": 0.33,
+          "estimated": true,
+          "role": "Volatile citrus oils."
+        },
+        {
+          "id": "C.05",
+          "name": "Fresh Lemon Juice",
+          "volume": "1/4 tsp",
+          "mass": 1.25,
+          "pct": 0.42,
+          "estimated": true,
+          "role": "Trace acid to lift the dairy fat."
+        },
+        {
+          "id": "C.06",
+          "name": "Fine Sea Salt",
+          "volume": "One healthy pinch",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Seasoning."
+        },
+        {
+          "id": "C.07",
+          "name": "White Pepper",
+          "volume": "A light dusting for finishing",
+          "massText": "To taste",
+          "pctText": "—",
+          "role": "Finishing spice; dusted on the surface."
+        }
       ]
     },
     {
       "title": "Charcuterie Element",
-      "columns": ["Item ID", "Ingredient", "Home Chef Equivalent", "Mass (g)", "% of Flour Base", "Chef's Specification"],
+      "columns": [
+        "Item ID",
+        "Ingredient",
+        "Home Chef Equivalent",
+        "Mass (g)",
+        "% of Flour Base",
+        "Chef's Specification"
+      ],
       "rows": [
-        { "id": "D.01", "name": "Prosciutto di Parma or Jamón Ibérico", "volume": "12 paper-thin slices, room temp", "mass": 120, "pct": 40.0, "estimated": true, "role": "One slice per popover; brought to room temperature so the fat softens on contact with the hot pastry." }
+        {
+          "id": "D.01",
+          "name": "Prosciutto di Parma or Jamón Ibérico",
+          "volume": "12 paper-thin slices, room temp",
+          "mass": 120,
+          "pct": 40.0,
+          "estimated": true,
+          "role": "One slice per popover; brought to room temperature so the fat softens on contact with the hot pastry."
+        }
       ]
     }
   ],
   "matrixFootnote": "*Milk, kefir, eggs, mascarpone, herbs, and prosciutto are given in the source by volume, count, or slice. Gram values shown are standard culinary conversions and are marked accordingly; flour, butter, and salt masses are stated directly.",
   "mise": [
-    { "label": "Thermal Tempering (Crucial Step)", "text": "Before beginning, ensure that the milk, kefir, and eggs are completely at room temperature. Cold ingredients trap less air and will severely stunt the popover's steam-driven rise. Leave them on the counter for at least 45 to 60 minutes before mixing." },
-    { "label": "Preparing the Herbed Mascarpone", "text": "In a small chilled mixing bowl, combine the mascarpone with the finely minced chives and tarragon. Gently fold in the lemon zest, lemon juice, and a healthy pinch of fine sea salt. Mix until seamlessly combined but do not over-work — mascarpone can break or become grainy if beaten too aggressively. Transfer to a ramekin, dust the surface with white pepper, cover, and refrigerate. Remove 15 minutes before serving to soften slightly." }
+    {
+      "label": "Thermal Tempering (Crucial Step)",
+      "text": "Before beginning, ensure that the milk, kefir, and eggs are completely at room temperature. Cold ingredients trap less air and will severely stunt the popover's steam-driven rise. Leave them on the counter for at least 45 to 60 minutes before mixing."
+    },
+    {
+      "label": "Preparing the Herbed Mascarpone",
+      "text": "In a small chilled mixing bowl, combine the mascarpone with the finely minced chives and tarragon. Gently fold in the lemon zest, lemon juice, and a healthy pinch of fine sea salt. Mix until seamlessly combined but do not over-work — mascarpone can break or become grainy if beaten too aggressively. Transfer to a ramekin, dust the surface with white pepper, cover, and refrigerate. Remove 15 minutes before serving to soften slightly."
+    }
   ],
   "execution": [
-    { "name": "Blend the Batter", "params": "~20 sec active | Blender", "text": "Prepare the batter while the oven preheats to allow the starch molecules to fully hydrate and relax any developed gluten. In a standard home blender, combine the room-temperature eggs, whole milk, kefir, and 6 g of fine sea salt. Blend on medium speed for 15 seconds until completely homogenous and light. Add the 300 g of all-purpose flour all at once. Pulse 5 to 7 times, just until the flour disappears. Pour in the 45 g of melted (but not boiling hot) butter. Pulse 2 more times to incorporate. Over-blending develops too much gluten, making the popovers tough instead of airy." },
-    { "name": "Rest the Batter", "params": "20–30 min | Room temperature", "text": "Allow the batter to rest at room temperature. This completes starch hydration and lets any developed gluten relax." },
-    { "name": "Preheat the Pan", "params": "Until at temp | 400°F / 205°C", "text": "Position your oven rack to the lowest or second-lowest level. Place a 12-cup popover pan directly into the oven and preheat to 400°F (205°C). The pan must be intensely hot before batter hits it." },
-    { "name": "Fill & Load", "params": "Work quickly | 400°F", "text": "Once the oven reaches temp, carefully pull the hot pan out. Working quickly, lightly coat each well with non-stick baking spray or a tiny brush of melted butter. Give your rested batter a quick, gentle stir. Divide the batter evenly among the 12 wells, filling each roughly 2/3 to 3/4 full. You should hear a faint sizzle. Immediately slide the pan back into the oven and shut the door." },
-    { "name": "Bake Stage 1", "params": "Exactly 25 min | 400°F / 205°C", "text": "The high heat activates rapid steam production, driving the massive expansion." },
-    { "name": "Bake Stage 2", "params": "10 min | 350°F / 175°C", "text": "Without opening the oven door, turn the heat down to 350°F (175°C) and bake for an additional 10 minutes. This sets the structure and dries out the interior walls." },
-    { "name": "De-steam and Plate", "params": "Immediate | Off heat", "text": "Remove the pan from the oven. Immediately use a sharp paring knife or a toothpick to pierce the side or top of each popover. This releases the trapped residual steam, preventing the interior from turning soggy and ensuring the crust stays beautifully crisp. Turn them out of the pan onto a wire rack or directly onto a serving platter." }
+    {
+      "name": "Blend the Batter",
+      "params": "~20 sec active | Blender",
+      "text": "Prepare the batter while the oven preheats to allow the starch molecules to fully hydrate and relax any developed gluten. In a standard home blender, combine the room-temperature eggs, whole milk, kefir, and 6 g of fine sea salt. Blend on medium speed for 15 seconds until completely homogenous and light. Add the 300 g of all-purpose flour all at once. Pulse 5 to 7 times, just until the flour disappears. Pour in the 45 g of melted (but not boiling hot) butter. Pulse 2 more times to incorporate. Over-blending develops too much gluten, making the popovers tough instead of airy."
+    },
+    {
+      "name": "Rest the Batter",
+      "params": "20–30 min | Room temperature",
+      "text": "Allow the batter to rest at room temperature. This completes starch hydration and lets any developed gluten relax."
+    },
+    {
+      "name": "Preheat the Pan",
+      "params": "Until at temp | 400°F / 205°C",
+      "text": "Position your oven rack to the lowest or second-lowest level. Place a 12-cup popover pan directly into the oven and preheat to 400°F (205°C). The pan must be intensely hot before batter hits it."
+    },
+    {
+      "name": "Fill & Load",
+      "params": "Work quickly | 400°F",
+      "text": "Once the oven reaches temp, carefully pull the hot pan out. Working quickly, lightly coat each well with non-stick baking spray or a tiny brush of melted butter. Give your rested batter a quick, gentle stir. Divide the batter evenly among the 12 wells, filling each roughly 2/3 to 3/4 full. You should hear a faint sizzle. Immediately slide the pan back into the oven and shut the door."
+    },
+    {
+      "name": "Bake Stage 1",
+      "params": "Exactly 25 min | 400°F / 205°C",
+      "text": "The high heat activates rapid steam production, driving the massive expansion."
+    },
+    {
+      "name": "Bake Stage 2",
+      "params": "10 min | 350°F / 175°C",
+      "text": "Without opening the oven door, turn the heat down to 350°F (175°C) and bake for an additional 10 minutes. This sets the structure and dries out the interior walls."
+    },
+    {
+      "name": "De-steam and Plate",
+      "params": "Immediate | Off heat",
+      "text": "Remove the pan from the oven. Immediately use a sharp paring knife or a toothpick to pierce the side or top of each popover. This releases the trapped residual steam, preventing the interior from turning soggy and ensuring the crust stays beautifully crisp. Turn them out of the pan onto a wire rack or directly onto a serving platter."
+    }
   ],
   "sections": [
     {
