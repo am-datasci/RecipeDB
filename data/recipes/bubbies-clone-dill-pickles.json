@@ -1,0 +1,67 @@
+{
+  "slug": "bubbies-clone-dill-pickles",
+  "title": "Bubbies Clone Kosher Dill Pickles",
+  "subtitle": "Technical Formulation Sheet",
+  "tags": ["Pickles & Ferments", "Vegan", "Vegetarian", "Fermentation", "Favorites"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "1 L Brine / 450–680 g Cucumber Load"
+  },
+  "summary": [
+    "This sheet replicates Bubbies-style kosher dill pickles using natural lacto-fermentation. A precise 3.5% salinity brine matrix combined with controlled anaerobic conditions optimizes the biological environment for lactic acid bacteria (LAB) while preserving structural crunch."
+  ],
+  "scalingPrinciple": "Item A.01 (Filtered Water) is locked at 100.0% so that every other component reads directly as a percentage of the brine water. This makes the defining specification — 3.5% salinity — legible straight off the matrix. Scale the water and salt together to preserve the ratio; cucumber load may vary within the stated range without affecting brine chemistry.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "Water Base" },
+        { "id": "A.01", "name": "Distilled or Filtered Water", "volume": "1000 ml", "mass": 1000, "pct": 100.0, "baseline": true, "role": "Provides the liquid matrix. Chlorine and chloramine must be absent to protect wild, beneficial bacterial cultures from inhibition." },
+        { "group": "Mineral" },
+        { "id": "B.01", "name": "Coarse Kosher Salt (Non-Iodized)", "volume": "—", "mass": 35, "pct": 3.5, "role": "Establishes the 3.5% salinity matrix. Inhibits spoilage organisms while selecting for halotolerant Lactic Acid Bacteria (LAB)." },
+        { "group": "Produce" },
+        { "id": "C.01", "name": "Pickling Cucumbers (Kirby or Small Persian)", "volume": "1.0–1.5 lb", "mass": 565, "pct": 56.5, "estimated": true, "role": "The primary substrate. Must have high density and thick skin to withstand enzymatic breakdown during active fermentation." },
+        { "group": "Tannin, Aromatics & Spice" },
+        { "id": "D.01", "name": "Dry Bay Leaves", "volume": "1–2 leaves", "mass": 0.5, "pct": 0.05, "estimated": true, "role": "Releases active tannins that bind to and denature pectinase enzymes, protecting cell walls from softening." },
+        { "id": "D.02", "name": "Fresh Garlic Cloves, crushed", "volume": "4–5 cloves", "mass": 22, "pct": 2.2, "estimated": true, "role": "Provides allicin, sulfur compounds, and natural sugars to feed the bacteria and generate the iconic pungent deli flavor." },
+        { "id": "D.03", "name": "Whole Dill Seed (or Fresh Flowering Dill)", "volume": "2 tbsp", "mass": 12, "pct": 1.2, "estimated": true, "role": "Supplies carvone and limonene, delivering the classic herbaceous dill profile." },
+        { "id": "D.04", "name": "Whole Coriander Seeds", "volume": "1 tsp", "mass": 2, "pct": 0.2, "estimated": true, "role": "Adds subtle citrus, floral, and warm spice backnotes." },
+        { "id": "D.05", "name": "Whole Black Peppercorns", "volume": "1 tsp", "mass": 2.5, "pct": 0.25, "estimated": true, "role": "Contributes mild, woody heat and complex terpene notes." },
+        { "id": "D.06", "name": "Whole Mustard Seeds (Optional)", "volume": "0.5 tsp", "mass": 1.5, "pct": 0.15, "estimated": true, "role": "Imparts a sharp, bright, traditional deli undertone." }
+      ],
+      "total": { "mass": 1640.5, "pct": 164.05, "estimated": true, "role": "Combined raw material input footprint at mid-range cucumber load." }
+    }
+  ],
+  "matrixFootnote": "*Cucumber load is entered at the midpoint of the source's stated 1.0–1.5 lb range; spice and aromatic masses are standard culinary conversions from the stated volumes and counts. Water and salt are stated directly and are the only two figures that must be held exactly — if you need more brine, extend at the same ratio (e.g. 500 ml water to 17.5 g salt).",
+  "mise": [
+    { "label": "Enzymatic Deactivation", "text": "Thoroughly wash the cucumbers in chilled water. Trim exactly 1/16th of an inch off the blossom ends. This eliminates the source of active pectinase enzymes, which would otherwise degrade the pectin matrix of the cucumber cell walls, resulting in a soft, mushy product." },
+    { "label": "Sanitation and Spice Placement", "text": "Clean and rinse the fermentation vessel. Distribute the crushed garlic, dill seeds, coriander, peppercorns, mustard seeds, and bay leaves evenly at the bottom." }
+  ],
+  "executionTitle": "II. Step-by-Step Production Protocol",
+  "execution": [
+    { "name": "Structural Packing", "text": "Pack the cucumbers tightly into the vessel over the spice bed. Pack them in an interlocking grid pattern (horizontally or vertically) to reduce voids and prevent the cucumbers from floating when the brine is added." },
+    { "name": "Brine Mobilization", "text": "Dissolve 35 grams of non-iodized coarse kosher salt completely in 1000 ml of room-temperature distilled water. Pour the saline solution over the cucumbers until they are completely submerged. If gaps require more liquid, prepare an identical 3.5% ratio extension (e.g., 500 ml water to 17.5 g salt)." },
+    { "name": "Securing the Anaerobic Environment", "text": "Insert the inner vacuum plate with the silicone valve pulled open. Press the plate downward smoothly until the brine rises through the valve opening. Push the silicone plug firmly into place to secure the seal and lock out oxygen. Secure the outer lid tightly." },
+    { "name": "Incubation (Fermentation)", "params": "7–10 days | 65–72°F / 18–22°C", "text": "Incubate the vessel in a dark, temperature-controlled environment. Avoid locations with direct sunlight or extreme temperature swings." },
+    { "name": "Curing", "params": "1–2 weeks | Refrigerated", "text": "After 7–10 days, repack the cucumbers and 1 tsp of the spices into a clean large glass jar. Move to the refrigerator and age to let the cucumbers develop acidity and additional flavor." }
+  ],
+  "sections": [
+    {
+      "id": "biochem",
+      "title": "III. Fermentation Biochemistry",
+      "intro": "The fermentation of kosher dills progresses through highly predictable biological stages:",
+      "items": [
+        { "label": "Phase 1 (Days 1–3):", "text": "Heterofermentative bacteria like *Leuconostoc mesenteroides* initiate the process. They consume simple sugars, yielding lactic acid, acetic acid, carbon dioxide gas, and ethanol. This rapidly lowers the pH, making the environment inhospitable to pathogenic microbes." },
+        { "label": "Phase 2 (Days 4–10+):", "text": "Acid-tolerant homofermentative bacteria, primarily *Lactobacillus plantarum*, become dominant. They consume remaining sugars, producing purely lactic acid. This results in the characteristic clean, sour flavor of Bubbies pickles and the signature cloudy brine." }
+      ]
+    }
+  ],
+  "qcTitle": "IV. Critical Process Checks",
+  "qc": [
+    { "metric": "Brine Clarity", "target": "Transitions from clear to highly cloudy. A white sediment settling at the bottom is normal (spent lactobacilli).", "action": "No action required. Do not discard cloudy brine; it is the hallmark of active wild fermentation." },
+    { "metric": "pH Level", "target": "Should drop below 4.6 within 3 to 5 days, stabilizing around 3.5 to 3.8 at completion.", "action": "Test with a calibrated pH meter or food-grade pH strips to verify preservation safety." },
+    { "metric": "Gas Build-up", "target": "Inner plate may lift slightly due to carbon dioxide expansion.", "action": "Every 3 days, gently pop open the silicone valve, press the plate down to submerge vegetables, and reseal." },
+    { "metric": "Organoleptic Profile", "target": "Sour, salty, aggressively garlicky, and sharp. Texture must remain firm and crisp.", "action": "Halt active fermentation once the desired flavor profile is achieved (typically days 7–10) by transferring the container to cold storage (34–38°F)." }
+  ],
+  "directive": "Trimming the blossom end is the single highest-leverage step in this sheet. Pectinase concentrated at that end will soften an entire batch regardless of salinity, tannin load, or temperature control — 1/16 inch off every cucumber, no exceptions."
+}

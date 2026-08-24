@@ -1,0 +1,64 @@
+{
+  "slug": "mushroom-bolognese",
+  "title": "Pasta With Rich and Hearty Mushroom Bolognese",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "Italian", "Vegetarian", "Braising", "Favorites"],
+  "meta": {
+    "projectId": "#00-01",
+    "version": "1.0",
+    "date": "August 13, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "6 Servings / ~3,814 g Total Batch (excl. finishing oil)",
+    "source": "Serious Eats — \"Pasta With Rich and Hearty Mushroom Bolognese Recipe,\" J. Kenji López-Alt (first published February 2014; updated March 6, 2025)"
+  },
+  "summary": [
+    "The ragu's meaty texture comes from frying a mix of finely chopped button and shiitake mushrooms in oil until well browned and nearly dry — reducing to roughly a quarter of their starting volume. This concentrates flavor and produces a chewy bite that stands in for ground meat, in place of tempeh, TVP, or tofu.",
+    "Savoriness is built in layers: red wine is reduced separately with bay leaves to a near-dry glaze before joining the pot, tomato paste is fried directly in oil to develop deeper sweetness, and miso paste plus soy sauce are added as concentrated glutamate sources.",
+    "Body and gloss come from a roasted eggplant, chopped to a fine purée and stirred into the sauce — the technique is adapted from the author's turkey burger recipe, where roasted eggplant flesh binds and moistens ground meat. A small amount of almond milk aids in emulsifying the oil and reduced liquids without adding sweetness.",
+    "Herbs are added in two stages: sage, and half of the parsley and basil, go into the soffritto for cooked-herb depth; the remaining parsley and basil are stirred in at the end for fresh, bright top notes. The finished sauce should be thick enough to cling to pasta — if lifted pasta runs bare, the sauce needs further reduction."
+  ],
+  "scalingPrinciple": "Item A.01 (Button Mushrooms) is locked at 100.0% to serve as the mathematical baseline weight, reflecting its role as the primary textural substrate for the ragu. All subsequent component percentages are calculated relative to that baseline mass of 453.6 g. Volumetric values map to the stated 6-serving batch and must be dynamically scaled via weight calculations for larger yields.",
+  "formulations": [
+    {
+      "rows": [
+        { "id": "A.01", "name": "Button Mushrooms, finely chopped", "volume": "1 lb", "mass": 453.6, "pct": 100.0, "baseline": true, "role": "Primary textural substrate; browned until chewy as the ground-meat-analogue element." },
+        { "id": "B.01", "name": "Shiitake Mushrooms, stems discarded, caps finely chopped", "volume": "12 oz", "mass": 340.2, "pct": 75.0, "role": "Secondary mushroom component; adds complexity to the meat-analogue texture." },
+        { "id": "B.02", "name": "Whole Peeled Tomatoes (canned, in juice), crushed by hand", "volume": "1 (28 oz) can", "mass": 793.8, "pct": 175.0, "role": "Primary acid and body component; forms the bulk of the sauce liquid." },
+        { "id": "B.03", "name": "Extra-Virgin Olive Oil, divided", "volume": "1/2 cup", "mass": 107.6, "pct": 23.73, "role": "Cooking fat for soffritto and mushroom searing; plus finishing drizzle." },
+        { "id": "B.04", "name": "Dry Red Wine", "volume": "2 cups", "mass": 473.2, "pct": 104.32, "estimated": true, "role": "Acid and glutamate source; reduced with bay leaves to a near-dry concentrated base." },
+        { "id": "B.05", "name": "Almond Milk", "volume": "3/4 cup", "mass": 182.8, "pct": 40.29, "estimated": true, "role": "Aids emulsification of oil and reduced liquids during the final simmer." },
+        { "id": "C.01", "name": "Eggplant, roasted, flesh only", "volume": "1 medium", "mass": 400.0, "pct": 88.18, "estimated": true, "role": "Roasted and puréed to bind the sauce; adds moisture, gloss, and light smokiness." },
+        { "id": "C.02", "name": "Yellow Onion, finely diced", "volume": "1 medium (~1 cup)", "mass": 150.0, "pct": 33.07, "estimated": true, "role": "Soffritto base." },
+        { "id": "C.03", "name": "Carrots, finely diced", "volume": "2 medium (~1 cup)", "mass": 122.0, "pct": 26.90, "estimated": true, "role": "Soffritto base." },
+        { "id": "C.04", "name": "Celery, finely diced", "volume": "2 large ribs (~1 cup)", "mass": 120.0, "pct": 26.46, "estimated": true, "role": "Soffritto base." },
+        { "id": "C.05", "name": "Garlic, minced", "volume": "4 medium cloves", "mass": 20.0, "pct": 4.41, "role": "Soffritto aromatic." },
+        { "id": "D.01", "name": "Tomato Paste", "volume": "1/4 cup", "mass": 84.0, "pct": 18.52, "estimated": true, "role": "Fried in oil to develop concentrated sweet, savory depth." },
+        { "id": "D.02", "name": "White or Red Miso Paste", "volume": "2 tbsp", "mass": 42.0, "pct": 9.26, "estimated": true, "role": "Glutamate-rich savory booster." },
+        { "id": "D.03", "name": "Soy Sauce", "volume": "2 tbsp", "mass": 29.6, "pct": 6.52, "estimated": true, "role": "Glutamate-rich savory booster." },
+        { "id": "E.01", "name": "Fresh Sage, finely chopped", "volume": "1/4 cup", "mass": 10.0, "pct": 2.20, "estimated": true, "role": "Hearty herb added early in the soffritto stage." },
+        { "id": "E.02", "name": "Fresh Parsley, finely chopped, divided", "volume": "1/4 cup", "mass": 15.0, "pct": 3.31, "estimated": true, "role": "Added in two stages (soffritto + finish) for cooked and fresh herb notes." },
+        { "id": "E.03", "name": "Fresh Basil, finely chopped, divided", "volume": "1/4 cup", "mass": 10.0, "pct": 2.20, "estimated": true, "role": "Added in two stages (soffritto + finish) for cooked and fresh herb notes." },
+        { "id": "E.04", "name": "Bay Leaves", "volume": "3 leaves", "mass": 1.5, "pct": 0.33, "role": "Aromatic, added with the wine during reduction." },
+        { "id": "F.01", "name": "Kosher Salt and Freshly Ground Black Pepper", "volume": "to taste", "mass": 5.0, "pct": 1.10, "estimated": true, "role": "Seasoning for eggplant pre-roast and final sauce adjustment." },
+        { "id": "G.01", "name": "Short Tubular or Long Wide Pasta (penne, rigatoni, or pappardelle)", "volume": "1 lb", "mass": 453.6, "pct": 100.0, "role": "Starch component; finished in the sauce to absorb flavor and achieve full coating." }
+      ],
+      "total": { "mass": 3813.8, "pct": 840.80, "role": "Combined raw material input footprint, excluding finishing oil." }
+    }
+  ],
+  "matrixFootnote": "*Quantities marked with an asterisk are not given as precise weights in the source. Gram values shown are standard culinary estimates for the stated volumes (red wine and almond milk via water/milk-analogue density; onion, carrot, celery, tomato paste, miso, herbs, eggplant, and seasoning via standard culinary weights) and are marked accordingly. All other masses are either stated directly in the source (mushrooms, tomatoes, pasta) or derived by standard unit conversion from source-stated volumes/counts (oil, garlic, bay leaves).",
+  "mise": [
+    { "label": "Eggplant (C.01)", "text": "Lay whole eggplant on foil, drizzle with 1 tsp oil (from B.03), season with salt and pepper, wrap loosely, and roast on a rimmed baking sheet at 375°F (190°C) until completely softened, 45 minutes to 1 hour. Rest until cool enough to handle, then slit the skin and scrape out the flesh with a spoon. Chop into a fine purée." },
+    { "label": "Soffritto (C.02–C.05, E.01–E.03)", "text": "Dice onion, carrots, and celery uniformly. Finely chop sage and half of the parsley and basil (reserve remaining herbs for the finishing stage). Mince garlic." },
+    { "label": "Mushrooms (A.01, B.01)", "text": "Break button mushrooms into mid-sized chunks by squeezing between fingers and thumb, then chop with a chef's knife to no larger than 1/4-inch; alternatively, roughly chop by hand and pulse in a food processor (about 8 short pulses). Cut shiitake caps lengthwise into 1/4-inch strips, rotate 90°, and cut into fine dice." }
+  ],
+  "execution": [
+    { "name": "Build the Soffritto", "params": "~10 min | Medium heat", "text": "Heat 3 tbsp oil (B.03) in a large skillet over medium heat until simmering. Add C.02–C.04 and cook, stirring occasionally, until completely softened but not browned, about 10 minutes." },
+    { "name": "Bloom Aromatics and Reduce Wine", "params": "~7 min | Medium–High heat", "text": "Add sage, half the parsley, half the basil (E.01–E.03), and garlic (C.05); cook, stirring frequently, until aromatic, about 2 minutes. Add red wine (B.04) and bay leaves (E.04). Increase heat to medium-high and simmer until nearly dry — pan bottom should be visible — about 5 minutes. Transfer to a large saucepan; wipe out the skillet." },
+    { "name": "Brown the Mushrooms", "params": "~20 min | Medium–High heat", "text": "Add remaining oil (B.03) to the skillet over medium-high heat until shimmering. Add A.01 and B.01; cook, stirring occasionally, until mushroom liquid fully evaporates and mushrooms are well browned all over, about 20 minutes." },
+    { "name": "Fry the Pastes", "params": "~1–2 min | Medium–High heat", "text": "Add tomato paste and miso (D.01–D.02) to the browned mushrooms and stir to combine. A light residue will form on the pan bottom — this is expected." },
+    { "name": "Deglaze and Combine", "params": "Brief | Medium–High heat", "text": "Add whole tomatoes (B.02) and cook, scraping up browned bits with a wooden spoon. Transfer the mushroom-tomato mixture into the saucepan with the vegetables and reduced wine. Stir in soy sauce and almond milk (D.03, B.05)." },
+    { "name": "Add Eggplant and Simmer", "params": "~1 hr | Bare simmer, lid ajar", "text": "Stir the roasted eggplant purée (C.01) into the pot. Bring to a bare simmer, reduce to the lowest setting, and cover with the lid slightly ajar. Cook, stirring occasionally, until rich, thick, and fully developed in flavor, about 1 hour. Season to taste with salt and pepper (F.01)." },
+    { "name": "Finish with Pasta", "params": "~3–5 min | High heat", "text": "Cook pasta (G.01) in salted water per package directions; drain, reserving 1/2 cup cooking liquid. Add pasta and reserved liquid to the sauce along with the remaining parsley and basil (E.02–E.03). Cook over high heat, stirring, until the sauce is thick and coats every piece of pasta." }
+  ],
+  "directive": "Reserve the second half of the parsley and basil (E.02–E.03) until the pasta-finishing stage — adding them earlier sacrifices the fresh-herb contrast the two-stage method is built to deliver. The sauce is done reducing only when lifted pasta stays fully coated; if bare noodle shows through, continue reducing before serving."
+}

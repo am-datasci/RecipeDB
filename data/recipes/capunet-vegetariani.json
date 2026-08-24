@@ -1,0 +1,56 @@
+{
+  "slug": "capunet-vegetariani",
+  "title": "Capunet Vegetariani alle Lenticchie",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Appetizers", "Italian", "Vegetarian", "Baking"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "10–12 Cabbage Rolls / 200 g Potato Base"
+  },
+  "specs": [
+    { "label": "Serves", "value": "10–12 cabbage rolls" },
+    { "label": "Difficulty", "value": "Easy" },
+    { "label": "Preparation Time", "value": "25 minutes" },
+    { "label": "Cooking Time", "value": "50 minutes" },
+    { "label": "Resting Time", "value": "30 minutes" },
+    { "label": "Category", "value": "Appetizers" }
+  ],
+  "scalingPrinciple": "Item A.01 (Potatoes) is locked at 100.0% as the dominant filling mass. All other components are expressed relative to that 200 g baseline, including the cabbage wrapper, so the filling-to-leaf ratio holds when the batch is scaled up.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Filling Base" },
+        { "id": "A.01", "name": "Potatoes", "volume": "—", "mass": 200, "pct": 100.0, "baseline": true, "role": "Primary starch substrate; peeled and finely diced." },
+        { "group": "B — Filling Components" },
+        { "id": "B.01", "name": "Red Lentils", "volume": "—", "mass": 100, "pct": 50.0, "role": "Protein and structural body; cooked al dente with the potato." },
+        { "id": "B.02", "name": "Stale Bread (preferably wholemeal)", "volume": "—", "mass": 100, "pct": 50.0, "role": "Crumbled binder; absorbs residual moisture from the lentil-potato mixture." },
+        { "id": "B.03", "name": "Grated Cheese", "volume": "to taste", "mass": 100, "pct": 50.0, "role": "Savory depth and binding fat." },
+        { "id": "B.04", "name": "Eggs", "volume": "2 each", "mass": 100, "pct": 50.0, "estimated": true, "role": "Primary binder; sets the filling during the bake." },
+        { "group": "C — Aromatics" },
+        { "id": "C.01", "name": "Onion", "volume": "1 unit", "mass": 150, "pct": 75.0, "estimated": true, "role": "Finely chopped; sautéed with the potato." },
+        { "id": "C.02", "name": "Garlic", "volume": "1 clove", "mass": 5, "pct": 2.5, "estimated": true, "role": "Aromatic base." },
+        { "group": "D — Wrapper & Finishing" },
+        { "id": "D.01", "name": "Cabbage Leaves", "volume": "10 leaves", "mass": 400, "pct": 200.0, "estimated": true, "role": "Structural wrapper; blanched to pliability, thick central ribs thinned with a peeler." },
+        { "id": "D.02", "name": "Vegetable Broth", "volume": "as needed", "massText": "As needed", "pctText": "—", "role": "Added gradually during the lentil-potato cook." },
+        { "id": "D.03", "name": "Extra Virgin Olive Oil", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Sauté fat plus finishing drizzle before and after baking." },
+        { "id": "D.04", "name": "Salt, Black Pepper, Aromatic Herbs", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Seasoning." }
+      ],
+      "total": { "mass": 1155, "pct": 577.5, "estimated": true, "role": "Combined raw material input footprint, excluding broth, oil, and seasoning." }
+    }
+  ],
+  "matrixFootnote": "*Eggs, onion, garlic, and cabbage leaves are given in the source by count. Gram values shown are standard culinary unit-weight conversions and are marked accordingly; lentils, potatoes, bread, and cheese masses are stated directly.",
+  "mise": [
+    { "label": "Leaf Selection & Blanching (D.01)", "text": "Select the largest cabbage leaves and blanch them briefly in boiling water to soften. If the central rib is very tough, thin it out with a vegetable peeler." },
+    { "label": "Vegetable Prep (A.01, C.01, C.02)", "text": "Peel and finely dice the potatoes. Finely chop the onion and garlic." }
+  ],
+  "execution": [
+    { "name": "Build the Base", "params": "~15 min | Medium heat", "text": "Sauté the diced potatoes with the finely chopped onion and garlic in a pan with a drizzle of oil. Add the red lentils and begin cooking over medium heat, gradually adding the broth." },
+    { "name": "Reduce & Bind with Bread", "params": "~5 min | Raised heat", "text": "After 15 minutes, when the lentils and potatoes are al dente, raise the heat and simmer the mixture, adding the crumbled stale bread (or bread ground in a blender). Season with salt and pepper, mix well while mashing lightly, then turn off the heat and let cool." },
+    { "name": "Enrich the Filling", "params": "~5 min | Off heat", "text": "In a large bowl, combine the cooled mixture with the beaten eggs and the grated cheese. Mix until the filling is smooth and uniform." },
+    { "name": "Roll the Capunet", "params": "~10 min | Ambient", "text": "Take the blanched cabbage leaves and place a portion of the filling in the center of each, then roll them up to form the rolls." },
+    { "name": "Bake", "params": "~30 min | 180°C / 350°F", "text": "Arrange the rolls on a baking sheet lined with parchment paper and drizzle them with oil. Bake in a preheated oven for about 30 minutes — 15 on the lower rack and 15 in the middle — until golden brown and slightly crispy on top." },
+    { "name": "Serve", "params": "Immediate | Hot", "text": "Serve hot with a drizzle of extra virgin olive oil." }
+  ],
+  "directive": "Let the lentil-potato mixture cool fully before the eggs go in. Folding beaten egg into a hot filling scrambles it on contact and costs you the binder that holds the roll together through the bake."
+}

@@ -1,0 +1,213 @@
+{
+  "slug": "rye-hemp-seeded-loaf",
+  "title": "Organic Rye & Hemp Seeded Loaf",
+  "subtitle": "Technical Baking Sheet",
+  "tags": [
+    "Breads",
+    "Baking",
+    "Vegan",
+    "Vegetarian"
+  ],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "1 kg Flour Base / 2 pan loaves"
+  },
+  "summary": [
+    "A high-seed whole rye formulation built for nutrient density — hemp hearts, pumpkin and sunflower seeds, and ground flax carry magnesium, B6, tyrosine, and omega-3s. A pre-soak neutralizes phytic acid so those minerals stay bioavailable rather than bound.",
+    "Method is no-knead: a high-frequency stretch-and-fold schedule builds structure in a dough too slack to knead conventionally, followed by a 12–24 hour cold ferment for deep proteolysis and lactic acid development."
+  ],
+  "specs": [
+    {
+      "label": "Method",
+      "value": "No-knead / high-frequency stretch & fold / 24 hr cold proof"
+    },
+    {
+      "label": "Batch Size",
+      "value": "1 kg flour base"
+    },
+    {
+      "label": "Hydration",
+      "value": "82%"
+    },
+    {
+      "label": "Total Timeline",
+      "value": "~2 days"
+    }
+  ],
+  "scalingPrinciple": "Item A.01 (Organic Whole Rye Flour) is locked at 100.0% in the baker's convention. Every other component reads directly as a true baker's percentage against that 1,000 g flour mass, so the formula scales linearly to any batch size.",
+  "formulationTitle": "I. Formulation (Baker's Percentages)",
+  "formulations": [
+    {
+      "columns": [
+        "Item ID",
+        "Ingredient",
+        "Baker's %",
+        "Weight (g)",
+        "% of Flour",
+        "Functional Role"
+      ],
+      "rows": [
+        {
+          "group": "A — Flour Base"
+        },
+        {
+          "id": "A.01",
+          "name": "Organic Whole Rye Flour",
+          "volume": "100%",
+          "mass": 1000,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Primary flour substrate; high pentosan content drives the hydration requirement."
+        },
+        {
+          "group": "B — Structure & Fermentation"
+        },
+        {
+          "id": "B.01",
+          "name": "Vital Wheat Gluten",
+          "volume": "2%",
+          "mass": 20,
+          "pct": 2.0,
+          "role": "Structural scaffold for gas retention — rye alone cannot form a gluten network."
+        },
+        {
+          "id": "B.02",
+          "name": "Water (Filtered)",
+          "volume": "82%",
+          "mass": 820,
+          "pct": 82.0,
+          "role": "Optimal hydration for rye pentosans. 10–20% may be replaced with whole milk kefir."
+        },
+        {
+          "id": "B.03",
+          "name": "Sea Salt",
+          "volume": "2%",
+          "mass": 20,
+          "pct": 2.0,
+          "role": "Fermentation control and flavor."
+        },
+        {
+          "id": "B.04",
+          "name": "Instant Yeast",
+          "volume": "0.5%",
+          "mass": 5,
+          "pct": 0.5,
+          "role": "Balanced for long cold fermentation."
+        },
+        {
+          "group": "C — Seed Inclusions"
+        },
+        {
+          "id": "C.01",
+          "name": "Hemp Hearts",
+          "volume": "5%",
+          "mass": 50,
+          "pct": 5.0,
+          "role": "Tyrosine and magnesium; soft texture, no hard bite."
+        },
+        {
+          "id": "C.02",
+          "name": "Pumpkin Seeds",
+          "volume": "4%",
+          "mass": 40,
+          "pct": 4.0,
+          "role": "Magnesium; structural crunch."
+        },
+        {
+          "id": "C.03",
+          "name": "Sunflower Seeds",
+          "volume": "4%",
+          "mass": 40,
+          "pct": 4.0,
+          "role": "B6; cofactor for B12 and folate metabolism."
+        },
+        {
+          "id": "C.04",
+          "name": "Ground Flaxseed",
+          "volume": "2%",
+          "mass": 20,
+          "pct": 2.0,
+          "role": "Omega-3 for membrane fluidity; also a mucilage binder."
+        }
+      ],
+      "total": {
+        "mass": 2015,
+        "pct": 201.5,
+        "role": "Combined raw material input footprint."
+      }
+    }
+  ],
+  "matrixFootnote": "Water may be substituted 10–20% with whole milk kefir for additional lactic tang and a softer crumb. Adjust total hydration only if the kefir is notably thicker than the water it replaces.",
+  "miseTitle": "II. Pre-Assembly Processing (The Seed Soaker)",
+  "mise": [
+    {
+      "label": "Seed Soaker — T minus 2:00 hours (C.01–C.03)",
+      "text": "Combine hemp hearts, pumpkin seeds, and sunflower seeds with 150 g of the recipe water at 35–45°C. Rest 2 hours."
+    },
+    {
+      "label": "Why the soaker matters",
+      "text": "Soaking neutralizes phytic acid to unlock the magnesium bound in the seeds, and pre-hydrates them so they do not pull water back out of the dough during bulk fermentation."
+    }
+  ],
+  "executionTitle": "III. Process Schedule",
+  "execution": [
+    {
+      "name": "Phase 2 — The Mix & Autolyse",
+      "params": "T = 0:00 | 20 min rest",
+      "text": "Whisk dry rye flour and vital wheat gluten thoroughly in a large bowl. Add the seed soaker including its liquid, salt, yeast, ground flax, and the remaining 670 g of water. Mix until a thick, shaggy paste forms with no dry flour remaining. Cover and let sit for 20 minutes."
+    },
+    {
+      "name": "Phase 3 — High-Frequency Structural Build",
+      "params": "80 min | 4 folds at 20-minute intervals",
+      "items": [
+        "**Fold 1 (20 min):** With wet hands, perform 4–6 folds by pulling the edge of the dough up and over the center.",
+        "**Fold 2 (40 min):** Perform 4 folds. The vital wheat gluten will begin providing noticeable resistance.",
+        "**Fold 3 (60 min):** Perform 4 folds. This ensures even distribution of the heavy seed inclusions.",
+        "**Fold 4 (80 min):** Final fold. Pull the dough into a tight, rounded mass."
+      ]
+    },
+    {
+      "name": "Phase 4 — Cold Fermentation",
+      "params": "12–24 hr | 4°C / 40°F",
+      "text": "Cover the container tightly to prevent a skin from forming and refrigerate for a minimum of 12 hours. This window allows deep proteolysis and lactic acid development, which maximizes the bioavailability of the B-vitamin cofactors and builds the sour backbone of the loaf."
+    },
+    {
+      "name": "Phase 5 — Final Proof",
+      "params": "90–120 min | Room temperature",
+      "text": "Remove the cold dough. Divide and shape gently into two logs using wet hands or a bench scraper. Place into greased loaf tins. Let rise until the dough reaches the rim of the tin."
+    },
+    {
+      "name": "Phase 6 — The Bake",
+      "params": "45–55 min | 200°C / 400°F",
+      "text": "Place a pan of water at the bottom of the oven for the first 15 minutes to generate steam. Bake to a target internal temperature of 98°C (208°F) — this is crucial for setting rye starches."
+    }
+  ],
+  "sections": [
+    {
+      "id": "post-bake",
+      "title": "IV. Post-Bake Protocol",
+      "items": [
+        {
+          "label": "Curing:",
+          "text": "Do not slice for 24 hours."
+        },
+        {
+          "label": "Why:",
+          "text": "This setting period stabilizes the starches, resulting in a lower glycemic index and preventing the gummy texture that under-rested rye loaves develop."
+        }
+      ]
+    },
+    {
+      "id": "serving",
+      "title": "V. Serving Suggestions",
+      "items": [
+        "Raw almond butter (no added sugar or palm oil), or mashed avocado.",
+        "1 tbsp tahini — sesame fats plus zinc.",
+        "1–2 tsp dark black miso — tyrosine and melanoidins.",
+        "1 tsp Chinese black vinegar — improves mineral solubility."
+      ]
+    }
+  ],
+  "directive": "Target internal temperature, not clock time, governs the bake. Rye starches set only at 98°C (208°F); pulling the loaf early produces a gummy, dense crumb that the 24-hour cure cannot fix."
+}

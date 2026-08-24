@@ -1,0 +1,59 @@
+{
+  "slug": "beet-pickle-lunch",
+  "title": "Basic Beet Pickle",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Pickles & Ferments", "Vegan", "Vegetarian", "Meal Prep", "No-Cook"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "1 quart jar / 450 g raw beet base"
+  },
+  "summary": [
+    "A deliberately minimal quick pickle built on a 1:1 water-to-rice-wine-vinegar ratio. Character is clean, crisp, and mineral-forward.",
+    "The restraint is the point. With no dill, ginger, or warming spice, this pickle does not compete with anything else in the container — it stays a structural element next to assertive neighbors like kimchi or a dark miso dressing. Rice wine vinegar is also gentler than apple cider vinegar, which keeps the beets firm and snappy across a full week rather than going floppy by midweek."
+  ],
+  "specs": [
+    { "label": "Brine Ratio", "value": "1:1 water to rice wine vinegar" },
+    { "label": "Character", "value": "Clean, crisp, mineral-focused" },
+    { "label": "Cure Time", "value": "Cool to room temp, then refrigerate" },
+    { "label": "Holds", "value": "~1 week refrigerated" }
+  ],
+  "scalingPrinciple": "Item A.01 (Raw Beets) is locked at 100.0% as the substrate baseline. The brine components read against that beet mass — critically, water and vinegar stay locked to each other at 1:1 regardless of batch size, since that ratio is what buffers the acidity enough to preserve texture.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Substrate" },
+        { "id": "A.01", "name": "Raw Beets, cut into matchsticks", "volume": "3–4 beets", "mass": 450, "pct": 100.0, "baseline": true, "estimated": true, "role": "Primary substrate; a source of betaine. Cut to matchsticks for maximum brine surface contact." },
+        { "group": "B — Brine" },
+        { "id": "B.01", "name": "Rice Wine Vinegar", "volume": "1 cup", "mass": 239, "pct": 53.11, "estimated": true, "role": "Gentle acid — less aggressive than cider vinegar, which is what preserves the snap." },
+        { "id": "B.02", "name": "Water", "volume": "1 cup", "mass": 237, "pct": 52.67, "estimated": true, "role": "Buffers acidity to keep the beets firm rather than slack." },
+        { "id": "B.03", "name": "Sea Salt", "volume": "1/2 tsp", "mass": 3, "pct": 0.67, "estimated": true, "role": "Seasoning and osmotic draw." },
+        { "group": "C — Aromatic" },
+        { "id": "C.01", "name": "Garlic, smashed", "volume": "1–2 cloves", "mass": 7.5, "pct": 1.67, "estimated": true, "role": "The only aromatic in the formulation — sulfur compounds, kept deliberately singular." }
+      ],
+      "total": { "mass": 936.5, "pct": 208.12, "estimated": true, "role": "Combined raw material input footprint." }
+    }
+  ],
+  "matrixFootnote": "*This formulation is given in volumetric kitchen units and counts in the source. All gram values are standard culinary conversions and are marked accordingly; none are source-stated weights.",
+  "mise": [
+    { "label": "Prep (A.01, C.01)", "text": "Cut the raw beets into matchsticks. Smash the garlic cloves. Pack both into your jar." }
+  ],
+  "execution": [
+    { "name": "Brine", "params": "~3 min | Simmer", "text": "Simmer the rice wine vinegar, water, and salt just until the salt dissolves — no longer. This is a dissolution step, not a reduction." },
+    { "name": "Combine", "params": "Immediate | Hot pour", "text": "Pour the hot liquid over the packed beets and garlic." },
+    { "name": "Cure", "params": "To room temp, then cold | Refrigerated", "text": "Let cool on the counter, then refrigerate." }
+  ],
+  "sections": [
+    {
+      "id": "integration",
+      "title": "Serving Notes",
+      "intro": "Built as a component rather than a standalone condiment:",
+      "items": [
+        { "label": "The mix:", "text": "Rice or quinoa base, plus carrots, plus the pickled beets." },
+        { "label": "The sauce:", "text": "Garlic-tahini, made with dark black miso and a splash of the rice wine vinegar from the pickle jar." },
+        { "label": "Why it stays plain:", "text": "Without herbs like dill or ginger, the pickle won't compete with a bok choy kimchi or a dark miso dressing sharing the same bowl. It stays in its lane as a structural, acidic element." }
+      ]
+    }
+  ],
+  "directive": "Simmer the brine only until the salt dissolves. Boiling it down concentrates the acid past the 1:1 ratio the formulation depends on, and over-acidified brine is what turns matchsticks floppy within a couple of days."
+}

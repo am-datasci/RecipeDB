@@ -1,0 +1,54 @@
+{
+  "slug": "rye-spelt-kefir-loaf",
+  "title": "Rye & Spelt Kefir Loaf (1.2 kg)",
+  "subtitle": "Technical Baking Sheet",
+  "tags": ["Breads", "Baking", "Vegetarian"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "1 × 1.2 kg loaf / 650 g total flour"
+  },
+  "specs": [
+    { "label": "Total Flour", "value": "650 g" },
+    { "label": "Hydration", "value": "80%" },
+    { "label": "Salt", "value": "2%" },
+    { "label": "Yeast", "value": "0.5%" },
+    { "label": "Levain", "value": "12-hour milk kefir" }
+  ],
+  "scalingPrinciple": "Item A.01 (Total Flour Base) is locked at 100.0% in the baker's convention — the sum of all rye and spelt flour across both the levain and the final dough. Every liquid, salt, and yeast figure reads as a true baker's percentage against that 650 g flour mass.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Flour Baseline" },
+        { "id": "A.01", "name": "Total Flour Base (Rye + Spelt)", "volume": "—", "mass": 650, "pct": 100.0, "baseline": true, "role": "Combined flour mass; the baker's-percentage reference for the whole formula." },
+        { "group": "B — The 12-Hour Kefir Levain" },
+        { "id": "B.01", "name": "Organic Whole Rye Flour (levain)", "volume": "—", "mass": 150, "pct": 23.08, "role": "Levain flour; drawn from the total flour base." },
+        { "id": "B.02", "name": "Milk Kefir (room temperature)", "volume": "—", "mass": 150, "pct": 23.08, "role": "Wild culture and acid source; drives the 12-hour levain." },
+        { "group": "C — Final Dough Flour" },
+        { "id": "C.01", "name": "Organic Whole Rye Flour (final)", "volume": "—", "mass": 175, "pct": 26.92, "role": "Brings total rye to 325 g (50% of flour base)." },
+        { "id": "C.02", "name": "Whole Spelt Flour", "volume": "—", "mass": 325, "pct": 50.0, "role": "Provides the extensibility rye cannot; balances the crumb." },
+        { "group": "D — Liquids & Finishers" },
+        { "id": "D.01", "name": "Warm Water (32°C)", "volume": "—", "mass": 370, "pct": 56.92, "role": "Adjusted downward to account for the kefir's own hydration." },
+        { "id": "D.02", "name": "Sea Salt", "volume": "—", "mass": 13, "pct": 2.0, "role": "Fermentation control and flavor." },
+        { "id": "D.03", "name": "Instant Yeast", "volume": "approx. 1 level tsp", "mass": 3.2, "pct": 0.49, "role": "Insurance leavening; ensures a dense mass of rye and spelt expands before the crust sets." },
+        { "id": "D.04", "name": "Miso (optional)", "volume": "1 tbsp", "mass": 18, "pct": 2.77, "estimated": true, "role": "Optional umami depth; whisked into the liquids." }
+      ],
+      "total": { "mass": 1204.2, "pct": 185.26, "estimated": true, "role": "Combined raw material input footprint — the 1.2 kg target loaf." }
+    }
+  ],
+  "matrixFootnote": "*Miso is given as 1 tbsp in the source; the gram value is a standard culinary conversion and is marked accordingly. Note that B.01 and C.01/C.02 are components of the A.01 flour baseline, not additions to it — the flour is listed once as a total and again as its split between levain and final dough.",
+  "mise": [
+    { "label": "The 12-Hour Kefir Levain (B.01, B.02)", "text": "Mix 150 g organic whole rye flour with 150 g room-temperature milk kefir. Let sit at room temperature until active and bubbly — approximately 12 hours." },
+    { "label": "Vessel Check", "text": "This is a large loaf. If using a Dutch oven, ensure it is at least 5 quarts. If using a loaf pan, a standard 9×5 inch pan is required so the dough does not overflow." }
+  ],
+  "executionTitle": "III. The Execution",
+  "execution": [
+    { "name": "The Mix", "params": "10 min | Ambient", "text": "Whisk the water, levain, and miso together. Stir in the flours, salt, and yeast until a thick, sticky paste forms." },
+    { "name": "Bulk Rise", "params": "2–3 hr | Warm spot", "text": "Cover and place in a warm spot. Perform one strength fold with wet hands at the 30-minute mark." },
+    { "name": "Shape", "params": "5 min | Ambient", "text": "Transfer to a large, well-greased loaf pan (9×5 inch or similar) or a large banneton. If proofing in a banneton, use excessive rye flour to prevent sticking — rye and spelt are far stickier than standard wheat, and 1,200 g of 80% hydration dough exerts significant pressure." },
+    { "name": "Final Proof", "params": "1 hr | Room temperature", "text": "Let rise until the dough looks tight and small fissures appear on the surface." },
+    { "name": "Bake — Lid On", "params": "25 min | 230°C", "text": "Bake in a Dutch oven or with steam." },
+    { "name": "Bake — Lid Off", "params": "25–35 min | 210°C", "text": "Continue until the crust is dark and the internal temperature reaches 98°C." }
+  ],
+  "directive": "At 80% hydration and 1,200 g total mass this dough is heavy and slack. Use wet hands for every contact, flour a banneton far past the point that feels excessive, and confirm your vessel is large enough before the bulk rise — there is no recovery from a dough that overflows its pan mid-proof."
+}

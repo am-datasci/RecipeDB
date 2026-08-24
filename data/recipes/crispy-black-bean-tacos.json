@@ -1,0 +1,55 @@
+{
+  "slug": "crispy-black-bean-tacos",
+  "title": "Crispy Sheet Pan Black Bean Tacos",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "Mexican", "Vegetarian", "Roasting", "Favorites"],
+  "meta": {
+    "projectId": "#BP-01",
+    "version": "1.0",
+    "date": "June 12, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "4 Servings / 8 Tacos",
+    "source": "Delish — \"Crispy Sheet Pan Black Bean Tacos\"",
+    "sourceUrl": "https://www.delish.com/cooking/a45876266/crispy-sheet-pan-black-bean-tacos-recipe/"
+  },
+  "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
+  "formulations": [
+    {
+      "rows": [
+        { "id": "A.01", "name": "Black Beans (Canned)", "volume": "1 can (15.5 oz)", "mass": 440.0, "pct": 100.0, "baseline": true, "role": "Primary foundational substrate; core protein matrix. Drained and rinsed." },
+        { "id": "B.01", "name": "Yellow Corn Tortillas (6\")", "volume": "8 pieces", "mass": 200.0, "pct": 45.45, "role": "Structural containment vessel; crisp exterior envelope." },
+        { "id": "B.02", "name": "Shredded Mexican-Blend Cheese", "volume": "1.0 cup", "mass": 113.0, "pct": 25.68, "role": "Lipid profile binder; internal structural adhesion mechanism." },
+        { "id": "B.03", "name": "Yellow Onion", "volume": "1 small", "mass": 110.0, "pct": 25.0, "role": "Aromatic base modifier; internal texture element. Finely chopped." },
+        { "id": "B.04", "name": "Neutral Vegetable Oil", "volume": "5.0 tbsp (divided)", "mass": 67.5, "pct": 15.34, "role": "Thermal conduction lipid medium for pan searing and browning." },
+        { "id": "B.05", "name": "Taco Seasoning", "volume": "1.0 tbsp", "mass": 8.0, "pct": 1.82, "role": "Primary organoleptic flavor profile seasoning matrix." },
+        { "id": "B.06", "name": "Kosher Salt", "volume": "1.0 tsp (divided)", "mass": 6.0, "pct": 1.36, "role": "Ionic flavor enhancer; moisture extraction promoter." },
+        { "id": "B.07", "name": "Water", "volume": "0.25 cup", "mass": 60.0, "pct": 13.64, "role": "Starch hydration and viscosity moderation fluid." },
+        { "id": "C.01", "name": "Sour Cream", "volume": "For serving (optional)", "massText": "—", "pctText": "—", "role": "Finishing acid/lipid topping profile." },
+        { "id": "C.02", "name": "Fresh Cilantro Leaves", "volume": "For serving (optional)", "massText": "—", "pctText": "—", "role": "Finishing top-note volatile aromatic profile." },
+        { "id": "C.03", "name": "Lime Wedges", "volume": "For serving (optional)", "massText": "—", "pctText": "—", "role": "Finishing acid profile accent." }
+      ],
+      "total": { "mass": 1004.5, "pct": 228.29, "role": "Combined raw material input footprint (excluding optional finishes)." }
+    }
+  ],
+  "mise": [
+    { "label": "Phase A — Substrate Isolation", "text": "Extract the core substrate A.01 from preservation fluid. Drain completely via fine mesh sifter and rinse thoroughly under continuous cold water to eliminate surface starches." },
+    { "label": "Phase B — Vegetable Comminution", "text": "Peel and process the yellow onion B.03 to a fine dice configuration (uniform 3–5 mm sizing tolerances)." },
+    { "label": "Phase C — Tortilla Thermal Plastification", "text": "Expose yellow corn tortillas B.01 to localized radiant heat or a microwave thermal field for 15–20 seconds immediately prior to fold execution to maximize tensile elasticity and eliminate fracturing risk." },
+    { "label": "Phase D — Equipment Configuration", "text": "Select a dark-colored high-emissivity sheet pan to optimize the radiant thermal absorption profile and maximize bottom-surface caramelization." }
+  ],
+  "execution": [
+    { "name": "Aromatic Thermal Sauté", "params": "6–8 min | Medium heat", "text": "Charge a standard skillet with a fraction of the neutral vegetable oil B.04 (approx. 1 tbsp / 13.5 g). Introduce finely chopped yellow onion B.03 and a calculated portion of kosher salt B.06 (0.5 tsp). Apply continuous mechanical agitation until cellular structure collapses, yielding a translucent, softened matrix. Add taco seasoning B.05 during the final 60 seconds of this phase to thermally bloom lipid-soluble volatile compounds." },
+    { "name": "Substrate Mashing & Viscosity Consolidation", "params": "4–5 min | Simmer state", "text": "Introduce the isolated black beans A.01, remaining kosher salt B.06, and water B.07 directly to the skillet. Bring the fluid component to a low boil, then adjust energy input to maintain a stable simmer. Use a rigid flattening tool to crush approximately 50% of the bean volume, allowing liberated internal starches to cross-link with the aqueous phase until a thickened, high-viscosity paste is established. Remove from thermal source." },
+    { "name": "Sheet Pan Prep & Vessel Assembly", "params": "5 min | Room temperature", "text": "Distribute the remaining neutral vegetable oil B.04 (approx. 4 tbsp / 54 g) evenly across the interior surface of the dark sheet pan to establish a uniform lipid-conductive barrier. Lay out the plasticized tortillas B.01. Dispense precisely apportioned amounts of the bean paste and shredded cheese B.02 onto one hemisphere of each tortilla. Pivot the unburdened hemisphere over the filling, compressing firmly to lock the structural envelope in a semi-circular configuration. Align assembled units onto the oiled surface." },
+    { "name": "Thermal Enclosure Dehydration & Crisp Searing", "params": "15–18 min | 425°F / 218°C", "text": "Transfer the sheet pan into a preheated high-temperature convection enclosure. Bake approximately 8–10 minutes until the bottom interface exhibits solid structural rigidity and high caramelization. Extract the pan, carefully invert each taco unit to expose the alternate hemisphere to the direct lipid-pan interface, and return to the oven for an additional 7–8 minutes until complete crisp-crunch uniformity is locked across all surfaces." }
+  ],
+  "qc": [
+    { "metric": "Texture & Core", "target": "Rigid, high-crunch exterior shell with complete absence of sogginess; internal legume matrix maintains a cohesive, smooth, and warm structural thickness.", "actual": "[Pending Run]", "rating": "/ 10" },
+    { "metric": "Surface Optics", "target": "Deep golden-brown to dark caramelized exterior accents across both corn tortilla surfaces; clear visual signs of localized cheese melting/bubbling at structural borders.", "actual": "[Pending Run]", "rating": "/ 10" }
+  ],
+  "alternatives": [
+    { "label": "Legume/Protein Swap:", "text": "Substrate A.01 may be substituted on a direct 1:1 weight mass basis with rinsed, drained canned chickpeas or brown lentils to introduce an altered textural density and nutty flavor profile." },
+    { "label": "Functional High-Protein Modification:", "text": "Incorporate 3.0–5.0% hemp hearts into the bean mashing phase (Step 2) to step up protein and essential fatty acid payload without breaking target viscosity standards." }
+  ],
+  "directive": "Execute taco inversion with high structural care. If minor surface splitting occurs on corn matrices due to elasticity drop-off, do not interrupt thermal processing; the consolidated lipid-starch binder boundary will preserve total envelope integrity during the terminal crisp phase."
+}

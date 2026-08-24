@@ -1,0 +1,58 @@
+{
+  "slug": "sunflower-tofu-veggie-burger",
+  "title": "Sunflower-Tofu Veggie Burger",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "American", "Vegetarian"],
+  "meta": {
+    "projectId": "#01-01",
+    "version": "1.0 (Reconstructed Reference)",
+    "date": "August 8, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "6 Patties / ~1,024 g Base",
+    "source": "Reconstructed formulation — not a verified Nearly Normal's (Corvallis, OR) recipe; built from a user-supplied ingredient list plus user-requested additions, using standard proportions for this burger style.",
+    "reconstruction": "No verified recipe or ingredient ratio for the Nearly Normal's Sunburger has ever been published. This sheet is a standard-proportion reconstruction, not a replica. Gram values marked with an asterisk are culinary estimates rather than source-stated weights, and the egg ratio in particular was calibrated from personal recollection of the original."
+  },
+  "summary": [
+    "Nearly Normal's Gonzo Cuisine opened in downtown Corvallis in 1979, when five friends took over a failing cafe on NW 15th Street and turned it into what is widely described as the city's first strictly vegetarian restaurant. The building itself became a local landmark — purple trim, oversized iris cutouts, impossible to miss driving by — and the restaurant held that corner for over four decades before permanently closing.",
+    "The Sunburger was the restaurant's signature dish and, by several accounts, the item that set it apart from other vegetarian kitchens in town. One longtime reviewer specifically contrasted it with more typical tofu-forward veggie burgers elsewhere, noting Nearly Normal's built theirs on a sunflower-seed base instead — a version popular enough that other Corvallis restaurants reportedly served their own take on it, and that Nearly Normal's sold packaged for retail across more than twenty co-ops and grocers in the region.",
+    "The Corvallis Farmers' Market is a separate, real, and long-running institution — established in 1981 as a Wednesday market and formalized as a nonprofit in 1991, it still runs Wednesdays and Saturdays on 1st Street along the Willamette riverfront. No source found in this research documents the Sunburger being sold as a market vendor item; the restaurant's presence in Corvallis food culture and the market's presence downtown appear to be two separate threads of the same era rather than one venue."
+  ],
+  "scalingPrinciple": "Item A.01 (Firm Tofu, Pressed) is locked at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline mass of 340 g. This formulation is based on a 6-patty batch.",
+  "formulations": [
+    {
+      "rows": [
+        { "id": "A.01", "name": "Firm Tofu, Pressed", "volume": "1 block (~12 oz)", "mass": 340.0, "pct": 100.0, "baseline": true, "role": "Primary foundational substrate; provides moist, cohesive base mass." },
+        { "id": "B.01", "name": "Sunflower Seeds, Toasted & Ground", "volume": "1/3 cup", "mass": 51.0, "pct": 15.0, "estimated": true, "role": "Structural body and nutty flavor base." },
+        { "id": "B.02", "name": "Pumpkin Seeds, Toasted & Ground (added)", "volume": "1/3 cup", "mass": 51.0, "pct": 15.0, "estimated": true, "role": "Structural body and earthy flavor base; user-added ingredient, not in original list." },
+        { "id": "B.03", "name": "Carrot, Finely Grated", "volume": "3/4 cup", "mass": 90.0, "pct": 26.47, "estimated": true, "role": "Moisture and sweetness; sautéed before mixing to soften and concentrate flavor." },
+        { "id": "B.04", "name": "Celery, Finely Diced", "volume": "1/2 cup", "mass": 60.0, "pct": 17.65, "estimated": true, "role": "Aromatic base; sautéed before mixing to soften texture and mellow raw bite." },
+        { "id": "B.05", "name": "Onion, Finely Diced", "volume": "3/4 cup", "mass": 110.0, "pct": 32.35, "estimated": true, "role": "Aromatic base; sautéed before mixing to develop sweetness and remove raw sharpness." },
+        { "id": "B.06", "name": "Butter, Unsalted (added)", "volume": "2 tbsp", "mass": 28.0, "pct": 8.24, "estimated": true, "role": "Sauté fat for B.03–B.05; user-added, not in original ingredient list. Introduces dairy." },
+        { "id": "C.01", "name": "Eggs, Large", "volume": "4 each", "mass": 200.0, "pct": 58.82, "role": "Primary binder; provides structural cohesion during cooking." },
+        { "id": "C.02", "name": "Soy Sauce", "volume": "3 tbsp", "mass": 49.0, "pct": 14.41, "estimated": true, "role": "Umami seasoning and moisture; salt profile contributor." },
+        { "id": "C.03", "name": "Garlic, Minced", "volume": "3 cloves", "mass": 15.0, "pct": 4.41, "role": "Aromatic; foundational flavor note." },
+        { "id": "D.01", "name": "Parsley, Fresh, Chopped", "volume": "1/4 cup", "mass": 15.0, "pct": 4.41, "estimated": true, "role": "Fresh herbal top note; color fleck." },
+        { "id": "D.02", "name": "Nutritional Yeast", "volume": "2 tbsp", "mass": 10.0, "pct": 2.94, "estimated": true, "role": "Vegetarian umami booster; adds savory, slightly cheesy depth without dairy or meat." },
+        { "id": "D.03", "name": "Salt", "volume": "3/4 tsp", "mass": 4.5, "pct": 1.32, "estimated": true, "role": "Final seasoning correction; primary standalone salt source now that no packaged seasoning is used." }
+      ],
+      "total": { "mass": 1023.5, "pct": 301.03, "role": "Combined raw material input footprint." }
+    }
+  ],
+  "matrixFootnote": "*Quantities marked with an asterisk are reconstructed estimates, not figures from a verified source recipe. Gram values reflect typical culinary density and standard-item-weight conversions for the stated volumes. Unmarked masses (tofu block, eggs, garlic cloves) use standard commercial/culinary unit weights. Item B.06 introduces dairy into an otherwise dairy-free formulation. Item D.02 (nutritional yeast) replaces a generic placeholder spice blend. Egg content (C.01) was estimated at 4 eggs (58.8% of baseline) from recollection of the original burger.",
+  "mise": [
+    { "label": "Tofu Press", "text": "Press A.01 under weight for 20–30 minutes to expel excess water; pat dry. Insufficient pressing will slacken the final patty and extend cook time." },
+    { "label": "Seed Toast & Grind", "text": "Toast B.01 and B.02 together in a dry skillet over medium heat, stirring frequently, 4–5 minutes until fragrant and lightly golden. Cool fully, then pulse in a food processor to a coarse meal — do not over-process into paste." },
+    { "label": "Vegetable Prep", "text": "Grate B.03 on the fine side of a box grater. Dice B.04 and B.05 to a uniform 3–4 mm mince for even distribution and cohesion. These are sautéed in Step 1 of Execution below, not used raw." },
+    { "label": "Aromatics", "text": "Mince C.03 finely. Chop D.01, removing thick stems." }
+  ],
+  "execution": [
+    { "name": "Sauté Vegetables", "params": "6–8 min | Medium heat", "text": "Melt B.06 in a skillet over medium heat. Add B.03, B.04, and B.05; sauté, stirring occasionally, until onion is translucent and vegetables have softened and lost most of their raw moisture. Cool to room temperature before combining — adding hot vegetables to the tofu/egg mixture will begin cooking the egg prematurely." },
+    { "name": "Combine Base", "params": "2–3 min | Hand mix", "text": "In a large bowl, mash A.01 to a rough crumble. Fold in ground B.01 and B.02 until evenly distributed through the tofu." },
+    { "name": "Incorporate Vegetables & Aromatics", "params": "2 min | Hand mix", "text": "Add the cooled sautéed B.03–B.05 and raw C.03 to the base. Mix until uniformly dispersed." },
+    { "name": "Bind & Season", "params": "2–3 min | Hand mix", "text": "Whisk C.01 lightly, then fold into the mixture along with C.02, D.02, and D.03. At this egg ratio the mix will be noticeably wet and loose rather than tacky — this is expected; do not add extra dry ingredients to compensate." },
+    { "name": "Rest", "params": "30–40 min | Refrigerated", "text": "Cover and rest the mixture chilled. Extended rest time is required at this egg ratio to let the tofu and seed meal absorb excess moisture before shaping; a short rest will produce patties that spread and lose shape in the pan." },
+    { "name": "Portion & Form", "params": "3–4 min | Hand-formed", "text": "Divide into 6 equal portions (~170 g each). Press firmly and compact well — the higher moisture content makes the raw patty more fragile, so handle gently when transferring to the pan." },
+    { "name": "Sear", "params": "5–6 min per side | Medium-low heat, oiled skillet", "text": "Cook patties until deeply golden-brown and a firm crust forms on each side. Use slightly lower heat and a longer sear than a standard-egg formulation to fully set the interior without scorching the crust before the center firms." }
+  ],
+  "directive": "At 4 eggs (58.8% of baseline), the mixture is significantly wetter than a standard veggie burger formulation. Do not skip or shorten the chilled rest — it is the primary control against patties that spread, tear, or fail to hold shape during the sear. Also let the sautéed vegetables (Step 1) cool fully before combining with the egg-bound mixture."
+}

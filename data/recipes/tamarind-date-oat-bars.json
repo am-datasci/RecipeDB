@@ -1,0 +1,47 @@
+{
+  "slug": "tamarind-date-oat-bars",
+  "title": "Tamarind Date Oat Energy Bars",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Snacks & Bars", "Vegan", "Vegetarian", "Make-Ahead"],
+  "meta": {
+    "projectId": "#TDO-01",
+    "version": "1.0",
+    "date": "June 23, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "10–12 Bars / ~509.5 g Target Batch Footprint"
+  },
+  "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Volumetric values map to the current baseline target scale and must be dynamically scaled via weight calculations for larger yields.",
+  "formulations": [
+    {
+      "rows": [
+        { "id": "A.01", "name": "Medjool Dates (Pitted)", "volume": "1 cup", "mass": 150.0, "pct": 100.0, "baseline": true, "role": "Primary foundational substrate and natural high-fructose binding matrix; provides structural stickiness and core carbohydrate base." },
+        { "id": "B.01", "name": "Tamarind Paste (Pure, Unsweetened)", "volume": "3 tbsp", "mass": 45.0, "pct": 30.0, "role": "Primary acidulant and moisture contributor; provides a sharp tartaric acid contrast to balance date sweetness." },
+        { "id": "B.02", "name": "Almond Butter (Smooth, Unsweetened)", "volume": "1/3 cup", "mass": 85.0, "pct": 56.7, "role": "Lipid medium and structural softener; introduces monounsaturated fats to keep the bar pliable and provide satiety." },
+        { "id": "B.03", "name": "Chia Seeds", "volume": "1.5 tbsp", "mass": 18.0, "pct": 12.0, "role": "Hydrophilic stabilizing agent; absorbs unbound water from the tamarind paste to prevent syneresis/bleeding." },
+        { "id": "B.04", "name": "Fine Sea Salt", "volume": "1/4 tsp", "mass": 1.5, "pct": 1.0, "role": "Flavor potentiator; rounds out sharpness and enhances background caramel notes of the dates." },
+        { "id": "C.01", "name": "Rolled Oats (Old Fashioned)", "volume": "2 cups", "mass": 180.0, "pct": 120.0, "role": "Complex carbohydrate matrix and core structural substrate; provides beta-glucans and essential chewing texture." },
+        { "id": "C.02", "name": "Toasted Pumpkin Seeds (Pepitas)", "volume": "1/4 cup", "mass": 30.0, "pct": 20.0, "role": "Inclusions for structural crunch and visual contrast; adds zinc, magnesium, and plant protein." }
+      ],
+      "total": { "mass": 509.5, "pct": 339.7, "role": "Combined raw material input footprint." }
+    }
+  ],
+  "mise": [
+    { "label": "Substrate Cleanliness & Inspection", "text": "Manually verify Medjool Dates (A.01) are 100% free of pits or calyx fragments. If dates feel overly dry or firm, submerge in hot water for 5 minutes, then drain completely before weighing." },
+    { "label": "Grain Matrix Toasting", "text": "Spread Rolled Oats (C.01) evenly onto a parchment-lined sheet pan. Bake at 350°F (177°C) for 8–10 minutes until aromatic and lightly golden. Cool completely to room temperature before mixing to prevent premature starch gelatinization." },
+    { "label": "Tamarind Uniformity", "text": "Ensure Tamarind Paste (B.01) is completely smooth. If using compressed block tamarind, dissolve in a minimal quantity of boiling water and pass through a fine mesh sieve to eliminate fibrous strands and seed debris." }
+  ],
+  "execution": [
+    { "name": "Binding Paste Synthesis", "text": "Combine inspected dates (A.01), tamarind paste (B.01), almond butter (B.02), chia seeds (B.03), and fine sea salt (B.04) in the bowl of a heavy-duty food processor." },
+    { "name": "Homogenization Cycle", "params": "45–60 sec | High speed", "text": "Process on high, pulsing occasionally, until the ingredients merge into a completely unified, thick paste substrate. No large individual date fragments should remain." },
+    { "name": "Dry Phase Dispersion", "params": "5–8 pulses | Brief bursts", "text": "Introduce the cooled toasted oats (C.01) and pepitas (C.02) to the processor bowl. Pulse in brief bursts. The objective is to thoroughly coat the grains and seeds with the paste matrix without grinding them down, retaining complete grain boundaries for a premium mouthfeel." },
+    { "name": "Compaction & Consolidation", "text": "Line an 8×8-inch straight-sided baking pan with parchment paper, leaving a 2-inch overhang on the sides. Transfer the mixture into the pan. Using a flat-bottomed tool or offset spatula, press the mixture down with significant force to compress it thoroughly into a uniform sheet, removing any interior air pockets." },
+    { "name": "Structural Stabilization", "params": "Minimum 2 hr | 4°C", "text": "Cover and transfer the pan to a refrigerated environment. This resting window is critical for allowing the chia seeds and oat starch to absorb structural moisture and firm up completely." },
+    { "name": "Portioning", "text": "Extract the solidified slab using the parchment handles. Using a long, sharp chef's knife wiped with a damp cloth, slice into 10–12 uniform bars. Wrap individually in wax paper or store in an airtight container." }
+  ],
+  "qcTitle": "IV. Quality Control Parameters & Corrective Directives",
+  "qc": [
+    { "metric": "Cohesive Integrity", "target": "The bar must bend slightly before cracking, maintaining its shape at room temperature without crumbling or feeling overly tacky to the touch.", "action": "If crumbling, re-process with 5–10 g of water or extra almond butter. If overly sticky, fold in 10 g of ground oat flour." },
+    { "metric": "Organoleptic Profile", "target": "Balanced delivery beginning with a sharp, clean tamarind tang, immediately followed by the rich caramel sweetness of dates, finishing with an earthy almond/toasted-grain note.", "action": "Adjust tamarind paste by ±5% in subsequent batches to fine-tune the sour-to-sweet acid balance depending on natural date sugar variances." },
+    { "metric": "Surface Water Activity", "target": "Dry external surface; zero moisture bleeding or syneresis over a 72-hour period under ambient storage conditions.", "action": "Ensure the chia seed ratio is strictly maintained; consider increasing chia seeds by 2 g if using high-moisture commercial tamarind extract." }
+  ]
+}

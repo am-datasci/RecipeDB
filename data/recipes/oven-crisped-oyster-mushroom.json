@@ -1,0 +1,68 @@
+{
+  "slug": "oven-crisped-oyster-mushroom",
+  "title": "Oven-Crisped Oyster Mushroom",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "Thai", "Vegetarian", "Roasting"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "450 g Mushroom Base / 35 Minutes Active"
+  },
+  "specs": [
+    { "label": "Oven Temp", "value": "425°F (218°C)" },
+    { "label": "Target Time", "value": "35 minutes active" },
+    { "label": "Protein Source", "value": "Quinoa flour / kefir" },
+    { "label": "Serve With", "value": "Nam jim jaew, garlic-herb roast potatoes" }
+  ],
+  "scalingPrinciple": "Item A.01 (Oyster Mushroom Clusters) is locked at 100.0% as the mathematical baseline weight. All dredge and binder percentages are expressed relative to that 450 g substrate mass, so the wet-to-dry coating ratio holds at any batch size.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Core Substrate" },
+        { "id": "A.01", "name": "Oyster Mushroom Clusters", "volume": "—", "mass": 450, "pct": 100.0, "baseline": true, "role": "Torn into hand-sized floret groups; the structural substrate." },
+        { "group": "B — Loaded Wet Binder" },
+        { "id": "B.01", "name": "Whole Milk Kefir", "volume": "120 ml", "mass": 124.0, "pct": 27.56, "estimated": true, "role": "Primed binder; acid tenderizes and carries the spice block into the gills." },
+        { "id": "B.02", "name": "Pickle Juice (Acid / Thinning)", "volume": "15–30 ml", "mass": 22.5, "pct": 5.0, "estimated": true, "role": "Target: heavy cream viscosity. Thins the kefir to a coating consistency." },
+        { "id": "B.03", "name": "Granulated Garlic", "volume": "—", "mass": 6, "pct": 1.33, "role": "High-grade aromatic load." },
+        { "id": "B.04", "name": "Granulated Onion", "volume": "—", "mass": 6, "pct": 1.33, "role": "High-grade aromatic load." },
+        { "id": "B.05", "name": "Smoked Paprika", "volume": "—", "mass": 1.5, "pct": 0.33, "role": "Color bloom and light wood-smoke note." },
+        { "id": "B.06", "name": "Fine Sea Salt", "volume": "—", "mass": 6, "pct": 1.33, "role": "Core flavor activator." },
+        { "id": "B.07", "name": "Fresh Coarse Black Pepper", "volume": "—", "mass": 1, "pct": 0.22, "role": "Pungency block." },
+        { "group": "C — Dry Crunch" },
+        { "id": "C.01", "name": "Whole Raw Quinoa", "volume": "—", "mass": 90, "pct": 20.0, "role": "Milled to coarse grit — the micro-ventilation agent that replaces deep-fry crisping." },
+        { "id": "C.02", "name": "White Rice Flour", "volume": "—", "mass": 65, "pct": 14.44, "role": "Structure and moisture-barrier agent." },
+        { "group": "D — Finishing" },
+        { "id": "D.01", "name": "Monounsaturated Avocado Oil", "volume": "As needed", "massText": "—", "pctText": "—", "role": "High-velocity aerosol spray; must fully opacify the dry starch." },
+        { "id": "D.02", "name": "Nam Jim Jaew (optional)", "volume": "60 ml", "mass": 64.0, "pct": 14.22, "estimated": true, "role": "Optional glaze — borrowed from the Vegetarian Crying Tiger sheet." }
+      ],
+      "total": { "mass": 772.0, "pct": 171.56, "role": "Combined raw material input footprint, excluding finishing oil and optional glaze." }
+    }
+  ],
+  "matrixFootnote": "*Kefir, pickle juice, and nam jim jaew are specified by volume in the source. Gram values shown convert at standard densities (kefir ≈1.03 g/ml; brine and jaew ≈1.06 g/ml) and are marked accordingly. Pickle juice is entered at the midpoint of the stated 15–30 ml range. All other masses are stated directly.",
+  "mise": [
+    { "label": "Dry Grind (C.01)", "text": "Ensure the blender container and blades are completely moisture-free. Charge with the raw quinoa. Set variable speed to 5. Pulse 6 to 8 times. Inspect: the goal is a uniform, granular grit resembling fine cornmeal or cracked bulgur — do not let it pulverize into powder." },
+    { "label": "The Blend (C.01, C.02)", "text": "In a shallow pan, thoroughly whisk the milled quinoa grit with the white rice flour. Leave completely plain — all seasoning lives in the wet phase." },
+    { "label": "The Emulsion (B.01–B.07)", "text": "In a wide bowl, vigorously whisk the kefir, pickle juice, and the entire spice block (garlic, onion, paprika, salt, pepper) until completely homogenous." }
+  ],
+  "execution": [
+    { "name": "Preheat & Pan Prep", "params": "Setup | 425°F / 218°C", "text": "Set the oven to 425°F (218°C). Lightly coat a half sheet pan or parchment with avocado oil (D.01)." },
+    { "name": "Submersion", "params": "Per cluster | Ambient", "text": "Dip a mushroom cluster directly into the seasoned kefir. Ensure the liquid penetrates deep into the gills. Lift and let the heavy excess drain back into the bowl for 2 seconds." },
+    { "name": "The Press", "params": "Per cluster | Ambient", "text": "Drop the wet cluster into the dry flour-grit mix. Use your dry hand to pack the grains firmly into every crevice. Shake off any loose grains that fail to bond." },
+    { "name": "Placement", "params": "Setup | Wire rack", "text": "Space the coated clusters on the wire rack with a minimum of 2 cm of clearance between each piece to maximize convective airflow." },
+    { "name": "The Hydration Spray", "params": "Crucial | 30 cm standoff", "text": "Hold the avocado oil spray 30 cm above the pan. Evenly coat the mushrooms until the dry white starch turns completely opaque. If you leave dry, chalky patches, they will bake into hard, powdery spots." },
+    { "name": "Bake Cycle 1", "params": "10 min | Middle rack, 425°F", "text": "Fire on the middle rack for 10 minutes." },
+    { "name": "The Inversion", "params": "Brief | Tongs", "text": "Pull the pan and carefully invert each cluster with tongs." },
+    { "name": "Bake Cycle 2", "params": "10 min | Middle rack, 425°F", "text": "Return to the oven until the crust turns an intense golden-straw color and feels completely rigid to the touch." },
+    { "name": "The Glaze (optional)", "params": "Immediate | Off heat", "text": "Transfer the roaring hot mushrooms into a warm bowl. Drizzle the warm nam jim jaew glaze (D.02) along the sides of the bowl — not directly over the top. Gently toss twice. The heat of the mushrooms will flash-absorb the sauce without breaking down the integrity of the quinoa crust." }
+  ],
+  "sections": [
+    {
+      "id": "texture-note",
+      "title": "Chef's Note on Texture",
+      "paragraphs": [
+        "The beauty of this build is the raw quinoa grit. In a deep fryer, starch absorbs oil instantly to crisp. In the oven, the moisture in the kefir vaporizes outwards through the tiny gaps created by the coarse quinoa grains, creating micro-ventilation. This ensures the mushroom dries out perfectly inside while the exterior remains exceptionally crisp."
+      ]
+    }
+  ],
+  "directive": "The hydration spray is not optional cosmetics — any dry, chalky patch left unopacified will bake into a hard powdery spot that no amount of glaze will rescue. Spray until the starch reads uniformly translucent before the pan goes in."
+}

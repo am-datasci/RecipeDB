@@ -1,0 +1,72 @@
+{
+  "slug": "vegetarian-crying-tiger",
+  "title": "Vegetarian Crying Tiger (Sua Rong Hai)",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "Thai", "Vegetarian", "Vegan", "Favorites"],
+  "meta": {
+    "projectId": "Recipe #05",
+    "version": "3.0 (Formulation Hybrid)",
+    "date": "May 30, 2026",
+    "status": "Production Spec",
+    "baseTargetScale": "4 Large Servings (Mushroom Base = 400 g)"
+  },
+  "scalingPrinciple": "The King Oyster Mushroom weight serves as the 100% base. All percentages express the ingredient's relationship to that base mass. Volumes are optimized for the baseline batch size and must be scaled proportionally if batch mass changes.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Core Substrate" },
+        { "id": "A.01", "name": "King Oyster Mushrooms", "volume": "4 large", "mass": 400, "pct": 100.0, "baseline": true, "role": "Core protein/steak substrate; dense chew." },
+        { "group": "B — Glaze & Sear" },
+        { "id": "B.01", "name": "Vegetarian Mushroom Oyster Sauce", "volume": "2 tbsp", "mass": 36, "pct": 9.0, "role": "Glaze backbone; deep savory umami." },
+        { "id": "B.02", "name": "Golden Mountain Soy Sauce", "volume": "1 tbsp", "mass": 16, "pct": 4.0, "role": "Glaze salt profile; distinct Thai notes." },
+        { "id": "B.03", "name": "Coconut Palm Sugar (Glaze)", "volume": "1 tsp", "mass": 4, "pct": 1.0, "role": "Sweetness balance; aids lacquer caramelization." },
+        { "id": "B.04", "name": "Coriander Roots (or stems)", "volume": "3 roots / 6 stems", "mass": 10, "pct": 2.5, "role": "Pounded aromatic base paste." },
+        { "id": "B.05", "name": "Garlic Cloves", "volume": "3 cloves", "mass": 15, "pct": 3.75, "role": "Pounded aromatic base paste." },
+        { "id": "B.06", "name": "Neutral Oil (Avocado/Rice Bran)", "volume": "1 tbsp", "mass": 14, "pct": 3.5, "role": "High smoke-point searing fat." },
+        { "group": "C — Nam Jim Jaew" },
+        { "id": "C.01", "name": "Tamarind Paste Concentrate", "volume": "2.5 tbsp", "mass": 45, "pct": 11.25, "role": "Tart, fruity acid base for the jaew sauce." },
+        { "id": "C.02", "name": "Vegan Fish Sauce", "volume": "1.5 tbsp", "mass": 24, "pct": 6.0, "role": "Sharp, salty umami backbone for the jaew." },
+        { "id": "C.03", "name": "Fresh Lime Juice", "volume": "1 tbsp", "mass": 15, "pct": 3.75, "role": "High-note acidity to finish the sauce." },
+        { "id": "C.04", "name": "Coconut Palm Sugar (Sauce)", "volume": "1 tbsp", "mass": 12, "pct": 3.0, "role": "Sweet balance for the heavy tamarind." },
+        { "id": "C.05", "name": "Shallots (Micro-planed)", "volume": "2 small", "mass": 20, "pct": 5.0, "role": "Pungent, sweet aromatic for the jaew." },
+        { "id": "C.06", "name": "Khao Khua (Toasted Sticky Rice Powder)", "volume": "1 tbsp", "mass": 8, "pct": 2.0, "role": "Vital texturizer; nutty aroma and crunch." },
+        { "id": "C.07", "name": "Prik Bon (Thai Chili Flakes)", "volume": "1 tbsp", "mass": 6, "pct": 1.5, "role": "Adjustable heat driver." },
+        { "group": "D — Herb Bed" },
+        { "id": "D.01", "name": "Shallots (Ring-sliced)", "volume": "3 small", "mass": 30, "pct": 7.5, "role": "Fresh aromatic component for herb bed." },
+        { "id": "D.02", "name": "Fresh Mint Leaves", "volume": "1 cup", "mass": 15, "pct": 3.75, "role": "Whole leaf herb bed; aromatic contrast." },
+        { "id": "D.03", "name": "Fresh Cilantro Leaves", "volume": "1 cup", "mass": 15, "pct": 3.75, "role": "Whole leaf herb bed; fresh profile." },
+        { "id": "D.04", "name": "Culantro Leaves (Saw-Tooth)", "volume": "4–5 leaves", "mass": 5, "pct": 1.25, "role": "Ultra-fine ribbon slices for herb bed." }
+      ],
+      "total": { "mass": 670, "pct": 167.25, "role": "Combined raw material input weight." }
+    }
+  ],
+  "mise": [
+    { "label": "Aromatic Base", "text": "Combine coriander roots/stems (B.04) and garlic (B.05) in a heavy stone mortar. Pound until a smooth, uniform paste forms." },
+    { "label": "Substrate Score", "text": "Trim the woody base of the King Oysters (A.01). Slice vertically into clean 1/2-inch thick planks. Score a tight 1/8-inch deep diamond cross-hatch pattern on both flat faces to bypass surface tension and maximize glaze channels." },
+    { "label": "Herb Bed", "text": "Wash and spin-dry mint (D.02), cilantro (D.03), and culantro (D.04). Toss whole leaves, culantro ribbons, and sliced shallots (D.01) in a chilled bowl. Store cold." },
+    { "label": "Jaew Base", "text": "Whisk tamarind (C.01), vegan fish sauce (C.02), lime juice (C.03), and palm sugar (C.04) until fully dissolved. Stir in micro-planed shallots (C.05). Crucial: hold the rice powder and chili flakes back until service." }
+  ],
+  "execution": [
+    { "name": "Dry-Weighted Sear", "params": "6–8 min | Medium-High heat", "text": "Lay the scored mushroom planks completely dry into a blistering hot cast-iron skillet wiped down with the neutral oil (B.06). Apply continuous downward pressure with a heavy pan-weight or metal spatula. This forces out internal air pockets and cooks off natural moisture rapidly, avoiding the classic \"chitin sponge\" steaming issue. Flip halfway through." },
+    { "name": "Glaze Lacquer Reduction", "params": "2–3 min | Low heat", "text": "While the steaks finish their sear, heat the pounded garlic/coriander paste, mushroom oyster sauce (B.01), Golden Mountain soy (B.02), and the glaze palm sugar (B.03) in a separate small saucepan. Simmer gently until the sugars reduce into a thick, syrupy lacquer. Pull mushrooms from the iron pan, set them on a wire rack, and paint both sides generously with the hot reduction." },
+    { "name": "Broiler Radiant Flash", "params": "90–120 sec | High broiler, top rack", "text": "Transfer the glazed planks directly under a preheated high broiler element. The intense top-down radiant heat will rapidly bubble, caramelize, and fuse the sticky lacquer onto the pre-charred ridges without softening the dense, steak-like core of the mushroom." }
+  ],
+  "qc": [
+    { "metric": "Structural Integrity", "target": "Dense, chewy, steak-like resistance. Zero flaccid or spongy tissue.", "actual": "[Pending Line Run]", "rating": "/ 10" },
+    { "metric": "Aesthetic Lacquer", "target": "Deeply caramelized amber finish inside the cross-hatch definition. Glossy and bubbling.", "actual": "[Pending Line Run]", "rating": "/ 10" },
+    { "metric": "Textural Contrast", "target": "Crisp crunch from the late-addition toasted rice powder against the warm, sticky glaze.", "actual": "[Pending Line Run]", "rating": "/ 10" }
+  ],
+  "sections": [
+    {
+      "id": "iteration",
+      "title": "VI. Iteration & Optimization",
+      "intro": "Carried forward from the v2.0 Technical Build Sheet, which this formulation supersedes.",
+      "items": [
+        { "label": "Identified issue:", "text": "Traditional wet-marinating introduces excess external water into a porous ingredient, leading to a steamed, spongy texture when pan-seared." },
+        { "label": "Implemented fix:", "text": "Redesigned the sequence to use a dry, weighted pan-press followed by an independent broiler glaze reduction." },
+        { "label": "Observation:", "text": "By completely separating the moisture evacuation phase (the dry sear) from the surface caramelization phase (the broiler flash), the classic chitin sponge problem is solved. The glaze adheres to the open cross-hatch channels instead of sliding off into a pool of mushroom water." }
+      ]
+    }
+  ],
+  "directive": "Always stir the Khao Khua (C.06) and Prik Bon (C.07) into the nam jim jaew liquid at the absolute last millisecond before slicing the warm steaks. This guarantees the rice powder preserves its maximum crunch."
+}

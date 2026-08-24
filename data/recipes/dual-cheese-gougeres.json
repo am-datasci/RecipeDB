@@ -1,0 +1,57 @@
+{
+  "slug": "dual-cheese-gougeres",
+  "title": "Dual-Cheese Gougères",
+  "subtitle": "Technical Recipe Formulation Sheet",
+  "tags": ["Appetizers", "French", "Vegetarian", "Baking", "Favorites"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "30–36 mini units (15–18 per flavor stream)",
+    "source": "Document Type: Standard Operating Procedure & Formulation Sheet — Savory Pastry / Choux Dough (Pâte à Choux). Target application: low-residue, ambient-stable finger food for event catering."
+  },
+  "specs": [
+    { "label": "Total Batch Yield", "value": "~30–36 mini units" },
+    { "label": "Portion Dimensions", "value": "~1.25 in (3 cm) spherical" },
+    { "label": "Preparation Time", "value": "25 minutes" },
+    { "label": "Thermal Processing", "value": "20–25 minutes" },
+    { "label": "Critical Texture", "value": "Crisp rigid crust; hollow, moist, airy crumb; non-greasy exterior" }
+  ],
+  "scalingPrinciple": "Item A.01 (Filtered Water) is locked at 100.0% as the hydration baseline for the choux. All other base components read as a percentage of that water mass, the conventional way choux ratios are expressed. The finished base paste is then divided by mass — not by eye — into two equal sub-batches before inclusions are folded in.",
+  "formulationTitle": "I. Master Base Formulation (Choux Pastry)",
+  "formulations": [
+    {
+      "rows": [
+        { "id": "A.01", "name": "H₂O (Filtered Water)", "volume": "1/2 cup", "mass": 120, "pct": 100.0, "baseline": true, "role": "Steam generation agent / hydration source." },
+        { "id": "B.01", "name": "Whole Milk (3.25% Fat)", "volume": "1/2 cup", "mass": 120, "pct": 100.0, "role": "Maillard browning enhancement via lactose; tenderizes crumb." },
+        { "id": "B.02", "name": "Unsalted Butter (80% Milkfat)", "volume": "6 tbsp, cubed", "mass": 85, "pct": 70.83, "role": "Shortens gluten strands for crispness; emulsification fat base." },
+        { "id": "B.03", "name": "Fine Sodium Chloride (Salt)", "volume": "1/2 tsp", "mass": 3, "pct": 2.5, "role": "Flavor enhancer; gluten structure stabilizer." },
+        { "id": "C.01", "name": "All-Purpose Flour (~11% Protein)", "volume": "1 cup, sifted", "mass": 120, "pct": 100.0, "role": "Starch gelatinization baseline; structural integrity builder." },
+        { "id": "D.01", "name": "Whole Liquid Eggs (Room Temp)", "volume": "4 large", "mass": 200, "pct": 166.67, "estimated": true, "role": "Leavening steam, protein coagulation structure, lecithin emulsifier." }
+      ],
+      "total": { "mass": 648, "pct": 540.0, "role": "Master base paste before diversion (~324 g per sub-batch)." }
+    },
+    {
+      "title": "Phase Diversion & Flavor Inclusion Metrics",
+      "intro": "Prior to the piping phase, the master base paste must be divided precisely into two equal mass quantities (approx. 324 grams of base paste per sub-batch) to execute the separate flavor streams.",
+      "columns": ["Stream", "Inclusion Component", "Preparation", "Mass (g)", "% of Sub-Batch", "Integration Note"],
+      "rows": [
+        { "id": "α", "name": "Aged Gouda", "volume": "Microplane or fine-hole grater", "mass": 50, "pct": 15.43, "estimated": true, "role": "Stream Alpha. Deep, nutty, caramelized profile with subtle wood-smoke undertones." },
+        { "id": "α", "name": "Smoked Paprika (Pimentón)", "volume": "1 pinch", "massText": "—", "pctText": "—", "role": "Stream Alpha spice botanical." },
+        { "id": "β", "name": "Extra-Sharp White Cheddar", "volume": "Microplane or fine-hole grater", "mass": 50, "pct": 15.43, "estimated": true, "role": "Stream Beta. Sharp, tangy, high-acid savory profile balanced by clean spice heat." },
+        { "id": "β", "name": "Fresh Black Peppercorn", "volume": "1/4 tsp, coarsely fractured", "massText": "—", "pctText": "—", "role": "Stream Beta spice botanical." }
+      ]
+    }
+  ],
+  "matrixFootnote": "*Egg mass is the source's own approximation for 4 large eggs; cheese masses are the source's stated approximations for 1/2 cup grated. Percentages for the inclusion streams are expressed against the ~324 g divided sub-batch, not the full base.",
+  "executionTitle": "II. Standard Operating Procedure",
+  "execution": [
+    { "name": "Thermal Pre-conditioning & Mise en Place", "params": "Setup | 400°F / 204°C", "text": "Adjust target oven parameters to 400°F (204°C). Line rigid aluminum baking sheets with non-stick silicone-treated parchment. Ensure eggs are verified at room temperature (~70°F / 21°C)." },
+    { "name": "Liquid Liquidization & Lipid Fusion", "params": "~5 min | Medium heat", "text": "In a heavy-bottomed stainless steel saucepan, combine the water, whole milk, cubed unsalted butter, and salt. Bring to a rapid rolling boil. Adjust timing so that the butter completely liquefies at the exact moment boiling commences, to limit vaporized water loss." },
+    { "name": "Starch Gelatinization (The Panade Phase)", "params": "2 min | Low heat", "text": "Reduce heat delivery to low. Introduce the total volume of sifted flour instantaneously. Agitate the matrix aggressively using a heavy wooden paddle. Continue cooking and mashing for 2 full minutes. The process is complete when the mixture detaches completely from the pan walls and leaves a translucent starch film across the bottom surface of the cookware." },
+    { "name": "Cooling & Vapor Dissipation", "params": "4–5 min | Low speed", "text": "Transfer the dense panade paste to a clean mixing bowl. Agitate manually or via a stand mixer paddle on low speed. Monitor paste temperature until it drops below 135°F (57°C) to prevent unintended egg protein coagulation during introduction." },
+    { "name": "Emulsion & Egg Incorporation", "params": "Sequential | Medium-low speed", "text": "Introduce the whole eggs sequentially, adding exactly one egg at a time. Mix completely after each addition. The emulsion will temporarily appear fractured and curdled; continue mixing until it regains structural cohesion. The final paste should possess a glossy appearance and drape from a suspended paddle in a clean, stable \"V\" geometry." },
+    { "name": "Diversion & Inclusion Dispersion", "params": "By mass | Fold only", "text": "Weigh and split the paste into equal halves (~324 g each). Gently fold the microplaned Aged Gouda and smoked paprika into Sub-Batch Alpha. Fold the microplaned Extra-Sharp Cheddar and black pepper into Sub-Batch Beta. Do not over-mix." },
+    { "name": "Extrusion & Thermal Processing", "params": "20–25 min | 400°F / 204°C", "text": "Extrude the paste via a piping apparatus with a plain circular tip, or drop via 1 tbsp disher leaving 1.5 inches of clearance between units. Bake undisturbed for 20 to 25 minutes. Remove when golden brown and hollow to the touch." }
+  ],
+  "directive": "Maintain a sealed oven door environment for the initial 15 minutes of baking. Opening the door before the protein structure sets collapses the steam envelope, and a collapsed gougère cannot be recovered by extending the bake."
+}

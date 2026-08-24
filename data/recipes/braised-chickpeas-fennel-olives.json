@@ -1,0 +1,57 @@
+{
+  "slug": "braised-chickpeas-fennel-olives",
+  "title": "Braised Chickpeas with Fennel, Olives & Preserved Lemon",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "Mediterranean", "Vegan", "Vegetarian", "Braising"],
+  "meta": {
+    "version": "0.1 (Reconstruction)",
+    "status": "R&D Prototype",
+    "baseTargetScale": "4 Servings / 250 g drained chickpea base",
+    "reconstruction": "**This sheet is the least source-anchored in the archive.** The original document is a descriptive overview of the dish rather than a recipe — it states only the chickpea can size, an oven temperature, a rough cook time, and the harissa quantity for one variation. Every other mass, ratio, and timing below is a standard-proportion reconstruction for this style of braise, not a figure carried over from a source. Treat the matrix as a starting point to cook against and revise, and expect to adjust the fennel-to-chickpea ratio and the salt to your own preserved lemon and olives, which vary enormously in intensity."
+  },
+  "summary": [
+    "A savory, tender Mediterranean braise. Slow-cooked or oven-braised, the fennel turns tender while the chickpeas absorb the briny olives and citrus-forward preserved lemon. Typically seasoned with garlic, herbs, and paprika, and served with crusty bread or over couscous."
+  ],
+  "scalingPrinciple": "Item A.01 (Drained Chickpeas) is locked at 100.0% as the substrate baseline. Because this formulation is reconstructed rather than source-derived, the percentages here describe a workable starting ratio rather than a validated specification — the fennel-to-chickpea relationship in particular is the main axis worth tuning across batches.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Core Substrate" },
+        { "id": "A.01", "name": "Chickpeas, drained", "volume": "1 can (15 oz)", "mass": 250, "pct": 100.0, "baseline": true, "estimated": true, "role": "Primary substrate. Canned gives an easy, robust texture; drained weight varies by brand." },
+        { "group": "B — Vegetable Body" },
+        { "id": "B.01", "name": "Fennel Bulbs, quartered", "volume": "2 medium", "mass": 600, "pct": 240.0, "estimated": true, "role": "Seared in olive oil to build flavor, then braised until tender. The dominant vegetable mass." },
+        { "group": "C — Flavor Boosters" },
+        { "id": "C.01", "name": "Olives (Castelvetrano or oil-cured), pitted", "volume": "~2/3 cup", "mass": 100, "pct": 40.0, "estimated": true, "role": "Briny counterweight to the fennel's sweetness." },
+        { "id": "C.02", "name": "Preserved Lemon Rind, finely diced", "volume": "1 lemon", "mass": 30, "pct": 12.0, "estimated": true, "role": "Complex salty-sour tang. Rind only — discard the pulp." },
+        { "id": "C.03", "name": "Garlic, sliced", "volume": "4 cloves", "mass": 20, "pct": 8.0, "estimated": true, "role": "Aromatic base." },
+        { "group": "D — Fat & Spice" },
+        { "id": "D.01", "name": "Extra-Virgin Olive Oil", "volume": "1/4 cup", "mass": 54, "pct": 21.6, "estimated": true, "role": "Searing fat and braising medium; also the sauce body." },
+        { "id": "D.02", "name": "Fennel Seeds", "volume": "1 tsp", "mass": 2, "pct": 0.8, "estimated": true, "role": "Reinforces the fresh fennel." },
+        { "id": "D.03", "name": "Harissa Paste (variation)", "volume": "1 1/2 tbsp", "mass": 25, "pct": 10.0, "estimated": true, "role": "For the spicy harissa-braised variation. Source-stated quantity." },
+        { "group": "E — Finishing" },
+        { "id": "E.01", "name": "Fresh Dill, Parsley, or Marjoram", "volume": "small handful", "mass": 15, "pct": 6.0, "estimated": true, "role": "Folded in raw at the end for a bright finish." },
+        { "id": "E.02", "name": "Salt and Pepper", "volume": "to taste", "massText": "To taste", "pctText": "—", "role": "Season late — preserved lemon and olives both carry significant salt." }
+      ],
+      "total": { "mass": 1096, "pct": 438.4, "estimated": true, "role": "Combined raw material input footprint, excluding seasoning." }
+    }
+  ],
+  "matrixFootnote": "*Every mass in this matrix except the harissa is a reconstructed estimate. The source states only \"one 15-ounce can (drained)\" of chickpeas, 1.5 tablespoons of harissa for the spicy variation, and a 375°F / ~1 hour braise. All quantities are marked accordingly.",
+  "mise": [
+    { "label": "Fennel (B.01)", "text": "Trim the stalks, reserving any fronds for the finish. Quarter the bulbs through the root so the layers stay attached during searing." },
+    { "label": "Preserved Lemon (C.02)", "text": "Separate rind from pulp. Discard the pulp and finely dice the rind only — the pulp is aggressively salty and turns the braise one-note." },
+    { "label": "Olives (C.01)", "text": "Pit if not already pitted. Leave whole or halve depending on preference." }
+  ],
+  "execution": [
+    { "name": "Sear the Fennel", "params": "~8 min | Medium-high heat", "text": "Heat the olive oil in a Dutch oven. Sear the quartered fennel cut-side down until well browned on the cut faces. This browning is the flavor base of the dish — do not rush it or crowd the pan." },
+    { "name": "Bloom Aromatics", "params": "~2 min | Medium heat", "text": "Add the sliced garlic and fennel seeds (and harissa, if making the spicy variation) and cook until fragrant." },
+    { "name": "Combine and Cover", "params": "~2 min | Off heat", "text": "Add the drained chickpeas, olives, and diced preserved lemon rind. Stir to combine and add a splash of water or stock if the pan looks dry. Cover." },
+    { "name": "Braise", "params": "~1 hr | 375°F / 190°C", "text": "Transfer the covered Dutch oven, or a covered baking dish, to the oven. Braise until the fennel is completely tender and the chickpeas have absorbed the briny, citrus-forward liquid." },
+    { "name": "Finish", "params": "Immediate | Off heat", "text": "Taste and season with salt and pepper — late, once the olive and preserved lemon salt has distributed. Top with fresh dill, parsley, or marjoram." }
+  ],
+  "alternatives": [
+    { "label": "Harissa Olive Oil-Braised:", "text": "A popular, spicy variation using 1 1/2 tablespoons of harissa paste for heat, bloomed with the garlic in step 2." },
+    { "label": "Cheesy Addition:", "text": "Incorporate feta during the final 10–15 minutes of cooking for a salty, creamy element. No longer vegan." },
+    { "label": "Serving:", "text": "Serve with warm crusty bread to soak up the olive oil and broth, or over fluffy couscous, quinoa, or polenta. Top with plain yogurt or labneh for extra creaminess." }
+  ],
+  "directive": "Season at the very end, never at the start. Preserved lemon and cured olives both release substantial salt across an hour-long braise, and a dish salted to taste at the beginning will be inedible by the time it comes out of the oven."
+}

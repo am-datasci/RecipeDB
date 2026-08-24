@@ -1,0 +1,15 @@
+# Source documents — kept local, never published.
+# These contain personal notes and health references that should not go public.
+Recipe_Docs/
+Reference/
+
+# Local tooling
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.idea/
+.vscode/

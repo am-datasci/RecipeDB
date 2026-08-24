@@ -1,0 +1,81 @@
+{
+  "slug": "shiso-quinoa-asian-dolmas",
+  "title": "Bicolor Shiso & Quinoa \"Asian Dolmas\"",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Appetizers", "Japanese", "Thai", "Make-Ahead"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "12–15 rolls / 185 g cooked grain base"
+  },
+  "summary": [
+    "A chilled, high-protein alternative to traditional stuffed grape leaves. Shiso belongs to the mint family, so it already shares a flavor profile with the herbs used in Lebanese warak enab — the pivot is structural rather than aromatic.",
+    "Shiso leaves are far more delicate than grape leaves and will not survive the long lemon-and-oil simmer of the traditional method. A 5-second blanch makes them pliable without destroying the color, and a short steam sets the filling. Chilling is not optional: the sushi rice starch retrogrades as it cools, and that is what locks each roll shut."
+  ],
+  "specs": [
+    { "label": "Prep Time", "value": "20 minutes" },
+    { "label": "Cook Time", "value": "10 minutes (steaming)" },
+    { "label": "Chill Time", "value": "1 hour minimum" },
+    { "label": "Yield", "value": "~12–15 rolls" },
+    { "label": "Service", "value": "Chilled" }
+  ],
+  "scalingPrinciple": "Item A.01 (Cooked Grain Blend) is locked at 100.0% as the filling baseline. Seasoning percentages are calculated against that grain mass, which is what keeps the fish sauce and lime in balance when the batch is scaled — leaf count scales with filling volume at roughly one leaf per 13 g of filling.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Structural Base" },
+        { "id": "A.01", "name": "Cooked Grain Blend (50/50 sushi rice and quinoa)", "volume": "1 cup", "mass": 185, "pct": 100.0, "baseline": true, "estimated": true, "role": "Filling baseline. Quinoa supplies the complete amino acid profile; sushi rice starch is the binder that locks the roll when chilled." },
+        { "id": "A.02", "name": "Bicolor Shiso Leaves", "volume": "15–20 leaves", "mass": 30, "pct": 16.22, "estimated": true, "role": "Structural wrapper. Large, fresh, purple/green. Flash-blanched to pliability." },
+        { "group": "B — Filling Inclusions" },
+        { "id": "B.01", "name": "Goji Berries", "volume": "2 tbsp", "mass": 18, "pct": 9.73, "estimated": true, "role": "Dried; rehydrate during steaming and absorb the seasoning liquid." },
+        { "id": "B.02", "name": "Toasted Sesame Seeds", "volume": "1 tbsp", "mass": 9, "pct": 4.86, "estimated": true, "role": "Nutty texture, plus extra reserved for garnish." },
+        { "id": "B.03", "name": "Scallion", "volume": "1 small", "mass": 15, "pct": 8.11, "estimated": true, "role": "Finely minced, both whites and greens." },
+        { "id": "B.04", "name": "Fresh Ginger", "volume": "1 tsp", "mass": 5, "pct": 2.70, "estimated": true, "role": "Grated into a fine paste." },
+        { "id": "B.05", "name": "Garlic", "volume": "1 clove", "mass": 5, "pct": 2.70, "estimated": true, "role": "Grated into a fine paste." },
+        { "group": "C — The Thai Pivot (Seasoning)" },
+        { "id": "C.01", "name": "Fish Sauce", "volume": "1 tbsp", "mass": 18, "pct": 9.73, "estimated": true, "role": "High-quality (e.g. Red Boat) for pure umami. Replaces the brine note of grape leaves." },
+        { "id": "C.02", "name": "Fresh Lime Juice", "volume": "1 tbsp", "mass": 15, "pct": 8.11, "estimated": true, "role": "Provides the bright acid that would otherwise come from a lemon simmer." },
+        { "id": "C.03", "name": "Honey or Coconut Sugar", "volume": "1/2 tsp", "mass": 3.5, "pct": 1.89, "estimated": true, "role": "Balances the salt and heat." }
+      ],
+      "total": { "mass": 303.5, "pct": 164.05, "estimated": true, "role": "Combined raw material input footprint." }
+    }
+  ],
+  "matrixFootnote": "*This formulation is specified entirely in volumetric kitchen units in the source. All gram values are standard culinary conversions and are marked accordingly; none are source-stated weights.",
+  "mise": [
+    { "label": "Prepare the Filling (A.01, B.01–B.05, C.01–C.03)", "text": "In a medium bowl, combine the warm cooked rice and quinoa. Add the ginger, garlic, minced scallions, and goji berries. Pour in the fish sauce, lime juice, and honey. Fold in the sesame seeds. Let this sit for 5 minutes so the goji berries begin to absorb the seasoning." },
+    { "label": "Prepare the Shiso Leaves (A.02)", "text": "Bring a pot of water to a boil. Using tongs, dip each shiso leaf for exactly 5 seconds until pliable, then immediately plunge into ice water. Pat dry with a paper towel. Remove the woody bit of the stem with kitchen shears. Unlike grape leaves, shiso needs seconds, not minutes — a long blanch turns it to mush and kills the purple." }
+  ],
+  "execution": [
+    { "name": "The Rolling Process", "params": "~10 min | Ambient", "items": [ "Place one shiso leaf on a flat surface, purple side up.", "Place a small tablespoon of the filling near the base (stem side).", "Fold the bottom of the leaf up over the filling, tuck in the sides, and roll tightly toward the tip.", "If leaves are small, overlap two leaves to create a larger wrapper. Expect mini rolls roughly the size of a large grape." ] },
+    { "name": "The Steam", "params": "8–10 min | Boiling water", "text": "Place the rolls seam-side down in a steamer basket. Steam over boiling water. This sets the leaf and allows the aromatics (ginger and garlic) to infuse the grains. Do not simmer — shiso will not survive submersion." },
+    { "name": "The Chill & Set", "params": "Minimum 1 hr | Refrigerated", "text": "Transfer the rolls to a plate and let them reach room temperature. Cover and refrigerate for at least 1 hour. Chilling allows the sushi rice starch to lock the roll together and deepens the citrus and fish sauce profile." }
+  ],
+  "alternatives": [
+    { "label": "Protein boost:", "text": "Finely chop toasted walnuts or tempeh into the grain blend to add the chew that minced meat provides in a traditional filling." },
+    { "label": "Binder variant:", "text": "A tiny amount of sesame oil plus a splash of kimchi juice binds the grains and pushes the profile toward Korean rather than Thai." },
+    { "label": "Dipping sauce:", "text": "In place of a lemon-olive oil bath, serve with rice vinegar, a drop of honey, and toasted sesame seeds." }
+  ],
+  "sections": [
+    {
+      "id": "comparison",
+      "title": "Comparison to Traditional Warak Enab",
+      "table": {
+        "columns": ["Feature", "Traditional (Grape Leaves)", "This Version (Shiso / Quinoa)"],
+        "rows": [
+          ["Texture", "Chewy, fibrous", "Tender, melt-in-mouth"],
+          ["Dominant Flavor", "Tangy, briny", "Minty, peppery, floral"],
+          ["Protein Level", "Low (mostly rice)", "Higher (quinoa, nuts, or tempeh)"],
+          ["Cooking Method", "Long simmer in lemon and oil", "8–10 minute steam, then chilled"]
+        ]
+      }
+    },
+    {
+      "id": "service",
+      "title": "Service Suggestion",
+      "paragraphs": [
+        "Serve chilled with a side of fresh mint leaves. The cooling sensation of the mint against the savory, chilled garlic-lime interior is the intended contrast. With bicolor shiso the finished rolls read dark and iridescent on the plate."
+      ]
+    }
+  ],
+  "directive": "The 5-second blanch is a hard limit, not an approximation. Shiso loses both pliability and its purple anthocyanin past roughly 10 seconds, and no amount of careful rolling recovers a leaf that has gone limp and brown."
+}

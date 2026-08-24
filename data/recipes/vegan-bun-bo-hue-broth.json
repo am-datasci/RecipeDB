@@ -1,0 +1,58 @@
+{
+  "slug": "vegan-bun-bo-hue-broth",
+  "title": "Vegan Bún Bò Huế Broth",
+  "subtitle": "Recipe Formulation Sheet",
+  "tags": ["Mains", "Soups & Broths", "Vietnamese", "Vegan", "Vegetarian"],
+  "meta": {
+    "projectId": "#BBH-01",
+    "version": "3.0",
+    "date": "June 14, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "6–8 Servings / 4,732 g Water Base"
+  },
+  "scalingPrinciple": "Lock Item A.01 at 100.0% to serve as the mathematical baseline weight. All subsequent component percentages are calculated relative to that baseline. Dried shiitake mushrooms replace commercial mushroom seasoning to provide an all-natural, guanylate-rich umami backbone; sea salt has been adjusted to compensate for the loss of sodium from commercial powder.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Extraction Medium" },
+        { "id": "A.01", "name": "Filtered Water", "volume": "20 cups", "mass": 4732.0, "pct": 100.0, "baseline": true, "role": "Primary liquid extraction medium; locks baseline mass." },
+        { "group": "B — Broth Substrates" },
+        { "id": "B.01", "name": "Jicama", "volume": "1 large", "mass": 400.0, "pct": 8.45, "role": "All-natural clean sweetness and foundational savory weight." },
+        { "id": "B.02", "name": "Granny Smith Apples (Cored)", "volume": "2 units", "mass": 300.0, "pct": 6.34, "role": "Malic tartness to mimic traditional fermented shrimp notes." },
+        { "id": "B.03", "name": "Daikon Radish", "volume": "1 unit", "mass": 400.0, "pct": 8.45, "role": "Sulfur-sweet baseline layer for broth depth." },
+        { "id": "B.04", "name": "Carrots", "volume": "3 units", "mass": 300.0, "pct": 6.34, "role": "Carotenoid-rich sweetness and background color depth." },
+        { "id": "B.05", "name": "Large Leeks (Green tops only)", "volume": "2 units", "mass": 150.0, "pct": 3.17, "role": "Allium base notes without muddying visual clarity." },
+        { "id": "B.06", "name": "Lemongrass Stalks (Tops, bruised)", "volume": "10 stalks", "mass": 200.0, "pct": 4.23, "role": "Essential aromatic profile (high-citral botanical matrix)." },
+        { "id": "B.07", "name": "Dried Shiitake Mushrooms", "volume": "1 cup", "mass": 30.0, "pct": 0.63, "role": "Natural guanylate-driven umami source; replaces commercial powder." },
+        { "id": "B.08", "name": "Rock Sugar (Yellow)", "volume": "—", "mass": 40.0, "pct": 0.85, "role": "Mellow, rounded sweetness to buffer capsaicin heat." },
+        { "id": "B.09", "name": "Sea Salt", "volume": "2 tbsp", "mass": 32.0, "pct": 0.68, "role": "Primary sapidity regulator (adjusted for sodium balance)." },
+        { "group": "C — Sate Infusion & Protein" },
+        { "id": "C.01", "name": "Neutral Cooking Oil", "volume": "5 tbsp", "mass": 68.0, "pct": 1.44, "role": "Lipid medium for carotenoid pigment extraction." },
+        { "id": "C.02", "name": "Annatto Seeds", "volume": "2 tbsp", "mass": 24.0, "pct": 0.51, "role": "Provides the signature vibrant red Huế visual spectrum." },
+        { "id": "C.03", "name": "Leek (White parts, finely minced)", "volume": "0.5 cup", "mass": 60.0, "pct": 1.27, "role": "Sate aromatic base layer." },
+        { "id": "C.04", "name": "Lemongrass (White parts, minced)", "volume": "0.5 cup", "mass": 60.0, "pct": 1.27, "role": "Sate aromatic core, fine texture integration." },
+        { "id": "C.05", "name": "Red Chili Flakes", "volume": "2 tbsp", "mass": 12.0, "pct": 0.25, "role": "Capsaicin delivery system for distinct regional heat." },
+        { "id": "C.06", "name": "King Oyster Mushrooms (Sliced)", "volume": "1 cup", "mass": 100.0, "pct": 2.11, "role": "Porous structural matrix to absorb and transfer sate flavors." },
+        { "id": "C.07", "name": "Firm Tofu (Cubes, pan-fried)", "volume": "14 oz", "mass": 400.0, "pct": 8.45, "role": "Sponge-like protein substrate for broth absorption." }
+      ],
+      "total": { "mass": 7308.0, "pct": 154.44, "role": "Combined raw material input footprint." }
+    }
+  ],
+  "mise": [
+    { "label": "Sweet Vegetable & Umami Base Substrates (B.01–B.04, B.07)", "text": "Peel jicama, daikon, and carrots. Chop into large, uniform chunks to optimize extraction surface area without clouding the broth. Core the Granny Smith apples and cut into halves. Briefly rinse dried shiitake mushrooms (B.07) under cold water to remove surface debris; leave whole for extraction." },
+    { "label": "Aromatic Stalks (B.05, B.06)", "text": "Separate leeks into white and green parts. Thoroughly rinse green tops (B.05) and leave whole. Wash lemongrass stalks (B.06); bruise the top green portions with a mallet to release essential oils. Finely mince the white sections of both leeks (C.03) and lemongrass (C.04) to a 1 mm tolerance for the sate infusion." },
+    { "label": "Protein & Fungi Matrix (C.06, C.07)", "text": "Press firm tofu to express excess moisture, cube into 2 cm blocks, and pan-fry until all facets present a resilient golden crust. Clean and slice King Oyster mushrooms into uniform 0.5 cm strips." }
+  ],
+  "execution": [
+    { "name": "Primary Botanical & Umami Extraction", "params": "60 min | High simmer, 95°C", "text": "Charge a large stockpot with filtered water (A.01) and bring to a rolling boil. Introduce all sweet vegetable substrates (B.01–B.04), leek greens (B.05), bruised lemongrass tops (B.06), dried shiitake mushrooms (B.07), and rock sugar (B.08). Reduce thermal output to maintain a constant, gentle simmer at 95°C. Simmer uncovered for exactly 60 minutes to allow the mushrooms to yield their deep glutamic/guanylate matrix and the vegetables to transfer their soluble solids." },
+    { "name": "Clarification & Separation", "params": "10 min | Ambient", "text": "Pass the crude botanical liquor through a fine-mesh chinois into a secondary sanitized container. Press the solids lightly to harvest trapped moisture without forcing particulate matter through the mesh. Discard the spent fibrous substrates and mushrooms; retain the clarified, umami-dense amber baseline broth." },
+    { "name": "Lipid Color Extraction (Annatto Fusion)", "params": "5 min | Moderate heat, 120°C", "text": "In a separate heavy-bottomed pan, introduce neutral cooking oil (C.01) and heat until it registers 120°C. Add annatto seeds (C.02). Agitate continuously for 60–90 seconds until the lipid phase acquires a brilliant, translucent deep-crimson hue. Immediately pass the mixture through a fine metal sieve into a bowl to isolate and discard the spent seeds, preserving the tinted oil." },
+    { "name": "Sate Aromatic Infusion", "params": "8 min | Medium-Low heat, 100°C", "text": "Return the crimson annatto oil to the pan over medium-low heat. Introduce minced leek whites (C.03) and minced lemongrass whites (C.04). Sauté for 3 minutes until aromatic moisture volatilizes. Incorporate red chili flakes (C.05) and sliced King Oyster mushrooms (C.06). Sauté for an additional 3–4 minutes until mushrooms soften and encapsulate the capsicum-lipid layer." },
+    { "name": "Final Broth Integration & Harmonization", "params": "15 min | Low simmer, 90°C", "text": "Pour the completed sate aromatic infusion directly into the clarified baseline broth. Add the fried tofu cubes (C.07). Bring the integrated system to a soft boil, then immediately suppress thermal output to a low simmer (90°C). Incorporate sea salt (B.09). Simmer for 15 minutes to allow the lipid-soluble sate notes to emulsify slightly and penetrate the tofu matrix. Evaluate the final broth profile and adjust with a pinch of salt or rock sugar if required." }
+  ],
+  "qc": [
+    { "metric": "Flavor Profile", "target": "Multi-layered equilibrium: front-loaded lemongrass citral brightness, an earthy and robust mid-palate umami depth driven by the dried shiitake extraction, balanced by clean vegetable sweetness and a back-end clean capsicum heat. Complete absence of chemical or commercial additives.", "actual": "[Pending Run]", "rating": "/ 10" },
+    { "metric": "Visual Optics", "target": "Vibrant, shimmering ruby-red lipid layer suspension over a perfectly clarified, debris-free translucent dark-amber broth.", "actual": "[Pending Run]", "rating": "/ 10" }
+  ],
+  "directive": "Using dried shiitake mushrooms provides a cleaner, more sophisticated savory baseline than commercial powder, but requires strict adherence to the straining step. Do not leave the whole shiitakes in the final serving broth — prolonged contact makes the delicate lemongrass profile taste muddy over time."
+}
