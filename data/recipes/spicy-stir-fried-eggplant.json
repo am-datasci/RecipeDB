@@ -1,0 +1,207 @@
+{
+  "slug": "spicy-stir-fried-eggplant",
+  "title": "Spicy Stir-Fried Eggplant",
+  "subtitle": "Recipe Formulation Sheet",
+  "blurb": "Long green eggplant fried down soft and smoky in Nam Prik Pao, then finished sticky-dry with oyster sauce and a fold of Thai basil.",
+  "tags": ["Mains", "Sides", "Thai", "Stir-Frying"],
+  "meta": {
+    "version": "1.0",
+    "status": "Production Ready",
+    "baseTargetScale": "1 Serving / 240 g Core Base",
+    "source": {
+      "publication": "ThaiCookbook.tv",
+      "title": "Recipe for Thailand-style Spicy Stir Fried Eggplant (Pad Prik Pao Ma Kua)",
+      "author": "W. Tipsuwan",
+      "url": "https://www.thaicookbook.tv/thai-recipes/one-dish-meals/spicy-stir-fried-eggplant/",
+      "note": "Published as a 1-serving recipe. Ingredient list states 'Light Soy Sauce,' not sweet soy sauce."
+    }
+  },
+  "summary": [
+    "The eggplant is fried in oil with ground fresh chili and garlic first, then braised in a little water until it collapses soft. That water evaporates before any sauce goes in — a dry pan is what lets the oyster sauce, soy sauce, and sugar reduce down sticky rather than just steaming the vegetable.",
+    "Nam Prik Pao goes in after the base seasoning, not with it. Frying it briefly on its own blooms the paste's roasted, smoky character before a second splash of water deglazes the pan into a thick, clinging sauce."
+  ],
+  "specs": [
+    { "label": "Yield", "value": "1 serving" },
+    { "label": "Prep Time", "value": "2 minutes" },
+    { "label": "Cook Time", "value": "5 minutes" }
+  ],
+  "scalingPrinciple": "Item A.01 (Long Green Eggplant) is locked at 100.0% as the primary substrate — this is a vegetable stir-fry built around the eggplant, and every sauce quantity in the source is calibrated to the volume of eggplant it needs to coat and reduce around.",
+  "formulations": [
+    {
+      "rows": [
+        { "group": "A — Core Substrate" },
+        {
+          "id": "A.01",
+          "name": "Long Green Eggplant, cut into bite-sized pieces",
+          "volume": "2 cups",
+          "mass": 240,
+          "pct": 100.0,
+          "baseline": true,
+          "estimated": true,
+          "role": "Primary vegetable. Soaked in salted water after cutting to prevent browning, then fried and braised until soft."
+        },
+        { "group": "B — Aromatics" },
+        {
+          "id": "B.01",
+          "name": "Brown or Yellow Onion",
+          "volume": "1/4 small onion",
+          "mass": 25,
+          "pct": 10.42,
+          "estimated": true,
+          "role": "Added in pieces partway through cooking for sweetness and bite; not ground into the paste."
+        },
+        {
+          "id": "B.02",
+          "name": "Garlic",
+          "volume": "2 large cloves",
+          "mass": 10,
+          "pct": 4.17,
+          "role": "Ground with the chili and fried first to build the base aromatic layer."
+        },
+        {
+          "id": "B.03",
+          "name": "Thai Hot Chili",
+          "volume": "1 chili",
+          "mass": 3,
+          "pct": 1.25,
+          "estimated": true,
+          "role": "Ground with the garlic. Fresh heat layered on top of the roasted heat from the chili sauce."
+        },
+        { "group": "C — Seasoning" },
+        {
+          "id": "C.01",
+          "name": "Thai Roasted Chili Sauce (Nam Prik Pao)",
+          "volume": "2 tablespoons",
+          "mass": 34,
+          "pct": 14.17,
+          "estimated": true,
+          "role": "Fire-roasted chili, shallot, and garlic paste. Fried briefly on its own to bloom before the pan is deglazed. See thaicookbook.tv/thai-food-ingredients/chili-pastes-and-curries/nam-prik-pao-thai-roasted-chili-paste for a description of the ingredient."
+        },
+        {
+          "id": "C.02",
+          "name": "Oyster Sauce",
+          "volume": "2 tablespoons",
+          "mass": 36,
+          "pct": 15.0,
+          "estimated": true,
+          "role": "Savory backbone; fried with the soy sauce and sugar until dry and sticky before the chili sauce goes in."
+        },
+        {
+          "id": "C.03",
+          "name": "Light Soy Sauce",
+          "volume": "2 teaspoons",
+          "mass": 10,
+          "pct": 4.17,
+          "estimated": true,
+          "role": "Thin, first-pressing soy sauce (ซีอิ้วขาว) used for seasoning rather than color. See thaicookbook.tv/thai-food-ingredients/sauces-and-condiments/light-soy-sauce-si-io-kaow for a description of the ingredient. Healthy Boy brand is a common choice for this style of sauce, though the source recipe does not specify a brand."
+        },
+        {
+          "id": "C.04",
+          "name": "Sugar",
+          "volume": "2 teaspoons",
+          "mass": 8,
+          "pct": 3.33,
+          "estimated": true,
+          "role": "Balances the salt and savory notes and helps the sauce caramelize dry and sticky in the pan."
+        },
+        { "group": "D — Finishing" },
+        {
+          "id": "D.01",
+          "name": "Thai Sweet Basil (Horapha)",
+          "volume": "1 cup leaves",
+          "mass": 20,
+          "pct": 8.33,
+          "estimated": true,
+          "role": "Folded in off heat at the end so it just wilts. Horapha's anise note is specific to this dish — other basils are not a straight swap."
+        }
+      ],
+      "total": {
+        "mass": 386,
+        "pct": 160.83,
+        "role": "Combined raw material input footprint."
+      }
+    }
+  ],
+  "matrixFootnote": "*Eggplant, onion, chili, basil, and all sauce/seasoning volumes (Nam Prik Pao, oyster sauce, soy sauce, sugar) are standard culinary mass estimates for the stated volumes — the source states everything by volume only. Garlic is a standard per-clove conversion.",
+  "miseTitle": "II. Pre-Assembly Processing (Mise en Place)",
+  "mise": [
+    {
+      "label": "Eggplant (A.01)",
+      "text": "Cut into bite-sized pieces and hold in a bowl of water salted with about 2 tsp salt while prepping everything else — this keeps the cut flesh from browning."
+    },
+    {
+      "label": "Basil (D.01)",
+      "text": "Pluck leaves and tender tops from the stems until you have at least 1 cup, loosely packed."
+    },
+    {
+      "label": "Chili paste base (B.02, B.03)",
+      "text": "Grind the garlic and chili together until well broken up — a mortar and pestle or a small food processor both work."
+    }
+  ],
+  "executionTitle": "III. Execution Sequence",
+  "execution": [
+    {
+      "name": "Fry the Aromatics",
+      "params": "~1 min | Medium heat",
+      "text": "Heat 1 tbsp oil in a wok or frying pan over medium heat. Add the ground garlic and chili and fry for about 30 seconds, until just softened — take it slow rather than risk burning the garlic."
+    },
+    {
+      "name": "Braise the Eggplant",
+      "params": "~5 min | Medium heat, then boil",
+      "text": "Add the eggplant and stir until it's coated in oil and starts to fry. Pour in 1/4 cup water, stir, and bring to a boil. Cook about 5 minutes, until the eggplant is soft and most of the water has evaporated."
+    },
+    {
+      "name": "Season and Reduce",
+      "params": "~1-2 min | Medium heat",
+      "text": "Add the onion pieces, light soy sauce, oyster sauce, and sugar. Stir well and let the sauce fry until it turns dry and sticky, clinging to the eggplant rather than pooling in the pan."
+    },
+    {
+      "name": "Bloom the Chili Paste and Deglaze",
+      "params": "~1-2 min | Medium heat",
+      "text": [
+        "Add the Nam Prik Pao and stir it in. Keep frying until the pan goes quite dry and looks close to catching — that's the paste blooming, not a mistake.",
+        "Before it burns, add another 1/4 cup water and deglaze, scraping the sticky sauce off the sides and bottom of the pan into the liquid. Cook until the sauce turns smooth and thick."
+      ]
+    },
+    {
+      "name": "Rest and Fold in Basil",
+      "params": "~1 min | Off heat",
+      "text": "Turn off the heat and let the eggplant sit for a minute to cool slightly. Fold in the basil gently, just until it wilts — don't cook it further or it turns dull and loses its anise perfume."
+    }
+  ],
+  "qcTitle": "IV. Quality Control Parameters",
+  "qc": [
+    {
+      "metric": "Sauce Consistency",
+      "target": "Smooth, thick, and glossy — clings to the eggplant rather than pooling loose in the pan.",
+      "action": "If still thin after deglazing, continue cooking uncovered a minute or two longer to reduce further. If it seizes up dry before smoothing out, add a tablespoon of water and stir through."
+    },
+    {
+      "metric": "Eggplant Texture",
+      "target": "Fully soft and collapsing at the edges, no raw bite in the center.",
+      "action": "If still firm after the initial water evaporates, add another splash of water and continue simmering before moving on to the seasoning step."
+    },
+    {
+      "metric": "Basil Color",
+      "target": "Bright green and just wilted, leaves still distinct.",
+      "action": "If the basil goes dark and slack, it was folded in while the pan was still too hot or cooked too long after adding — pull the pan off heat completely before folding it in next time."
+    }
+  ],
+  "directive": "Do not add the Nam Prik Pao until the pan has already gone dry from the first round of sauces — adding it too early prevents the base seasoning from concentrating and leaves the final dish thin and wet instead of dry and clinging.",
+  "alternativesTitle": "V. Alternative Ingredients & Formulations",
+  "alternatives": [
+    {
+      "label": "Vegetarian Swap (user-added, not in original recipe):",
+      "text": "Mushroom oyster sauce (a vegetarian sauce made from mushroom extract rather than oyster) substitutes 1:1 for C.02 by volume or mass. The source recipe does not offer this as a stated variation — swap it in if a vegetarian version of the dish is wanted."
+    }
+  ],
+  "sections": [
+    {
+      "id": "chef-notes",
+      "title": "A Note on the Two Chili Layers",
+      "paragraphs": [
+        "This dish carries chili heat in two distinct forms that shouldn't be confused with each other: fresh Thai hot chili ground raw with the garlic at the start, and Nam Prik Pao's roasted chili paste added later. The first is sharp and immediate; the second is smoky, sweet, and rounder. Losing either one changes the dish's character rather than just its spice level."
+      ]
+    }
+  ]
+}
