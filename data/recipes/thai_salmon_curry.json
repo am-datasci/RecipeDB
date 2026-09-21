@@ -1,0 +1,249 @@
+{
+  "slug": "thai-salmon-red-curry",
+  "title": "Thai Salmon Red Curry",
+  "subtitle": "Recipe Formulation Sheet",
+  "blurb": "Red curry paste is fried in the separated coconut cream before the milk goes in, then salmon simmers in a single layer with kale wilted in at the end.",
+  "tags": [
+    "Mains",
+    "Thai",
+    "Pescatarian",
+    "Fish"
+  ],
+  "meta": {
+    "version": "1.0",
+    "date": "September 21, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "1 Source Batch / 680.4 g Salmon Base",
+    "source": {
+      "publication": "thai-foodie.com",
+      "note": "Site attribution only. The recipe's published title, author, and page URL were not provided."
+    }
+  },
+  "specs": [
+    {
+      "label": "Total Time",
+      "value": "Under 30 minutes (per source)"
+    },
+    {
+      "label": "Cookware",
+      "value": "Wok with a lid"
+    },
+    {
+      "label": "Service",
+      "value": "Hot, with jasmine rice"
+    }
+  ],
+  "scalingPrinciple": "Item A.01 (salmon fillets) is locked at 100.0% because the dish is built around a fixed weight of fish and every other ingredient is sized to it. All percentages are calculated against the 680.4 g (1.5 lb) baseline.",
+  "formulations": [
+    {
+      "rows": [
+        {
+          "group": "A — Core Ingredient"
+        },
+        {
+          "id": "A.01",
+          "name": "Salmon Fillets",
+          "volume": "1.5 lb",
+          "mass": 680.4,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Primary ingredient and baseline. Added to the sauce in a single layer, then cooked on each side until flaky. Skin and fillet size are not specified in the source."
+        },
+        {
+          "group": "B — Curry Base"
+        },
+        {
+          "id": "B.01",
+          "name": "Cooking Oil of Choice",
+          "volume": "2 tbsp (a couple)",
+          "mass": 27.2,
+          "pct": 4.0,
+          "estimated": true,
+          "role": "Fried with the curry paste and coconut cream in Step 1. The source names no specific oil and mentions it only in the method, not the ingredient list."
+        },
+        {
+          "id": "B.02",
+          "name": "Thai Red Curry Paste",
+          "volume": "1 tbsp",
+          "mass": 15.0,
+          "pct": 2.2,
+          "estimated": true,
+          "role": "Cooked in the oil and coconut cream until fragrant (Step 1). Brand: Aroy-D or Maesri red curry paste (user-added specification; the source names no brand)."
+        },
+        {
+          "id": "B.03",
+          "name": "Coconut Milk, unshaken",
+          "volume": "1 can (size not stated)",
+          "mass": 400.0,
+          "pct": 58.79,
+          "estimated": true,
+          "role": "Do not shake the can, so the thick cream stays on top. That top layer goes in with the paste in Step 1; the remaining liquid goes in at Step 2. A standard 13.5 fl oz (400 mL) can is assumed."
+        },
+        {
+          "id": "B.04",
+          "name": "Water",
+          "volume": "1/2 cup",
+          "mass": 118.3,
+          "pct": 17.39,
+          "role": "Added with the coconut milk at Step 2 to loosen the sauce."
+        },
+        {
+          "id": "B.05",
+          "name": "Fish Sauce",
+          "volume": "2–3 tsp, to taste",
+          "mass": 14.8,
+          "pct": 2.18,
+          "estimated": true,
+          "role": "Savory seasoning, added at Step 2. Adjust within the source range; mass shown is the 2.5 tsp midpoint."
+        },
+        {
+          "id": "B.06",
+          "name": "Brown Sugar",
+          "volume": "1–2 tsp, to taste",
+          "mass": 6.6,
+          "pct": 0.97,
+          "estimated": true,
+          "role": "Sweetener, added with the fish sauce at Step 2. Adjust within the source range; mass shown is the 1.5 tsp midpoint, packed."
+        },
+        {
+          "group": "C — Vegetables"
+        },
+        {
+          "id": "C.01",
+          "name": "Fresh Kale Leaves",
+          "volume": "2 cups",
+          "mass": 60.0,
+          "pct": 8.82,
+          "estimated": true,
+          "role": "Stirred in at the end and wilted (Step 4). The source allows another green vegetable in its place."
+        },
+        {
+          "id": "C.02",
+          "name": "Red Bell Pepper",
+          "volume": "1 whole",
+          "mass": 120.0,
+          "pct": 17.64,
+          "estimated": true,
+          "role": "Listed in the source ingredients but never mentioned in the method. The thin-strip cut and the timing at the flip (Step 3) are editorial assumptions, not source-stated."
+        },
+        {
+          "group": "D — Finishing Aromatics (Optional)"
+        },
+        {
+          "id": "D.01",
+          "name": "Fresh Kaffir Lime Leaves, cut into thin strips",
+          "volume": "4 leaves (optional)",
+          "mass": 2.0,
+          "pct": 0.29,
+          "estimated": true,
+          "role": "Sprinkled on top at serving (Step 5)."
+        },
+        {
+          "id": "D.02",
+          "name": "Thai Chile, cut into long, thin strips",
+          "volume": "1 chile (optional)",
+          "mass": 3.0,
+          "pct": 0.44,
+          "estimated": true,
+          "role": "The source adds the chile at the flip (Step 3) and also sprinkles Thai red chili on top (Step 5), but lists only one chile and gives no split between the two."
+        },
+        {
+          "id": "D.03",
+          "name": "Thai Basil Leaves",
+          "volume": "1 handful (optional)",
+          "mass": 10.0,
+          "pct": 1.47,
+          "estimated": true,
+          "role": "Sprinkled on top at serving (Step 5)."
+        },
+        {
+          "group": "E — For Serving"
+        },
+        {
+          "id": "E.01",
+          "name": "Jasmine Rice",
+          "volume": "For serving",
+          "massText": "—",
+          "pctText": "—",
+          "role": "Serving accompaniment named in the method; the source gives no quantity."
+        }
+      ],
+      "total": {
+        "mass": 1457.3,
+        "pct": 214.18,
+        "role": "Combined raw material input footprint, optional items included. Jasmine rice is not counted."
+      }
+    }
+  ],
+  "matrixFootnote": "*Estimated masses. The source gives volumes and counts, not weights. Salmon is converted directly from 1.5 lb, and water is converted at 1 g/mL. Coconut milk assumes a standard 13.5 fl oz (400 mL) can, since the source gives no can size. Fish sauce (2.5 tsp) and brown sugar (1.5 tsp, packed) use the midpoint of the source's to-taste ranges. Oil, curry paste, kale (about 30 g per loosely packed cup), bell pepper (one medium, about 120 g), kaffir lime leaves, Thai chile, and Thai basil are standard culinary estimates for the stated volume or count.",
+  "mise": [
+    {
+      "label": "Coconut Milk (B.03)",
+      "text": "Do not shake the can. When opened, the first thick layer is the coconut cream used in Step 1; the remaining liquid is added in Step 2."
+    },
+    {
+      "label": "Red Bell Pepper (C.02)",
+      "text": "Cut into thin strips. The source lists the pepper without a cut or a timing, so both are editorial assumptions."
+    },
+    {
+      "label": "Kaffir Lime Leaves (D.01)",
+      "text": "Cut into thin strips."
+    },
+    {
+      "label": "Thai Chile (D.02)",
+      "text": "Cut into long, thin strips."
+    }
+  ],
+  "execution": [
+    {
+      "name": "Bloom the Paste",
+      "params": "Until fragrant | Medium-high heat",
+      "text": "Combine a couple tablespoons of cooking oil (B.01), the curry paste (B.02), and the coconut cream from the top of the can (B.03) in a wok over medium-high heat. Cook, stirring, until the paste is fragrant."
+    },
+    {
+      "name": "Build the Sauce and Add the Salmon",
+      "params": "2–4 min | Covered, medium-low",
+      "text": "Once the paste is fragrant, stir in the remaining coconut milk (B.03), water (B.04), fish sauce (B.05), and brown sugar (B.06). Lay the salmon (A.01) in the wok in a single layer. Cover, reduce the heat to medium-low, and cook 2–4 minutes, depending on thickness, until the salmon is flaky."
+    },
+    {
+      "name": "Flip the Salmon",
+      "params": "A few min | Heat unchanged",
+      "text": "If using, add the chile (D.02) and the bell pepper (C.02; the pepper timing is an editorial assumption, see the mise note). Flip the salmon over and cook the other side a few minutes, until flaky too."
+    },
+    {
+      "name": "Wilt the Kale",
+      "params": "1–2 min | Heat unchanged",
+      "text": "Stir in the kale (C.01) until wilted. This should only take a minute or two."
+    },
+    {
+      "name": "Garnish and Serve",
+      "params": "Finish | Serve with jasmine rice",
+      "text": "Sprinkle the kaffir lime leaves (D.01), Thai chile (D.02), and Thai basil (D.03) on top, if using, and serve with jasmine rice (E.01)."
+    }
+  ],
+  "qc": [
+    {
+      "metric": "Salmon Doneness",
+      "target": "Flaky on both sides. Timing runs 2–4 minutes covered on the first side, depending on thickness, then a few minutes on the second.",
+      "action": "If the fish is not flaky yet, re-cover and continue on medium-low, checking every minute. Thin fillets belong at the short end of the range, so check them early."
+    },
+    {
+      "metric": "Sauce Seasoning",
+      "target": "Fish sauce and brown sugar sit within the source's to-taste ranges (2–3 tsp and 1–2 tsp), and neither one overpowers the coconut and curry paste.",
+      "action": "Taste the sauce once the seasonings are in at Step 2 and adjust within those ranges: more fish sauce if it tastes flat, more brown sugar if it tastes sharp."
+    },
+    {
+      "metric": "Kale Wilt",
+      "target": "Wilted after a minute or two of stirring.",
+      "action": "If the leaves are still stiff, keep stirring over the heat until they wilt. If another green was used instead of kale, judge by texture, since 1–2 minutes is the source's time for kale."
+    }
+  ],
+  "alternativesTitle": "V. Alternative Ingredients & Formulations",
+  "alternatives": [
+    {
+      "label": "Green Vegetable:",
+      "text": "The source allows another green vegetable in place of the kale but does not name one. The 1–2 minute wilting time in Step 4 is given for kale."
+    }
+  ],
+  "directive": "Watch the salmon, not the clock. The 2–4 minute and few-minute windows depend on fillet thickness, and the fish keeps cooking in the hot sauce through the flip and while the kale wilts, so take it to flaky and no further."
+}
