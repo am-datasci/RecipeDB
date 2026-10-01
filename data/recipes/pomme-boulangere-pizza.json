@@ -1,0 +1,227 @@
+{
+  "slug": "pomme-boulangere-pizza",
+  "title": "Pomme Boulangère Pizza",
+  "subtitle": "Recipe Formulation Sheet",
+  "blurb": "Shingled, butter-glazed potato rounds crisp over a roasted garlic-ricotta base, with jammy caramelized onions and mozzarella, all on a sheet-pan crust.",
+  "tags": [
+    "Mains",
+    "Baking",
+    "Vegetarian",
+    "Pizza",
+    "Italian",
+    "French"
+  ],
+  "meta": {
+    "version": "1.1",
+    "date": "October 1, 2026",
+    "status": "R&D Prototype",
+    "baseTargetScale": "1 Half Sheet Pan (18 x 13 in) / 600 g Dough Base",
+    "source": {
+      "author": "Alan Mitchell, co-developed with AI"
+    }
+  },
+  "summary": [
+    "Pomme boulangère is a thinly sliced potato dish where butter and heat do the work. Par-boiling gelatinizes the surface starch so the slices turn tender quickly and brown at the edges, which matters on a pizza where the potato has only as long as the crust to cook.",
+    "The slices must be dry before the butter goes on. Residual water turns to steam under the slices and keeps them pale and soft. Melted butter on dry surfaces conducts heat evenly and browns the edges."
+  ],
+  "specs": [
+    {
+      "label": "Yield",
+      "value": "1 sheet pan pizza (about 12 squares)"
+    },
+    {
+      "label": "Active Time",
+      "value": "About 1 hour 15 minutes, plus dough"
+    },
+    {
+      "label": "Oven",
+      "value": "475°F / 245°C, lower-middle rack"
+    },
+    {
+      "label": "Service",
+      "value": "Hot, immediately"
+    }
+  ],
+  "scalingPrinciple": "Item A.01 (the dough) is locked at 100.0% because the pizza is built around it: every topping is sized to the surface the dough will cover. All other percentages are calculated against the 600 g dough baseline.",
+  "formulations": [
+    {
+      "rows": [
+        {
+          "group": "A — Dough"
+        },
+        {
+          "id": "A.01",
+          "name": "Pizza Dough, homemade",
+          "volume": "70% hydration",
+          "mass": 600,
+          "pct": 100.0,
+          "baseline": true,
+          "role": "Homemade dough at 70% hydration, fermented and ready to press into a half sheet pan."
+        },
+        {
+          "group": "B — Base and Cheese"
+        },
+        {
+          "id": "B.01",
+          "name": "Garlic, whole heads, roasted",
+          "volume": "2 heads | 40 min at 400°F / 205°C",
+          "mass": 100,
+          "pct": 16.67,
+          "estimated": true,
+          "role": "Roasted until soft and sweet, then squeezed from the skins and mashed into the ricotta."
+        },
+        {
+          "id": "B.02",
+          "name": "Whole-Milk Ricotta",
+          "volume": "1 cup",
+          "mass": 240,
+          "pct": 40.0,
+          "estimated": true,
+          "role": "Spread as the base layer. Mixed with the roasted garlic for a creamy, mellow sauce."
+        },
+        {
+          "id": "B.03",
+          "name": "Low-Moisture Mozzarella, shredded",
+          "volume": "About 2 cups",
+          "mass": 200,
+          "pct": 33.33,
+          "estimated": true,
+          "role": "Melts over the base without releasing much water, so the crust stays crisp."
+        },
+        {
+          "group": "C — Onions"
+        },
+        {
+          "id": "C.01",
+          "name": "Yellow Onions, caramelized",
+          "volume": "2 medium, thinly sliced",
+          "mass": 300,
+          "pct": 50.0,
+          "estimated": true,
+          "role": "Cooked low and slow until deep golden and jammy. Adds sweetness against the potato and cheese."
+        },
+        {
+          "group": "D — Potato Topping"
+        },
+        {
+          "id": "D.01",
+          "name": "Yukon Gold Potato",
+          "volume": "1 medium-large | sliced paper-thin, par-boiled",
+          "mass": 250,
+          "pct": 41.67,
+          "estimated": true,
+          "role": "Waxy-leaning and starchy enough to crisp at the edges while the centers stay tender."
+        },
+        {
+          "id": "D.02",
+          "name": "Unsalted Butter, melted",
+          "volume": "4 tbsp",
+          "mass": 56,
+          "pct": 9.33,
+          "role": "Tossed with the dried potato slices to promote browning and carry the thyme."
+        },
+        {
+          "id": "D.03",
+          "name": "Fresh Thyme Leaves",
+          "volume": "2 tbsp",
+          "mass": 6,
+          "pct": 1.0,
+          "estimated": true,
+          "role": "Stripped from the stems and tossed with the potato."
+        },
+        {
+          "id": "D.04",
+          "name": "Black Pepper, freshly ground",
+          "volume": "1 tsp",
+          "mass": 2,
+          "pct": 0.33,
+          "estimated": true,
+          "role": "Tossed with the potato slices and butter."
+        }
+      ],
+      "total": {
+        "mass": 1754,
+        "pct": 292.33,
+        "role": "Combined raw material input footprint."
+      }
+    }
+  ],
+  "matrixFootnote": "*Garlic, ricotta, mozzarella, onion, potato, thyme, and pepper masses are standard culinary estimates for the stated counts and volumes. Dough and butter masses are stated or derived by unit conversion. Salt and cooking fat are not listed; season to taste at each stage.",
+  "mise": [
+    {
+      "label": "Garlic (B.01)",
+      "text": "Cut the tops off the heads to expose the cloves, wrap in foil, and roast 40 minutes at 400°F / 205°C until the cloves are soft and golden. Cool until you can handle them."
+    },
+    {
+      "label": "Onions (C.01)",
+      "text": "Halve and slice thinly and evenly so they cook at the same rate."
+    },
+    {
+      "label": "Potato (D.01)",
+      "text": "Slice paper-thin, about 1.5 mm, on a mandoline. Keep the slices in a bowl of cold water until ready to par-boil so they do not oxidize."
+    },
+    {
+      "label": "Thyme (D.03)",
+      "text": "Strip the leaves from the stems and measure."
+    },
+    {
+      "label": "Pan and Oven",
+      "text": "Grease a half sheet pan (18 x 13 in) generously with your usual fat. Set a rack in the lower-middle position and preheat the oven to 475°F / 245°C for at least 30 minutes."
+    }
+  ],
+  "execution": [
+    {
+      "name": "Caramelize the Onions",
+      "params": "~40 min | Medium-low heat",
+      "text": "Cook the onions in a wide skillet, stirring every few minutes, until deep golden brown and jammy. If they start to scorch before they color, add a splash of water and scrape up the browned bits. Season with salt and set aside."
+    },
+    {
+      "name": "Par-Boil the Potato",
+      "params": "1-2 min | Gently boiling salted water",
+      "text": "Drain the potato slices and drop them into boiling salted water for 1 to 2 minutes, until they bend without breaking. Lift out gently, spread in a single layer on a clean towel, and pat completely dry."
+    },
+    {
+      "name": "Dress the Potato",
+      "params": "~2 min | Room temperature",
+      "text": "Toss the dry slices gently with the melted butter, black pepper, and thyme until every slice is coated. Work carefully, since par-boiled slices tear easily."
+    },
+    {
+      "name": "Make the Garlic-Ricotta Base",
+      "params": "~3 min | Room temperature",
+      "text": "Squeeze the roasted cloves from their skins into the ricotta. Mash with a fork until mostly smooth and season with salt."
+    },
+    {
+      "name": "Press Out the Dough",
+      "params": "20-30 min | Room temperature",
+      "text": "Turn the dough into the greased pan and press it toward the corners with your fingertips. If it springs back, let it rest 10 minutes and press again. Cover and let it relax and puff slightly for 20 to 30 minutes."
+    },
+    {
+      "name": "Assemble",
+      "params": "~10 min | Room temperature",
+      "text": "Spread the garlic-ricotta base to within 1/2 inch of the edge, scatter over the mozzarella, then the onions. Shingle the potato slices over the top in overlapping rows, covering as much of the surface as one potato allows."
+    },
+    {
+      "name": "Bake",
+      "params": "20-25 min | 475°F / 245°C",
+      "text": "Bake on the lower-middle rack until the crust edges are deeply browned and the potato edges are golden and crisp. Lift a corner with a spatula to check that the underside is browned. Rest 3 minutes in the pan, then slide onto a board and cut into squares."
+    }
+  ],
+  "qc": [
+    {
+      "metric": "Potato Edge Color",
+      "target": "Deep golden to brown at the edges, with the centers tender.",
+      "action": "If the slices are pale and soft, they were wet going in. Dry them more thoroughly next time and make sure the oven is fully preheated."
+    },
+    {
+      "metric": "Base Moisture",
+      "target": "Base is set and creamy, not pooling or watery.",
+      "action": "If the base is runny, drain the ricotta in a sieve for 15 to 30 minutes before mixing with the garlic."
+    },
+    {
+      "metric": "Crust Underside",
+      "target": "Browned and crisp from the fat in the pan, with no gummy layer under the toppings.",
+      "action": "If the underside is pale or soft, move the pan to the lowest rack for the last 5 minutes and use less topping moisture near the center next time."
+    }
+  ],
+  "directive": "Dry the par-boiled potatoes completely before tossing them with butter. Surface water steams the slices instead of crisping them."
+}
